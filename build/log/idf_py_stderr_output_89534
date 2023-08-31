@@ -1,0 +1,18 @@
+[0;33m--- idf_monitor on /dev/cu.wchusbserial54750365161 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008140c: pthread_mutex_lock_internal at /Users/icewalker/esp-idf/esp-idf/components/pthread/pthread.c:610
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 55e87201168f26e8524b509ba83c658137e8924bbbaee933403f89ab9eb618db[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008140c: pthread_mutex_lock_internal at /Users/icewalker/esp-idf/esp-idf/components/pthread/pthread.c:610
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 55e87201168f26e8524b509ba83c658137e8924bbbaee933403f89ab9eb618db[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008140c: pthread_mutex_lock_internal at /Users/icewalker/esp-idf/esp-idf/components/pthread/pthread.c:610
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 55e87201168f26e8524b509ba83c658137e8924bbbaee933403f89ab9eb618db[0m
+[0m

@@ -1,0 +1,371 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 30 2023 21:06:46[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (77) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (84) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (92) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (99) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (106) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (114) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (122) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (129) boot: End of partition table[0m
+[0;32mI (133) boot: No factory image, trying OTA 0[0m
+[0;32mI (138) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=39210h (234000) map[0m
+[0;32mI (195) esp_image: segment 1: paddr=00059238 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (195) esp_image: segment 2: paddr=00059244 vaddr=3ffbdb60 size=056f4h ( 22260) load[0m
+[0;32mI (206) esp_image: segment 3: paddr=0005e940 vaddr=40080000 size=016d8h (  5848) load[0m
+[0;32mI (211) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=fccd8h (1035480) map[0m
+[0;32mI (431) esp_image: segment 5: paddr=0015cd00 vaddr=400816d8 size=1d7c0h (120768) load[0m
+[0;32mI (478) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (540) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (540) boot: Disabling RNG early entropy source...[0m
+[0;32mI (551) cpu_start: Multicore app[0m
+[0;32mI (551) cpu_start: Pro cpu up.[0m
+[0;32mI (551) cpu_start: Starting app cpu, entry point is 0x400814a4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (571) cpu_start: Pro cpu start user code[0m
+[0;32mI (571) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (571) cpu_start: Application information:[0m
+[0;32mI (576) cpu_start: Project name:     light_relay[0m
+[0;32mI (581) cpu_start: App version:      1.0[0m
+[0;32mI (586) cpu_start: Compile time:     Aug 30 2023 21:06:40[0m
+[0;32mI (592) cpu_start: ELF file SHA256:  30696bae716957b9...[0m
+[0;32mI (598) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (603) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (607) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (612) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (617) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (624) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (630) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (636) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (643) heap_init: At 3FFD4BC0 len 0000B440 (45 KiB): DRAM[0m
+[0;32mI (649) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (655) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (661) heap_init: At 4009EE98 len 00001168 (4 KiB): IRAM[0m
+[0;32mI (669) spi_flash: detected chip: generic[0m
+[0;32mI (672) spi_flash: flash io: dio[0m
+[0;32mI (679) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (682) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (687) app_start: Starting scheduler on CPU1[0m
+mI (687) main_task: Started on CPU0[0m
+[0;32mI (697) main_task: Calling app_main()[0m
+[0;32mI (797) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (807) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (807) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001F already exists. Not creating again.[0m
+[0;31mE (817) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;31mE (827) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;33mW (837) esp_matter_core: Attribute 0x00000000 on cluster 0x00000030 already exists. Not creating again.[0m
+[0;32mI (857) led_driver_gpio: Initializing light driver[0m
+[0;33mW (857) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (867) app_main: Light created with endpoint_id 1[0m
+[0;32mI (867) led_driver_gpio: Initializing light driver[0m
+[0;33mW (877) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (887) app_main: Light created with endpoint_id 2[0m
+[0;32mI (887) led_driver_gpio: Initializing light driver[0m
+[0;33mW (897) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (907) app_main: Light created with endpoint_id 3[0m
+[0;32mI (907) led_driver_gpio: Initializing light driver[0m
+[0;33mW (917) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (927) app_main: Light created with endpoint_id 4[0m
+[0;32mI (927) led_driver_gpio: Initializing light driver[0m
+[0;33mW (937) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (947) app_main: Light created with endpoint_id 5[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (61) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Aug 30 2023 21:06:46[0m
+[0;32mI (62) boot: Multicore bootloader[0m
+[0;32mI (66) boot: chip revision: v3.0[0m
+[0;32mI (70) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;33mW (84) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (89) boot.esp32: WDT reset info: PRO CPU PC=0x400954c0[0m
+[0;33mW (95) boot.esp32: WDT reset info: APP CPU PC=0x40081c09[0m
+[0;32mI (101) boot: Enabling RNG early entropy source...[0m
+[0;32mI (107) boot: Partition Table:[0m
+[0;32mI (110) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (118) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (125) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (133) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (140) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (148) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (156) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (163) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (171) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (178) boot: End of partition table[0m
+[0;32mI (183) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=39210h (234000) map[0m
+[0;32mI (239) esp_image: segment 1: paddr=00059238 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (240) esp_image: segment 2: paddr=00059244 vaddr=3ffbdb60 size=056f4h ( 22260) load[0m
+[0;32mI (250) esp_image: segment 3: paddr=0005e940 vaddr=40080000 size=016d8h (  5848) load[0m
+[0;32mI (255) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=fccd8h (1035480) map[0m
+[0;32mI (475) esp_image: segment 5: paddr=0015cd00 vaddr=400816d8 size=1d7c0h (120768) load[0m
+[0;32mI (523) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (523) boot: Disabling RNG early entropy source...[0m
+[0;32mI (534) cpu_start: Multicore app[0m
+[0;32mI (535) cpu_start: Pro cpu up.[0m
+[0;32mI (535) cpu_start: Starting app cpu, entry point is 0x400814a4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (559) cpu_start: Project name:     light_relay[0m
+[0;32mI (565) cpu_start: App version:      1.0[0m
+[0;32mI (569) cpu_start: Compile time:     Aug 30 2023 21:06:40[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  30696bae716957b9...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFD4BC0 len 0000B440 (45 KiB): DRAM[0m
+[0;32mI (632) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (639) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (645) heap_init: At 4009EE98 len 00001168 (4 KiB): IRAM[0m
+[0;32mI (653) spi_flash: detected chip: generic[0m
+[0;32mI (656) spi_flash: flash io: dio[0m
+[0;32mI (663) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (666) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (670) app_start: Starting scheduler on CPU1[0m
+mI (670) main_task: Started on CPU0[0m
+[0;32mI (680) main_task: Calling app_main()[0m
+[0;32mI (780) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (790) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (790) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001F already exists. Not creating again.[0m
+[0;31mE (800) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;31mE (810) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;33mW (820) esp_matter_core: Attribute 0x00000000 on cluster 0x00000030 already exists. Not creating again.[0m
+[0;32mI (840) led_driver_gpio: Initializing light driver[0m
+[0;33mW (840) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (850) app_main: Light created with endpoint_id 1[0m
+[0;32mI (850) led_driver_gpio: Initializing light driver[0m
+[0;33mW (860) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (870) app_main: Light created with endpoint_id 2[0m
+[0;32mI (870) led_driver_gpio: Initializing light driver[0m
+[0;33mW (880) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (890) app_main: Light created with endpoint_id 3[0m
+[0;32mI (890) led_driver_gpio: Initializing light driver[0m
+[0;33mW (900) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (910) app_main: Light created with endpoint_id 4[0m
+[0;32mI (910) led_driver_gpio: Initializing light driver[0m
+[0;33mW (920) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (930) app_main: Light created with endpoint_id 5[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (61) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Aug 30 2023 21:06:46[0m
+[0;32mI (62) boot: Multicore bootloader[0m
+[0;32mI (66) boot: chip revision: v3.0[0m
+[0;32mI (70) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;33mW (84) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (89) boot.esp32: WDT reset info: PRO CPU PC=0x400954c0[0m
+[0;33mW (95) boot.esp32: WDT reset info: APP CPU PC=0x40081c09[0m
+[0;32mI (101) boot: Enabling RNG early entropy source...[0m
+[0;32mI (107) boot: Partition Table:[0m
+[0;32mI (110) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (118) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (125) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (133) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (140) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (148) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (156) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (163) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (171) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (178) boot: End of partition table[0m
+[0;32mI (183) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=39210h (234000) map[0m
+[0;32mI (239) esp_image: segment 1: paddr=00059238 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (240) esp_image: segment 2: paddr=00059244 vaddr=3ffbdb60 size=056f4h ( 22260) load[0m
+[0;32mI (250) esp_image: segment 3: paddr=0005e940 vaddr=40080000 size=016d8h (  5848) load[0m
+[0;32mI (255) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=fccd8h (1035480) map[0m
+[0;32mI (475) esp_image: segment 5: paddr=0015cd00 vaddr=400816d8 size=1d7c0h (120768) load[0m
+[0;32mI (523) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (523) boot: Disabling RNG early entropy source...[0m
+[0;32mI (534) cpu_start: Multicore app[0m
+[0;32mI (535) cpu_start: Pro cpu up.[0m
+[0;32mI (535) cpu_start: Starting app cpu, entry point is 0x400814a4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (559) cpu_start: Project name:     light_relay[0m
+[0;32mI (565) cpu_start: App version:      1.0[0m
+[0;32mI (569) cpu_start: Compile time:     Aug 30 2023 21:06:40[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  30696bae716957b9...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFD4BC0 len 0000B440 (45 KiB): DRAM[0m
+[0;32mI (632) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (639) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (645) heap_init: At 4009EE98 len 00001168 (4 KiB): IRAM[0m
+[0;32mI (653) spi_flash: detected chip: generic[0m
+[0;32mI (656) spi_flash: flash io: dio[0m
+[0;32mI (663) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (666) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (670) app_start: Starting scheduler on CPU1[0m
+mI (670) main_task: Started on CPU0[0m
+[0;32mI (680) main_task: Calling app_main()[0m
+[0;32mI (780) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (790) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (790) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001F already exists. Not creating again.[0m
+[0;31mE (800) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;31mE (810) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;33mW (820) esp_matter_core: Attribute 0x00000000 on cluster 0x00000030 already exists. Not creating again.[0m
+[0;32mI (840) led_driver_gpio: Initializing light driver[0m
+[0;33mW (840) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (850) app_main: Light created with endpoint_id 1[0m
+[0;32mI (850) led_driver_gpio: Initializing light driver[0m
+[0;33mW (860) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (870) app_main: Light created with endpoint_id 2[0m
+[0;32mI (870) led_driver_gpio: Initializing light driver[0m
+[0;33mW (880) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (890) app_main: Light created with endpoint_id 3[0m
+[0;32mI (890) led_driver_gpio: Initializing light driver[0m
+[0;33mW (900) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (910) app_main: Light created with endpoint_id 4[0m
+[0;32mI (910) led_driver_gpio: Initializing light driver[0m
+[0;33mW (920) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (930) app_main: Light created with endpoint_id 5[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (61) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time Aug 30 2023 21:06:46[0m
+[0;32mI (62) boot: Multicore bootloader[0m
+[0;32mI (66) boot: chip revision: v3.0[0m
+[0;32mI (70) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (79) boot.esp32: SPI Flash Size : 4MB[0m
+[0;33mW (84) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (89) boot.esp32: WDT reset info: PRO CPU PC=0x400954c0[0m
+[0;33mW (95) boot.esp32: WDT reset info: APP CPU PC=0x40081c09[0m
+[0;32mI (101) boot: Enabling RNG early entropy source...[0m
+[0;32mI (107) boot: Partition Table:[0m
+[0;32mI (110) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (118) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (125) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (133) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (140) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (148) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (156) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (163) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (171) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (178) boot: End of partition table[0m
+[0;32mI (183) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=39210h (234000) map[0m
+[0;32mI (239) esp_image: segment 1: paddr=00059238 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (240) esp_image: segment 2: paddr=00059244 vaddr=3ffbdb60 size=056f4h ( 22260) load[0m
+[0;32mI (250) esp_image: segment 3: paddr=0005e940 vaddr=40080000 size=016d8h (  5848) load[0m
+[0;32mI (255) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=fccd8h (1035480) map[0m
+[0;32mI (475) esp_image: segment 5: paddr=0015cd00 vaddr=400816d8 size=1d7c0h (120768) load[0m
+[0;32mI (523) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (523) boot: Disabling RNG early entropy source...[0m
+[0;32mI (534) cpu_start: Multicore app[0m
+[0;32mI (535) cpu_start: Pro cpu up.[0m
+[0;32mI (535) cpu_start: Starting app cpu, entry point is 0x400814a4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (555) cpu_start: Pro cpu start user code[0m
+[0;32mI (555) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) cpu_start: Application information:[0m
+[0;32mI (559) cpu_start: Project name:     light_relay[0m
+[0;32mI (565) cpu_start: App version:      1.0[0m
+[0;32mI (569) cpu_start: Compile time:     Aug 30 2023 21:06:40[0m
+[0;32mI (575) cpu_start: ELF file SHA256:  30696bae716957b9...[0m
+[0;32mI (581) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (586) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (591) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (596) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (601) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFD4BC0 len 0000B440 (45 KiB): DRAM[0m
+[0;32mI (632) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (639) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (645) heap_init: At 4009EE98 len 00001168 (4 KiB): IRAM[0m
+[0;32mI (653) spi_flash: detected chip: generic[0m
+[0;32mI (656) spi_flash: flash io: dio[0m
+[0;32mI (663) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (666) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (670) app_start: Starting scheduler on CPU1[0m
+mI (670) main_task: Started on CPU0[0m
+[0;32mI (680) main_task: Calling app_main()[0m
+[0;32mI (780) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (790) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (790) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001F already exists. Not creating again.[0m
+[0;31mE (800) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;31mE (810) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;33mW (820) esp_matter_core: Attribute 0x00000000 on cluster 0x00000030 already exists. Not creating again.[0m
+[0;32mI (840) led_driver_gpio: Initializing light driver[0m
+[0;33mW (840) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (850) app_main: Light created with endpoint_id 1[0m
+[0;32mI (850) led_driver_gpio: Initializing light driver[0m
+[0;33mW (860) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (870) app_main: Light created with endpoint_id 2[0m
+[0;32mI (870) led_driver_gpio: Initializing light driver[0m
+[0;33mW (880) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (890) app_main: Light created with endpoint_id 3[0m
+[0;32mI (890) led_driver_gpio: Initializing light driver[0m
+[0;33mW (900) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (910) app_main: Light created with endpoint_id 4[0m
+[0;32mI (910) led_driver_gpio: Initializing light driver[0m
+[0;33mW (920) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (930) app_main: Light created with endpoint_id 5[0m

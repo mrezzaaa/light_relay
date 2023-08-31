@@ -1,0 +1,2024 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7420
+ho 0 tail 12 room 4
+load:0x40078000,len:15716
+load:0x40080400,len:4668
+entry 0x400806a4
+[0;32mI (29) boot: ESP-IDF v5.0.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 03:18:13[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (69) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (77) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (84) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (92) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (99) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (107) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (114) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (122) boot: End of partition table[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=371b0h (225712) map[0m
+[0;32mI (216) esp_image: segment 1: paddr=000571d8 vaddr=3ffbdb60 size=053d4h ( 21460) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0005c5b4 vaddr=40080000 size=03a64h ( 14948) load[0m
+[0;32mI (231) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=f7afch (1014524) map[0m
+[0;32mI (599) esp_image: segment 4: paddr=00157b24 vaddr=40083a64 size=1a9f0h (109040) load[0m
+[0;32mI (660) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (660) boot: Disabling RNG early entropy source...[0m
+[0;32mI (671) cpu_start: Pro cpu up.[0m
+[0;32mI (672) cpu_start: Starting app cpu, entry point is 0x4008140c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (688) cpu_start: Pro cpu start user code[0m
+[0;32mI (688) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (688) cpu_start: Application information:[0m
+[0;32mI (693) cpu_start: Project name:     light_switch[0m
+[0;32mI (698) cpu_start: App version:      1.0[0m
+[0;32mI (703) cpu_start: Compile time:     Aug  4 2023 03:17:58[0m
+[0;32mI (709) cpu_start: ELF file SHA256:  391c11c69450b015...[0m
+[0;32mI (715) cpu_start: ESP-IDF:          v5.0.1[0m
+[0;32mI (719) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (724) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (729) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (734) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (741) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (747) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (753) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (759) heap_init: At 3FFD4478 len 0000BB88 (46 KiB): DRAM[0m
+[0;32mI (765) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (772) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (778) heap_init: At 4009E454 len 00001BAC (6 KiB): IRAM[0m
+[0;32mI (786) spi_flash: detected chip: generic[0m
+[0;32mI (789) spi_flash: flash io: dio[0m
+[0;32mI (796) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;33mW (1019) app_main: GPIO 13 initialized[0m
+[0;32mI (1019) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1029) app_main: Switch created with endpoint_id 1[0m
+I (1039) wifi:wifi driver task: 3ffdadb8, prio:23, stack:6656, core=0
+[0;32mI (1039) system_api: Base MAC address is not set[0m
+[0;32mI (1039) system_api: read default base MAC address from EFUSE[0m
+I (1069) wifi:wifi firmware version: 17afb16
+I (1069) wifi:wifi certification version: v7.0
+I (1069) wifi:config NVS flash: enabled
+I (1069) wifi:config nano formating: disabled
+I (1079) wifi:Init data frame dynamic rx buffer num: 32
+I (1079) wifi:Init management frame dynamic rx buffer num: 32
+I (1089) wifi:Init management short buffer num: 32
+I (1089) wifi:Init dynamic tx buffer num: 32
+I (1099) wifi:Init static rx buffer size: 1600
+I (1099) wifi:Init static rx buffer num: 10
+I (1099) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1109) wifi_init: rx ba win: 6[0m
+[0;32mI (1109) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1109) wifi_init: udp mbox: 6[0m
+[0;32mI (1119) wifi_init: tcp mbox: 6[0m
+[0;32mI (1119) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1129) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1129) wifi_init: tcp mss: 1440[0m
+[0;32mI (1139) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1139) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1169) chip[DL]: NVS set: chip-counters/reboot-count = 45 (0x2D)[0m
+[0;32mI (1179) CHIP[DL]: WiFi station already provisioned, not initializing BLE[0m
+[0;32mI (1179) chip[DL]: Real time clock set to 946684800 (0100/00/01 00:00:00 UTC)[0m
+[0;32mI (1189) chip[DL]: Starting ESP WiFi layer[0m
+[0;32mI (1189) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (1299) wifi:mode : sta (90:38:0c:d2:27:3c)
+I (1299) wifi:enable tsf
+W (1299) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (1299) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (1309) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;32mI (1309) chip[DL]: Done driving station state, nothing else to do...[0m
+I (1309) wifi:[0;32mI (1319) chip[SVR]: Initializing subscription resumption storage...[0m
+new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+[0;32mI (1329) chip[SVR]: Server initializing...[0m
+I (1339) wifi:state: init -> auth (b0)
+[0;32mI (1339) chip[TS]: Last Known Good Time: 2023-08-30T16:02:47[0m
+I (1349) wifi:state: auth -> assoc (0)
+I (1359) wifi:state: assoc -> run (10)
+[0;32mI (1369) chip[FP]: Fabric index 0x1 was retrieved from storage. Compressed FabricId 0x5070A2F460AE7060, FabricId 0x0000000000000001, NodeId 0x000000000000004B, VendorId 0xFFF1[0m
+I (1369) wifi:<ba-add>idx:0 (ifx:0, 0c:41:e9:80:c6:40), tid:0, ssn:0, winSize:64
+[0;32mI (1389) chip[FP]: Fabric index 0x3 was retrieved from storage. Compressed FabricId 0x906D89248D0488D1, FabricId 0x00000000004A4B6C, NodeId 0x0000000100000015, VendorId 0x125DI (1389) wifi:[0m
+[0;32mI (1399) chip[DMG]: AccessControl: initializing[0m
+[0;32mI (1409) chip[DMG]: Examples::AccessControlDelegate::Init[0m
+[0;32mI (1409) chip[DMG]: AccessControl: setting[0m
+[0;32mI (1419) chip[DMG]: DefaultAclStorage: initializing[0m
+connected with ReadysNetwork, aid = 6, channel 6, BW20, bssid = 0c:41:e9:80:c6:40
+I (1429) wifi:security: WPA2-PSK, phy: bgn, rssi: -39
+[0;32mI (1429) chip[DMG]: DefaultAclStorage: 2 entries loaded[0m
+I (1469) wifi:pm start, type: 1
+
+I (1469) wifi:AP's beacon interval = 499712 us, DTIM period = 1
+[0;32mI (1469) chip[ZCL]: Using ZAP configuration...[0m
+[0;32mI (1479) esp_matter_cluster: Cluster plugin init common callback[0m
+[0;32mI (1479) chip[DMG]: AccessControlCluster: initializing[0m
+[0;32mI (1479) chip[ZCL]: 0x3f40b41cep 0 clus 0x0000_0030 attr 0x0000_0000 not supported[0m
+[0;32mI (1489) chip[ZCL]: Initiating Admin Commissioning cluster.[0m
+[0;31mE (1499) chip[ZCL]: Duplicate attribute override registration failed[0m
+[0;32mI (1499) chip[SVR]: Fabric already commissioned. Disabling BLE advertisement[0m
+[0;32mI (1509) chip[IN]: CASE Server enabling CASE session setups[0m
+[0;32mI (1519) chip[SVR]: Joining Multicast groups[0m
+[0;32mI (1529) chip[SVR]: Server Listening...[0m
+[0;32mI (1529) esp_matter_core: Dynamic endpoint 0 added[0m
+[0;32mI (1529) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;32mI (1549) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x00000000 is 128 **********[0m
+[0;32mI (1559) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x0000FFFC is <invalid type: 0> **********[0m
+[0;32mI (1569) esp_matter_core: Dynamic endpoint 1 added[0m
+[0;32mI (1579) chip[DL]: WIFI_EVENT_STA_START[0m
+[0;32mI (1579) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (1589) chip[DL]: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (1589) chip[DL]: WiFi station state change: Connecting -> Connecting_Succeeded[0m
+[0;32mI (1599) chip[DL]: WiFi station state change: Connecting_Succeeded -> Connected[0m
+[0;32mI (1609) chip[DL]: WiFi station interface connected[0m
+[0;32mI (1609) chip[ZCL]: WiFiDiagnosticsDelegate: OnConnectionStatusChanged[0m
+[0;32mI (1619) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (1629) chip[DL]: Updating advertising data[0m
+[5n[6n [999C [6n [297D[6n [0;32m> [0m[6n [0;32mI (3029) chip[DL]: IP_EVENT_GOT_IP6[0m
+[0;32mI (3029) chip[DL]: IPv6 addr available. Ready on WIFI_STA_DEF interface: fe80:0000:0000:0000:9238:0cff:fed2:273c[0m
+[0;32mI (3029) app_main: Interface IP Address Changed[0m
+[0;32mI (3039) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (3049) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (3049) chip[DIS]: Advertise operational node 5070A2F460AE7060-000000000000004B[0m
+[0;32mI (3059) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-000000000000004B.[0m
+[0;32mI (3079) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (3079) chip[DIS]: Advertise operational node 906D89248D0488D1-0000000100000015[0m
+[0;32mI (3079) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 906D89248D0488D1-0000000100000015.[0m
+[0;32mI (3099) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (3099) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (3119) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (3119) chip[DIS]: Advertise operational node 5070A2F460AE7060-000000000000004B[0m
+[0;32mI (3129) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-000000000000004B.[0m
+[0;32mI (3139) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (3139) chip[DIS]: Advertise operational node 906D89248D0488D1-0000000100000015[0m
+[0;32mI (3159) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 906D89248D0488D1-0000000100000015.[0m
+[0;32mI (3159) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (3169) chip[SVR]: Server initialization complete[0m
+[0;32mI (3179) chip[IM]: No subscriptions to resume[0m
+[0;32mI (4979) esp_netif_handlers: sta ip: 192.168.100.27, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (4979) chip[DL]: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (4979) chip[DL]: IPv4 address changed on WiFi station interface: 192.168.100.27/255.255.255.0 gateway 192.168.100.1[0m
+[0;32mI (4999) chip[DL]: IPv4 Internet connectivity ESTABLISHED[0m
+[0;32mI (5009) app_main: Interface IP Address Changed[0m
+[0;32mI (5009) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (5019) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (5039) chip[DIS]: Advertise operational node 5070A2F460AE7060-000000000000004B[0m
+[0;32mI (5039) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-000000000000004B.[0m
+[0;32mI (5059) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (5059) chip[DIS]: Advertise operational node 906D89248D0488D1-0000000100000015[0m
+[0;32mI (5059) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 906D89248D0488D1-0000000100000015.[0m
+[0;32mI (5079) chip[DIS]: mDNS service published: _matter._tcp[0m
+
+
+[6n [999C [6n [297D[6n [0;32m> [0m[6n [0K[0;32m> [0mm[3C[0K[0;32m> [0mma[4C[0K[0;32m> [0mmat[5C[0K[0;32m> [0mmatt[6C[0K[0;32m> [0mmatte[7C[0K[0;32m> [0mmatter[8C[0K[0;32m> [0mmatter [9C[0K[0;32m> [0mmatter d[10C[0K[0;32m> [0mmatter de[11C[0K[0;32m> [0mmatter dev[12C[0K[0;32m> [0mmatter devi[13C[0K[0;32m> [0mmatter devic[14C[0K[0;32m> [0mmatter device[15C[0K[0;32m> [0mmatter devices[16C[0K[0;32m> [0mmatter device[15C[0K[0;32m> [0mmatter device [16C[0K[0;32m> [0mmatter device f[17C[0K[0;32m> [0mmatter device fa[18C[0K[0;32m> [0mmatter device fac[19C[0K[0;32m> [0mmatter device fact[20C[0K[0;32m> [0mmatter device facto[21C[0K[0;32m> [0mmatter device factor[22C[0K[0;32m> [0mmatter device factory[23C[0K[0;32m> [0mmatter device factoryr[24C[0K[0;32m> [0mmatter device factoryre[25C[0K[0;32m> [0mmatter device factoryres[26C[0K[0;32m> [0mmatter device factoryrese[27C[0K[0;32m> [0mmatter device factoryreset[28C
+
+Performing factory reset ... 
+Done
+[6n [0;32mI (12339) chip[DL]: Performing factory reset[0m
+[999C [6n I (12409) wifi:state: run -> init (0)
+I (12409) wifi:pm stop, total sleep time: 8023365 us / 10944966 us
+
+I (12409) wifi:<ba-del>idx
+I (12419) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+[297D[6n I (12489) wifi:flush txq
+I (12489) wifi:stop sw txq
+I (12489) wifi:lmac stop hw txq
+[0;32m> [0m[6n [0;32mI (12679) chip[DL]: System restarting[0m
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7420
+ho 0 tail 12 room 4
+load:0x40078000,len:15716
+load:0x40080400,len:4668
+entry 0x400806a4
+[0;32mI (29) boot: ESP-IDF v5.0.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 03:18:13[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (69) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (77) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (84) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (92) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (99) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (107) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (114) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (122) boot: End of partition table[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=371b0h (225712) map[0m
+[0;32mI (216) esp_image: segment 1: paddr=000571d8 vaddr=3ffbdb60 size=053d4h ( 21460) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0005c5b4 vaddr=40080000 size=03a64h ( 14948) load[0m
+[0;32mI (231) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=f7afch (1014524) map[0m
+[0;32mI (599) esp_image: segment 4: paddr=00157b24 vaddr=40083a64 size=1a9f0h (109040) load[0m
+[0;32mI (660) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (660) boot: Disabling RNG early entropy source...[0m
+[0;32mI (671) cpu_start: Pro cpu up.[0m
+[0;32mI (671) cpu_start: Starting app cpu, entry point is 0x4008140c[0m
+[0;32mI (657) cpu_start: App cpu up.[0m
+[0;32mI (688) cpu_start: Pro cpu start user code[0m
+[0;32mI (688) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (688) cpu_start: Application information:[0m
+[0;32mI (693) cpu_start: Project name:     light_switch[0m
+[0;32mI (698) cpu_start: App version:      1.0[0m
+[0;32mI (703) cpu_start: Compile time:     Aug  4 2023 03:17:58[0m
+[0;32mI (709) cpu_start: ELF file SHA256:  391c11c69450b015...[0m
+[0;32mI (715) cpu_start: ESP-IDF:          v5.0.1[0m
+[0;32mI (720) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (724) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (729) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (734) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (741) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (747) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (753) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (759) heap_init: At 3FFD4478 len 0000BB88 (46 KiB): DRAM[0m
+[0;32mI (765) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (772) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (778) heap_init: At 4009E454 len 00001BAC (6 KiB): IRAM[0m
+[0;32mI (786) spi_flash: detected chip: generic[0m
+[0;32mI (789) spi_flash: flash io: dio[0m
+[0;32mI (796) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;33mW (908) app_main: GPIO 13 initialized[0m
+[0;32mI (918) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (928) app_main: Switch created with endpoint_id 1[0m
+I (938) wifi:wifi driver task: 3ffdaa98, prio:23, stack:6656, core=0
+[0;32mI (938) system_api: Base MAC address is not set[0m
+[0;32mI (938) system_api: read default base MAC address from EFUSE[0m
+I (968) wifi:wifi firmware version: 17afb16
+I (968) wifi:wifi certification version: v7.0
+I (968) wifi:config NVS flash: enabled
+I (968) wifi:config nano formating: disabled
+I (968) wifi:Init data frame dynamic rx buffer num: 32
+I (978) wifi:Init management frame dynamic rx buffer num: 32
+I (978) wifi:Init management short buffer num: 32
+I (988) wifi:Init dynamic tx buffer num: 32
+I (988) wifi:Init static rx buffer size: 1600
+I (998) wifi:Init static rx buffer num: 10
+I (998) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1008) wifi_init: rx ba win: 6[0m
+[0;32mI (1008) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1008) wifi_init: udp mbox: 6[0m
+[0;32mI (1018) wifi_init: tcp mbox: 6[0m
+[0;32mI (1018) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1018) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1028) wifi_init: tcp mss: 1440[0m
+[0;32mI (1028) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1038) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1068) chip[DL]: NVS set: chip-counters/reboot-count = 1 (0x1)[0m
+[0;32mI (1078) chip[DL]: NVS set: chip-counters/total-hours = 0 (0x0)[0m
+[0;32mI (1078) chip[DL]: NVS set: chip-config/unique-id = "52371D4B05990BE9"[0m
+[0;32mI (1078) chip[DL]: Real time clock set to 946684800 (0100/00/01 00:00:00 UTC)[0m
+[0;32mI (1088) BTDM_INIT: BT controller compile version [60aae55][0m
+[0;32mI (1098) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1458) CHIP[DL]: BLE host-controller synced[0m
+[0;32mI (1958) chip[DL]: Configuring CHIPoBLE advertising (interval 25 ms, connectable)[0m
+[0;32mI (1958) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1968) NimBLE: disc_mode=2[0m
+[0;32mI (1968) NimBLE:  adv_channel_map=0 own_addr_type=1 adv_filter_policy=0 adv_itvl_min=40 adv_itvl_max=40[0m
+[0;32mI (1978) NimBLE: 
+[0m
+[0;32mI (1988) chip[DL]: CHIPoBLE advertising started[0m
+[0;31mE (1988) chip[DL]: Long dispatch time: 899 ms, for event type 2[0m
+[0;32mI (1998) chip[DL]: Starting ESP WiFi layer[0m
+I (1998) wifi:mode : sta (90:38:0c:d2:27:3c)
+I (2008) wifi:enable tsf
+W (2008) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (2008) chip[DL]: Done driving station state, nothing else to do...[0m
+W (2018) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (2018) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (2028) chip[SVR]: Initializing subscription resumption storage...[0m
+[0;32mI (2038) chip[SVR]: Server initializing...[0m
+[0;32mI (2038) chip[TS]: Last Known Good Time: [unknown][0m
+[0;32mI (2048) chip[TS]: Setting Last Known Good Time to firmware build time 2023-08-04T03:20:17[0m
+[0;32mI (2058) chip[DMG]: AccessControl: initializing[0m
+[0;32mI (2058) chip[DMG]: Examples::AccessControlDelegate::Init[0m
+[0;32mI (2068) chip[DMG]: AccessControl: setting[0m
+[0;32mI (2068) chip[DMG]: DefaultAclStorage: initializing[0m
+[0;32mI (2078) chip[DMG]: DefaultAclStorage: 0 entries loaded[0m
+[0;32mI (2158) chip[ZCL]: Using ZAP configuration...[0m
+[0;32mI (2158) esp_matter_cluster: Cluster plugin init common callback[0m
+[0;32mI (2158) chip[DMG]: AccessControlCluster: initializing[0m
+[0;32mI (2158) chip[ZCL]: 0x3f40b41cep 0 clus 0x0000_0030 attr 0x0000_0000 not supported[0m
+[0;32mI (2168) chip[ZCL]: Initiating Admin Commissioning cluster.[0m
+[0;31mE (2178) chip[ZCL]: Duplicate attribute override registration failed[0m
+[0;32mI (2188) chip[DIS]: Updating services using commissioning mode 1[0m
+[0;32mI (2188) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (2198) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=1[0m
+[0;32mI (2208) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: ECADE2AB6609351A.[0m
+[0;32mI (2218) chip[DIS]: mDNS service published: _matterc._udp[0m
+[0;32mI (2228) chip[IN]: CASE Server enabling CASE session setups[0m
+[0;32mI (2228) chip[SVR]: Joining Multicast groups[0m
+[0;32mI (2238) chip[SVR]: Server Listening...[0m
+[0;32mI (2238) esp_matter_core: Dynamic endpoint 0 added[0m
+[0;32mI (2248) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;32mI (2258) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x00000000 is 128 **********[0m
+[0;32mI (2268) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x0000FFFC is <invalid type: 0> **********[0m
+[0;32mI (2278) esp_matter_core: Dynamic endpoint 1 added[0m
+[0;32mI (2288) chip[DL]: WIFI_EVENT_STA_START[0m
+W (2280m
+[5n[0;32mI (2308) chip[DL]: Configuring CHIPoBLE advertising (interval 25 ms, connectable)[0m
+[0;32mI (2308) chip[DL]: Device already advertising, stop active advertisement and restart[0m
+[0;32mI (2318) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (2328) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (2328) NimBLE: disc_mode=2[0m
+[0;32mI (2338) NimBLE:  adv_channel_map=0 own_addr_type=1 adv_filter_policy=0 adv_itvl_min=40 adv_itvl_max=40[0m
+[0;32mI (2348) NimBLE: 
+[0m
+[6n [0;32mI (2358) app_main: Commissioning window opened[0m
+[999C [6n [297D[6n [0;32m> [0m[6n [0;32mI (12848) chip[DL]: BLE GAP connection established (con 0)[0m
+[0;32mI (12848) chip[DL]: CHIPoBLE advertising stopped[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7420
+ho 0 tail 12 room 4
+load:0x40078000,len:15716
+load:0x40080400,len:4668
+entry 0x400806a4
+[0;32mI (29) boot: ESP-IDF v5.0.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 03:18:13[0m
+[0;32mI (29) boot: chip revision: v1.0[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (69) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (77) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (84) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (92) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (99) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (107) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (114) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (122) boot: End of partition table[0m
+[0;32mI (126) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=371b0h (225712) map[0m
+[0;32mI (216) esp_image: segment 1: paddr=000571d8 vaddr=3ffbdb60 size=053d4h ( 21460) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0005c5b4 vaddr=40080000 size=03a64h ( 14948) load[0m
+[0;32mI (231) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=f7afch (1014524) map[0m
+[0;32mI (599) esp_image: segment 4: paddr=00157b24 vaddr=40083a64 size=1a9f0h (109040) load[0m
+[0;32mI (660) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (660) boot: Disabling RNG early entropy source...[0m
+[0;32mI (671) cpu_start: Pro cpu up.[0m
+[0;32mI (672) cpu_start: Starting app cpu, entry point is 0x4008140c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (688) cpu_start: Pro cpu start user code[0m
+[0;32mI (688) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (688) cpu_start: Application information:[0m
+[0;32mI (693) cpu_start: Project name:     light_switch[0m
+[0;32mI (698) cpu_start: App version:      1.0[0m
+[0;32mI (703) cpu_start: Compile time:     Aug  4 2023 03:17:58[0m
+[0;32mI (709) cpu_start: ELF file SHA256:  391c11c69450b015...[0m
+[0;32mI (715) cpu_start: ESP-IDF:          v5.0.1[0m
+[0;32mI (719) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (724) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (729) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (734) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (741) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (747) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (753) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (759) heap_init: At 3FFD4478 len 0000BB88 (46 KiB): DRAM[0m
+[0;32mI (765) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (772) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (778) heap_init: At 4009E454 len 00001BAC (6 KiB): IRAM[0m
+[0;32mI (786) spi_flash: detected chip: generic[0m
+[0;32mI (789) spi_flash: flash io: dio[0m
+[0;32mI (796) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;33mW (923) app_main: GPIO 13 initialized[0m
+[0;32mI (923) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (933) app_main: Switch created with endpoint_id 1[0m
+I (953) wifi:wifi driver task: 3ffdab20, prio:23, stack:6656, core=0
+[0;32mI (953) system_api: Base MAC address is not set[0m
+[0;32mI (953) system_api: read default base MAC address from EFUSE[0m
+I (983) wifi:wifi firmware version: 17afb16
+I (983) wifi:wifi certification version: v7.0
+I (983) wifi:config NVS flash: enabled
+I (983) wifi:config nano formating: disabled
+I (983) wifi:Init data frame dynamic rx buffer num: 32
+I (993) wifi:Init management frame dynamic rx buffer num: 32
+I (993) wifi:Init management short buffer num: 32
+I (1003) wifi:Init dynamic tx buffer num: 32
+I (1003) wifi:Init static rx buffer size: 1600
+I (1013) wifi:Init static rx buffer num: 10
+I (1013) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1013) wifi_init: rx ba win: 6[0m
+[0;32mI (1023) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1023) wifi_init: udp mbox: 6[0m
+[0;32mI (1023) wifi_init: tcp mbox: 6[0m
+[0;32mI (1033) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1033) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1043) wifi_init: tcp mss: 1440[0m
+[0;32mI (1043) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1053) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1083) chip[DL]: NVS set: chip-counters/reboot-count = 2 (0x2)[0m
+[0;32mI (1093) chip[DL]: Real time clock set to 946684800 (0100/00/01 00:00:00 UTC)[0m
+[0;32mI (1093) BTDM_INIT: BT controller compile version [60aae55][0m
+[0;32mI (1103) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+[0;32mI (1483) CHIP[DL]: BLE host-controller synced[0m
+[0;32mI (1983) chip[DL]: Configuring CHIPoBLE advertising (interval 25 ms, connectable)[0m
+[0;32mI (1983) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (1993) NimBLE: disc_mode=2[0m
+[0;32mI (1993) NimBLE:  adv_channel_map=0 own_addr_type=1 adv_filter_policy=0 adv_itvl_min=40 adv_itvl_max=40[0m
+[0;32mI (2003) NimBLE: 
+[0m
+[0;32mI (2013) chip[DL]: CHIPoBLE advertising started[0m
+[0;31mE (2013) chip[DL]: Long dispatch time: 917 ms, for event type 2[0m
+[0;32mI (2023) chip[DL]: Starting ESP WiFi layer[0m
+I (2023) wifi:mode : sta (90:38:0c:d2:27:3c)
+I (2023) wifi:enable tsf
+W (2033) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (2033) chip[DL]: Done driving station state, nothing else to do...[0m
+W (2043) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (2043) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (2053) chip[SVR]: Initializing subscription resumption storage...[0m
+[0;32mI (2063) chip[SVR]: Server initializing...[0m
+[0;32mI (2063) chip[TS]: Last Known Good Time: 2023-08-04T03:20:17[0m
+[0;32mI (2073) chip[DMG]: AccessControl: initializing[0m
+[0;32mI (2073) chip[DMG]: Examples::AccessControlDelegate::Init[0m
+[0;32mI (2083) chip[DMG]: AccessControl: setting[0m
+[0;32mI (2083) chip[DMG]: DefaultAclStorage: initializing[0m
+[0;32mI (2093) chip[DMG]: DefaultAclStorage: 0 entries loaded[0m
+[0;32mI (2123) chip[ZCL]: Using ZAP configuration...[0m
+[0;32mI (2133) esp_matter_cluster: Cluster plugin init common callback[0m
+[0;32mI (2133) chip[DMG]: AccessControlCluster: initializing[0m
+[0;32mI (2133) chip[ZCL]: 0x3f40b41cep 0 clus 0x0000_0030 attr 0x0000_0000 not supported[0m
+[0;32mI (2143) chip[ZCL]: Initiating Admin Commissioning cluster.[0m
+[0;31mE (2153) chip[ZCL]: Duplicate attribute override registration failed[0m
+[0;32mI (2163) chip[DIS]: Updating services using commissioning mode 1[0m
+[0;32mI (2163) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (2173) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=1[0m
+[0;32mI (2183) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: D62A83D9F6A459B3.[0m
+[0;32mI (2193) chip[DIS]: mDNS service published: _matterc._udp[0m
+[0;32mI (2193) chip[IN]: CASE Server enabling CASE session setups[0m
+[0;32mI (2203) chip[SVR]: Joining Multicast groups[0m
+[0;32mI (2203) chip[SVR]: Server Listening...[0m
+[0;32mI (2213) esp_matter_core: Dynamic endpoint 0 added[0m
+[0;32mI (2223) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;32mI (2233) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x00000000 is 128 **********[0m
+[0;32mI (2243) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x0000FFFC is <invalid type: 0> **********[0m
+[0;32mI (2253) esp_matter_core: Dynamic endpoint 1 added[0m
+[0;32mI (2263) chip[DL]: WIFI_EVENT_STA_START[0m
+W (2263) wifi:Haven't to[5n[0;32mI (2283) chip[DL]: Configuring CHIPoBLE advertising (interval 25 ms, connectable)[0m
+[0;32mI (2283) chip[DL]: Device already advertising, stop active advertisement and restart[0m
+[0;32mI (2293) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (2293) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (2313) NimBLE: disc_mode=2[0m
+[0;32mI (2313) NimBLE:  adv_channel_map=0 own_addr_type=1 adv_filter_policy=0 adv_itvl_min=40 adv_itvl_max=40[0m
+[0;32mI (2323) NimBLE: 
+[0m
+[0;32mI (2323) app_main: Commissioning window opened[0m
+[6n [999C [6n [297D[6n [0;32m> [0m[6n [0;32mI (32163) chip[DL]: Configuring CHIPoBLE advertising (interval 500 ms, connectable)[0m
+[0;32mI (32173) chip[DL]: Device already advertising, stop active advertisement and restart[0m
+[0;32mI (32183) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (32183) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (32183) NimBLE: disc_mode=2[0m
+[0;32mI (32193) NimBLE:  adv_channel_map=0 own_addr_type=1 adv_filter_policy=0 adv_itvl_min=800 adv_itvl_max=800[0m
+[0;32mI (32213) NimBLE: 
+[0m
+[0;32mI (68613) chip[DL]: BLE GAP connection established (con 0)[0m
+[0;32mI (68613) chip[DL]: CHIPoBLE advertising stopped[0m
+[0;32mI (69363) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (69363) chip[BLE]: local and remote recv window sizes = 5[0m
+[0;32mI (69373) chip[BLE]: selected BTP version 4[0m
+[0;32mI (69383) chip[BLE]: using BTP fragment sizes rx 244 / tx 244.[0m
+[0;32mI (69543) chip[DL]: Write request/command received for CHIPoBLE TX CCCD characteristic (con 0 ) indicate = 1[0m
+[0;32mI (69543) chip[DL]: CHIPoBLE subscribe received[0m
+[0;32mI (69543) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (69563) NimBLE: att_handle=14
+[0m
+[0;32mI (69603) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (69613) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (69623) chip[EM]: >>> [E:33523r S:0 M:22901859] (U) Msg RX from 0:206F46F2811C8A8A [0000] --- Type 0000:20 (SecureChannel:PBKDFParamRequest)[0m
+[0;32mI (69643) chip[EM]: <<< [E:33523r S:0 M:65689242] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)[0m
+[0;32mI (69643) chip[IN]: (U) Sending msg 65689242 to IP address 'BLE'[0m
+[0;32mI (69653) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (69653) NimBLE: att_handle=14
+[0m
+[0;32mI (69673) chip[SVR]: Commissioning session establishment step started[0m
+[0;32mI (69723) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (69933) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (69943) chip[EM]: >>> [E:33523r S:0 M:22901860] (U) Msg RX from 0:206F46F2811C8A8A [0000] --- Type 0000:22 (SecureChannel:PASE_Pake1)[0m
+[0;32mI (71433) chip[EM]: <<< [E:33523r S:0 M:65689243] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:23 (SecureChannel:PASE_Pake2)[0m
+[0;32mI (71443) chip[IN]: (U) Sending msg 65689243 to IP address 'BLE'[0m
+[0;32mI (71453) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (71453) NimBLE: att_handle=14
+[0m
+[0;31mE (71473) chip[DL]: Long dispatch time: 1531 ms, for event type 7[0m
+[0;32mI (71553) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (71613) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (71623) chip[EM]: >>> [E:33523r S:0 M:22901861] (U) Msg RX from 0:206F46F2811C8A8A [0000] --- Type 0000:24 (SecureChannel:PASE_Pake3)[0m
+[0;32mI (71633) chip[EM]: <<< [E:33523r S:0 M:65689244] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)[0m
+[0;32mI (71643) chip[IN]: (U) Sending msg 65689244 to IP address 'BLE'[0m
+[0;32mI (71653) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (71663) NimBLE: att_handle=14
+[0m
+[0;32mI (71663) chip[SC]: SecureSession[0x3ffc8670, LSID:30798]: State change 'kEstablishing' --> 'kActive'[0m
+[0;32mI (71673) chip[SVR]: Commissioning completed session establishment step[0m
+[0;32mI (71683) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (71683) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (71693) chip[SVR]: Device completed Rendezvous process[0m
+[0;32mI (71693) app_main: Commissioning session started[0m
+[0;32mI (71693) app_main: Commissioning window closed[0m
+[0;32mI (71703) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (74193) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (75033) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (75043) chip[EM]: >>> [E:33524r S:30798 M:224483652] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (75053) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 74211 and system Timestamp 74211.[0m
+[0;32mI (75063) chip[DL]: NVS set: chip-config/reg-location = 0 (0x0)[0m
+[0;32mI (75063) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x00000030's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (75083) chip[EM]: <<< [E:33524r S:30798 M:57387565] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (75093) chip[IN]: (S) Sending msg 57387565 on secure session with LSID: 30798[0m
+[0;32mI (75093) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75113) NimBLE: att_handle=14
+[0m
+[0;32mI (75153) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75163) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75173) NimBLE: att_handle=14
+[0m
+[0;32mI (75213) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75223) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (75233) chip[EM]: >>> [E:33525r S:30798 M:224483653] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (75243) esp_matter_command: Received command 0x00000000 for endpoint 0x0000's cluster 0x00000030[0m
+[0;32mI (75253) chip[FS]: GeneralCommissioning: Received ArmFailSafe (60s)[0m
+[0;32mI (75263) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x00000030's Attribute 0x00000000 is 3 **********[0m
+[0;32mI (75273) chip[EM]: <<< [E:33525r S:30798 M:57387566] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (75283) chip[IN]: (S) Sending msg 57387566 on secure session with LSID: 30798[0m
+[0;32mI (75293) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75293) NimBLE: att_handle=14
+[0m
+[0;32mI (75333) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75343) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (75353) chip[EM]: >>> [E:33526r S:30798 M:224483654] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (75363) esp_matter_command: Received command 0x00000002 for endpoint 0x0000's cluster 0x00000030[0m
+[0;32mI (75373) chip[DL]: NVS set: chip-config/reg-location = 0 (0x0)[0m
+[0;32mI (75383) chip[DL]: NVS set: chip-config/country-code = "XX"[0m
+[0;32mI (75383) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x00000030's Attribute 0x00000000 is 4 **********[0m
+[0;32mI (75403) chip[EM]: <<< [E:33526r S:30798 M:57387567] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (75413) chip[IN]: (S) Sending msg 57387567 on secure session with LSID: 30798[0m
+[0;32mI (75413) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75423) NimBLE: att_handle=14
+[0m
+[0;32mI (75483) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75493) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (75503) chip[EM]: >>> [E:33527r S:30798 M:224483655] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (75513) esp_matter_command: Received command 0x00000002 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (75523) chip[ZCL]: OpCreds: Certificate Chain request received for PAI[0m
+[0;32mI (75533) chip[EM]: <<< [E:33527r S:30798 M:57387568] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (75543) chip[IN]: (S) Sending msg 57387568 on secure session with LSID: 30798[0m
+[0;32mI (75553) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75553) NimBLE: att_handle=14
+[0m
+[0;32mI (75603) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75613) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75623) NimBLE: att_handle=14
+[0m
+[0;32mI (75663) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75663) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75683) NimBLE: att_handle=14
+[0m
+[0;32mI (75723) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75733) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (75743) chip[EM]: >>> [E:33528r S:30798 M:224483656] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (75753) esp_matter_command: Received command 0x00000002 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (75763) chip[ZCL]: OpCreds: Certificate Chain request received for DAC[0m
+[0;32mI (75773) chip[EM]: <<< [E:33528r S:30798 M:57387569] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (75783) chip[IN]: (S) Sending msg 57387569 on secure session with LSID: 30798[0m
+[0;32mI (75793) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75793) NimBLE: att_handle=14
+[0m
+[0;32mI (75843) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75853) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75863) NimBLE: att_handle=14
+[0m
+[0;32mI (75903) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75903) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (75923) NimBLE: att_handle=14
+[0m
+[0;32mI (75963) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (75973) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (75983) chip[EM]: >>> [E:33529r S:30798 M:224483657] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (75993) esp_matter_command: Received command 0x00000000 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (76003) chip[ZCL]: OpCreds: Received an AttestationRequest command[0m
+[0;32mI (76143) chip[ZCL]: OpCreds: AttestationRequest successful.[0m
+[0;32mI (76143) chip[EM]: <<< [E:33529r S:30798 M:57387570] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (76163) chip[IN]: (S) Sending msg 57387570 on secure session with LSID: 30798[0m
+[0;32mI (76163) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (76173) NimBLE: att_handle=14
+[0m
+[0;32mI (76233) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (76233) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (76253) NimBLE: att_handle=14
+[0m
+[0;32mI (76293) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (76293) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (76313) NimBLE: att_handle=14
+[0m
+[0;32mI (76353) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (76443) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (76453) chip[EM]: >>> [E:33530r S:30798 M:224483658] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (76463) esp_matter_command: Received command 0x00000004 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (76473) chip[ZCL]: OpCreds: Received a CSRRequest command[0m
+[0;32mI (76723) chip[ZCL]: OpCreds: AllocatePendingOperationalKey succeeded[0m
+[0;32mI (76853) chip[ZCL]: OpCreds: CSRRequest successful.[0m
+[0;32mI (76853) chip[EM]: <<< [E:33530r S:30798 M:57387571] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (76873) chip[IN]: (S) Sending msg 57387571 on secure session with LSID: 30798[0m
+[0;32mI (76873) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (76883) NimBLE: att_handle=14
+[0m
+[0;32mI (76923) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (76923) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (76943) NimBLE: att_handle=14
+[0m
+[0;32mI (76983) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (77013) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (77073) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (77083) chip[EM]: >>> [E:33531r S:30798 M:224483659] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (77093) esp_matter_command: Received command 0x0000000B for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (77103) chip[ZCL]: OpCreds: Received an AddTrustedRootCertificate command[0m
+[0;32mI (77583) chip[ZCL]: OpCreds: AddTrustedRootCertificate successful.[0m
+[0;32mI (77583) chip[EM]: <<< [E:33531r S:30798 M:57387572] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (77603) chip[IN]: (S) Sending msg 57387572 on secure session with LSID: 30798[0m
+[0;32mI (77603) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (77613) NimBLE: att_handle=14
+[0m
+[0;32mI (77673) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (77683) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (77733) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (77743) chip[EM]: >>> [E:33532r S:30798 M:224483660] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (77753) esp_matter_command: Received command 0x00000006 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (77763) chip[ZCL]: OpCreds: Received an AddNOC command[0m
+[0;32mI (77773) chip[FP]: Validating NOC chain[0m
+[0;32mI (78253) chip[FP]: NOC chain validation successful[0m
+[0;32mI (78253) chip[FP]: Added new fabric at index: 0x1[0m
+[0;32mI (78253) chip[FP]: Assigned compressed fabric ID: 0x5070A2F460AE7060, node ID: 0x0000000000000078[0m
+[0;32mI (78263) chip[TS]: Last Known Good Time: 2023-08-04T03:20:17[0m
+[0;32mI (78263) chip[TS]: New proposed Last Known Good Time: 2023-08-30T16:10:21[0m
+[0;32mI (78283) chip[TS]: Updating pending Last Known Good Time to 2023-08-30T16:10:21[0m
+[0;32mI (78303) chip[ZCL]: OpCreds: ACL entry created for Fabric index 0x1 CASE Admin Subject 0x2ED513DC3E2CC2BE[0m
+[0;32mI (78313) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (78323) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (78333) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (78333) chip[ZCL]: OpCreds: successfully created fabric index 0x1 via AddNOC[0m
+[0;32mI (78353) chip[EM]: <<< [E:33532r S:30798 M:57387573] (S) Msg TX to 1:FFFFFFFB00000000 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (78353) chip[IN]: (S) Sending msg 57387573 on secure session with LSID: 30798[0m
+[0;32mI (78363) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (78363) NimBLE: att_handle=14
+[0m
+[0;32mI (78423) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (78433) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (78443) chip[EM]: >>> [E:33533r S:30798 M:224483661] (S) Msg RX from 1:FFFFFFFB00000000 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (78453) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x00000030's Attribute 0x00000000 is 14 **********[0m
+[0;32mI (78463) chip[EM]: <<< [E:33533r S:30798 M:57387574] (S) Msg TX to 1:FFFFFFFB00000000 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (78483) chip[IN]: (S) Sending msg 57387574 on secure session with LSID: 30798[0m
+[0;32mI (78483) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (78493) NimBLE: att_handle=14
+[0m
+[0;32mI (78543) chip[DL]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 [0m
+[0;32mI (78553) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (78563) chip[EM]: >>> [E:33534r S:30798 M:224483662] (S) Msg RX from 1:FFFFFFFB00000000 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (78573) chip[NP]: ESP NetworkCommissioningDelegate: SSID: ReadysNetwork[0m
+W (78583) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (78583) chip[DL]: WiFi station mode change: Enabled -> Disabled[0m
+[0;32mI (78633) chip[DL]: WiFi station mode change: Disabled -> Enabled[0m
+W (78633) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (78643) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (78653) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;32mI (78653) chip[DL]: Done driving station state, nothing else to do...[0m
+W (78663) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (78673) chip[DL]: Attempting to connect WiFi station interface[0m
+E (78673) wifi:sta is connecting, return error
+[0;31mE (78683) chip[DL]: esp_wifi_connect() failed: ESP_ERR_WIFI_CONN[0m
+W (78683) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (78693) chip[DL]: Attempting to connect WiFi station interface[0m
+E (78693) wifi:sta is connecting, return error
+[0;31mE (78693) chip[DL]: esp_wifi_connect() failed: ESP_ERR_WIFI_CONN[0m
+W (78713) wifi:Haven't to connect to a suitable AP now!
+[0;31mE (78713) chip[DL]: Failed to get configured network when updating network status: Error ESP32:0x0500300F[0m
+I (79863) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (80623) wifi:state: init -> auth (b0)
+I (80633) wifi:state: auth -> assoc (0)
+I (80633) wifi:state: assoc -> run (10)
+I (80653) wifi:<ba-add>idx:0 (ifx:0, 0c:41:e9:80:c6:40), tid:0, ssn:0, winSize:64
+I (80663) wifi:connected with ReadysNetwork, aid = 6, channel 6, BW20, bssid = 0c:41:e9:80:c6:40
+I (80663) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+I (80683) wifi:pm start, type: 1
+
+[0;32mI (80693) chip[DL]: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (80693) chip[DL]: WiFi station state change: Connecting -> Connecting_Succeeded[0m
+[0;32mI (80693) chip[DL]: WiFi station state change: Connecting_Succeeded -> Connected[0m
+[0;32mI (80703) chip[DL]: WiFi station interface connected[0m
+[0;32mI (80713) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x00000030's Attribute 0x00000000 is 16 **********[0m
+[0;32mI (80723) chip[EM]: <<< [E:33534r S:30798 M:57387575] (S) Msg TX to 1:FFFFFFFB00000000 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (80743) chip[IN]: (S) Sending msg 57387575 on secure session with LSID: 30798[0m
+[0;32mI (80753) NimBLE: GATT procedure initiated: indicate; [0m
+[0;32mI (80753) NimBLE: att_handle=14
+[0m
+[0;32mI (80753) chip[ZCL]: WiFiDiagnosticsDelegate: OnConnectionStatusChanged[0m
+[0;32mI (80773) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (80773) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (80773) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (80783) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (80793) chip[DL]: [0;32mI (80803) chip[SVR]: Confirm received for CHIPoBLE TX characteristic indication (con 0) status= 14 Operational advertising enabled[0m
+[0m
+[0;32mI (80813) chip[DL]: Updating advertising data[0m
+I (81143) wifi:AP's beacon interval = 499712 us, DTIM period = 1
+[0;32mI (81943) chip[DL]: IP_EVENT_GOT_IP6[0m
+[0;32mI (81943) chip[DL]: IPv6 addr available. Ready on WIFI_STA_DEF interface: fe80:0000:0000:0000:9238:0cff:fed2:273c[0m
+[0;32mI (81953) app_main: Interface IP Address Changed[0m
+[0;32mI (81953) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (81963) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (81973) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (81983) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (81993) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (81993) chip[SVR]: Server initialization complete[0m
+[0;32mI (82003) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (82013) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (82013) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (82023) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (82033) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (82043) chip[IM]: No subscriptions to resume[0m
+[0;32mI (83153) chip[EM]: >>> [E:33535r S:0 M:22901862] (U) Msg RX from 0:AB77C9FA0AEBF9E3 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)[0m
+[0;32mI (83153) chip[IN]: CASE Server received Sigma1 message . Starting handshake. EC 0x3ffc9fe8[0m
+[0;32mI (83173) chip[EM]: <<< [E:33535r S:0 M:65689245 (Ack:22901862)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (83183) chip[IN]: (U) Sending msg 65689245 to IP address 'UDP:[FE80::F4:8D89:1EC4:5901%st1]:50441'[0m
+[0;32mI (83193) chip[SC]: Received Sigma1 msg[0m
+[0;32mI (83203) chip[SC]: CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000078[0m
+[0;32mI (83313) CHIP[DL]: Write request received for CHIPoBLE RX characteristic con 0 12[0m
+[0;32mI (83803) chip[EM]: <<< [E:33535r S:0 M:65689246 (Ack:22901862)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)[0m
+[0;32mI (83823) chip[IN]: (U) Sending msg 65689246 to IP address 'UDP:[FE80::F4:8D89:1EC4:5901%st1]:50441'[0m
+[0;32mI (83823) chip[SC]: Sent Sigma2 msg[0m
+[0;32mI (84033) chip[SVR]: Cannot load binding table: a0[0m
+[0;32mI (84133) chip[EM]: >>> [E:33535r S:0 M:22901863 (Ack:65689246)] (U) Msg RX from 0:AB77C9FA0AEBF9E3 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)[0m
+[0;32mI (84153) chip[EM]: <<< [E:33535r S:0 M:65689247 (Ack:22901863)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (84163) chip[IN]: (U) Sending msg 65689247 to IP address 'UDP:[FE80::F4:8D89:1EC4:5901%st1]:50441'[0m
+[0;32mI (84163) chip[SC]: Received Sigma3 msg[0m
+[0;31mE (84173) chip[SC]: The device does not support GetClock_RealTimeMS() API: 6c.  Falling back to Last Known Good UTC Time[0m
+[0;32mI (84693) esp_netif_handlers: sta ip: 192.168.100.27, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;31mE (85133) chip[DL]: Long dispatch time: 951 ms, for event type 2[0m
+[0;32mI (85133) chip[DL]: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (85143) chip[DL]: IPv4 address changed on WiFi station interface: 192.168.100.27/255.255.255.0 gateway 192.168.100.1[0m
+[0;32mI (85153) chip[DL]: IPv4 Internet connectivity ESTABLISHED[0m
+[0;32mI (85243) chip[EM]: <<< [E:33535r S:0 M:65689248 (Ack:22901863)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)[0m
+[0;32mI (85253) chip[IN]: (U) Sending msg 65689248 to IP address 'UDP:[FE80::F4:8D89:1EC4:5901%st1]:50441'[0m
+[0;32mI (85263) chip[SC]: SecureSession[0x3ffc8730, LSID:30799]: State change 'kEstablishing' --> 'kActive'[0m
+[0;32mI (85273) chip[IN]: CASE Session established to peer: <2ED513DC3E2CC2BE, 1>[0m
+[0;31mE (85273) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85283) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85293) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85303) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85313) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85313) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85323) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85333) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85343) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85353) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85353) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85363) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85373) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85383) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85393) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;31mE (85393) chip[IN]: Data received on an unknown session (LSID=50395). Dropping it![0m
+[0;32mI (85403) app_main: Interface IP Address Changed[0m
+[0;32mI (85413) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (85423) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (85433) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (85433) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (85453) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (85453) chip[EM]: >>> [E:33536r S:30799 M:134339373] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (85473) esp_matter_command: Received command 0x00000004 for endpoint 0x0000's cluster 0x00000030[0m
+[0;32mI (85473) chip[FS]: GeneralCommissioning: Received CommissioningComplete[0m
+[0;32mI (85493) chip[FP]: Metadata for Fabric 0x1 persisted to storage.[0m
+[0;32mI (85523) chip[TS]: Committing Last Known Good Time to storage: 2023-08-30T16:10:21[0m
+[0;32mI (85533) chip[ZCL]: OpCreds: Fabric index 0x1 was committed to storage. Compressed Fabric Id 0x5070A2F460AE7060, FabricId 0000000000000001, NodeId 0000000000000078, VendorId 0xFFF1[0m
+[0;32mI (85573) chip[FS]: GeneralCommissioning: Successfully commited pending fabric data[0m
+[0;32mI (85573) chip[FS]: Fail-safe cleanly disarmed[0m
+[0;32mI (85573) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x00000030's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (85593) chip[EM]: <<< [E:33536r S:30799 M:154413559 (Ack:134339373)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (85603) chip[IN]: (S) Sending msg 154413559 on secure session with LSID: 30799[0m
+[0;32mI (85623) chip[EM]: >>> [E:33535r S:0 M:22901864 (Ack:65689248)] (U) Msg RX from 0:AB77C9FA0AEBF9E3 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (85633) chip[SVR]: Commissioning completed successfully[0m
+[0;32mI (85643) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (85643) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (85653) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (85663) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (85673) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (85683) chip[SC]: SecureSession[0x3ffc8670, LSID:30798]: State change 'kActive' --> 'kPendingEviction'[0m
+[0;32mI (85683) chip[DL]: [0;32mI (85693) chip[BLE]: Write request/command received for CHIPoBLE TX CCCD characteristic (con 0 ) indicate = 0Releasing end point's BLE connection back to application.[0m
+[0m
+[0;32mI (85703) chip[DL]: CHIPoBLE unsubscribe received[0m
+[0;32mI (85713) chip[DL]: BLE GAP connection terminated (con 0 reason 0x213)[0m
+[0;32mI (85713) app_main: Commissioning complete[0m
+[0;32mI (85723) esp_matter_core: Commissioning Complete[0m
+[0;32mI (85723) chip[EM]: >>> [E:33536r S:30799 M:134339374 (Ack:154413559)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (85743) app_main: Commissioning window closed[0m
+[0;31mE (85753) chip[BLE]: no endpoint for unsub recvd[0m
+[0;32mI (85753) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (86753) esp_matter_core: BLE deinit successful and memory reclaimed[0m
+[0;31mE (86763) chip[DL]: Long dispatch time: 1006 ms, for event type 32776[0m
+[0;32mI (86763) chip[EM]: >>> [E:33537r S:30799 M:134339375] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (86773) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 85933 and system Timestamp 85933.[0m
+[0;32mI (86793) chip[EM]: >>> [E:33537r S:30799 M:134339375] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (86803) chip[EM]: <<< [E:33537r S:30799 M:154413560 (Ack:134339375)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (86823) chip[IN]: (S) Sending msg 154413560 on secure session with LSID: 30799[0m
+[0;32mI (86823) chip[EM]: >>> [E:33537r S:30799 M:134339375] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (86843) chip[EM]: <<< [E:33537r S:30799 M:154413561 (Ack:134339375)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (86853) chip[IN]: (S) Sending msg 154413561 on secure session with LSID: 30799[0m
+[0;32mI (86873) chip[EM]: <<< [E:33537r S:30799 M:154413562 (Ack:134339375)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (86873) chip[IN]: (S) Sending msg 154413562 on secure session with LSID: 30799[0m
+[0;32mI (86893) chip[EM]: >>> [E:33537r S:30799 M:134339376 (Ack:154413562)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (98633) chip[EM]: >>> [E:33538r S:30799 M:134339377] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (98633) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 97791 and system Timestamp 97791.[0m
+[0;32mI (98653) chip[EM]: <<< [E:33538r S:30799 M:154413563 (Ack:134339377)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (98663) chip[IN]: (S) Sending msg 154413563 on secure session with LSID: 30799[0m
+[0;32mI (98683) chip[EM]: >>> [E:33538r S:30799 M:134339378 (Ack:154413563)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (98693) chip[EM]: >>> [E:33539r S:30799 M:134339379] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (98703) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 97855 and system Timestamp 97855.[0m
+[0;32mI (98713) chip[EM]: <<< [E:33539r S:30799 M:154413564 (Ack:134339379)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (98733) chip[IN]: (S) Sending msg 154413564 on secure session with LSID: 30799[0m
+[0;32mI (98743) chip[EM]: >>> [E:33539r S:30799 M:134339380 (Ack:154413564)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (98763) chip[EM]: >>> [E:33540r S:30799 M:134339381] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (98763) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 97918 and system Timestamp 97918.[0m
+[0;32mI (98783) chip[EM]: <<< [E:33540r S:30799 M:154413565 (Ack:134339381)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (98793) chip[IN]: (S) Sending msg 154413565 on secure session with LSID: 30799[0m
+[0;32mI (98803) chip[EM]: >>> [E:33540r S:30799 M:134339382 (Ack:154413565)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (98823) chip[EM]: >>> [E:33541r S:30799 M:134339383] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (98823) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 97981 and system Timestamp 97981.[0m
+[0;32mI (98843) chip[EM]: <<< [E:33541r S:30799 M:154413566 (Ack:134339383)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (98853) chip[IN]: (S) Sending msg 154413566 on secure session with LSID: 30799[0m
+[0;32mI (98873) chip[EM]: >>> [E:33541r S:30799 M:134339384 (Ack:154413566)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (98883) chip[EM]: >>> [E:33542r S:30799 M:134339385] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (98893) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 98045 and system Timestamp 98045.[0m
+[0;32mI (98903) chip[EM]: <<< [E:33542r S:30799 M:154413567 (Ack:134339385)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (98923) chip[IN]: (S) Sending msg 154413567 on secure session with LSID: 30799[0m
+[0;32mI (98933) chip[EM]: >>> [E:33542r S:30799 M:134339386 (Ack:154413567)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (98953) chip[EM]: >>> [E:33543r S:30799 M:134339387] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (98953) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 98108 and system Timestamp 98108.[0m
+[0;32mI (98973) chip[EM]: <<< [E:33543r S:30799 M:154413568 (Ack:134339387)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (98983) chip[IN]: (S) Sending msg 154413568 on secure session with LSID: 30799[0m
+[0;32mI (98993) chip[EM]: >>> [E:33543r S:30799 M:134339388 (Ack:154413568)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (107623) chip[EM]: >>> [E:33547r S:30799 M:134339389] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:06 (IM:WriteRequest)[0m
+[0;32mI (107643) chip[EM]: <<< [E:33547r S:30799 M:154413569 (Ack:134339389)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:07 (IM:WriteResponse)[0m
+[0;32mI (107663) chip[IN]: (S) Sending msg 154413569 on secure session with LSID: 30799[0m
+[0;32mI (107673) chip[EM]: >>> [E:33547r S:30799 M:134339390 (Ack:154413569)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (107843) chip[DIS]: Checking node lookup status after 200 ms[0m
+[0;32mI (108623) chip[DIS]: UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540: new best score: 7[0m
+[0;32mI (108633) chip[DIS]: UDP:192.168.100.14%st1:5540: score has not improved: 2[0m
+[0;32mI (108643) chip[DIS]: Checking node lookup status after 1003 ms[0m
+[0;32mI (108643) chip[SC]: Initiating session on local FabricIndex 1 from 0x0000000000000078 -> 0x0000000000000075[0m
+[0;32mI (108783) chip[EM]: <<< [E:64505i S:0 M:65689249] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)[0m
+[0;32mI (108783) chip[IN]: (U) Sending msg 65689249 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (108803) chip[SC]: Sent Sigma1 msg[0m
+[0;32mI (109583) chip[IN]: (U) Sending msg 65689249 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (110483) chip[IN]: (U) Sending msg 65689249 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (110493) chip[EM]: >>> [E:64505i S:0 M:70599871 (Ack:65689249)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (110523) chip[EM]: >>> [E:64505i S:0 M:70599872 (Ack:65689249)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)[0m
+[0;32mI (110543) chip[EM]: <<< [E:64505i S:0 M:65689250 (Ack:70599872)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (110553) chip[IN]: (U) Sending msg 65689250 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (110553) chip[SC]: Received Sigma2 msg[0m
+[0;31mE (110893) chip[SC]: The device does not support GetClock_RealTimeMS() API: 6c.  Falling back to Last Known Good UTC Time[0m
+[0;32mI (111963) chip[EM]: <<< [E:64505i S:0 M:65689251 (Ack:70599872)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)[0m
+[0;32mI (111973) chip[IN]: (U) Sending msg 65689251 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (111983) chip[SC]: Sent Sigma3 msg[0m
+[0;31mE (111983) chip[DL]: Long dispatch time: 1458 ms, for event type 3[0m
+[0;32mI (111993) chip[EM]: >>> [E:64505i S:0 M:70599873 (Ack:65689249)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (112003) chip[EM]: >>> [E:64505i S:0 M:70599874 (Ack:65689249)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (112603) chip[IN]: (U) Sending msg 65689251 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (112613) chip[EM]: >>> [E:64505i S:0 M:70599875 (Ack:65689251)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (113123) chip[EM]: >>> [E:64505i S:0 M:70599876 (Ack:65689251)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (113133) chip[EM]: >>> [E:64505i S:0 M:70599877 (Ack:65689251)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)[0m
+[0;32mI (113153) chip[SC]: Success status report received. Session was established[0m
+[0;32mI (113173) chip[SC]: SecureSession[0x3ffc8670, LSID:30801]: State change 'kEstablishing' --> 'kActive'[0m
+[0;32mI (113173) chip[EM]: <<< [E:64505i S:0 M:65689252 (Ack:70599877)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (113193) chip[IN]: (U) Sending msg 65689252 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (113623) chip[EM]: >>> [E:64505i S:0 M:70599877 (Ack:65689251)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)[0m
+[0;32mI (113633) chip[EM]: <<< [E:64505i S:0 M:65689253 (Ack:70599877)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (113653) chip[IN]: (U) Sending msg 65689253 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (121703) app_driver: Toggle button pressed[0m
+[0;33mW (121713) app_driver: GPIO 13 On[0m
+[0;32mI (121713) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (121723) chip[EM]: <<< [E:64506i S:30801 M:154584624] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (121733) chip[IN]: (S) Sending msg 154584624 on secure session with LSID: 30801[0m
+[0;33mW (121743) app_driver: GPIO 13 Off[0m
+[0;32mI (122613) chip[IN]: (S) Sending msg 154584624 on secure session with LSID: 30801[0m
+[0;32mI (122623) chip[EM]: >>> [E:64506i S:30801 M:206612841 (Ack:154584624)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (122633) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (122653) esp_matter_client: Send command success[0m
+[0;32mI (122653) chip[EM]: <<< [E:64506i S:30801 M:154584625 (Ack:206612841)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (122663) chip[IN]: (S) Sending msg 154584625 on secure session with LSID: 30801[0m
+[0;32mI (122923) app_driver: Toggle button pressed[0m
+[0;33mW (122933) app_driver: GPIO 13 On[0m
+[0;32mI (122933) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (122943) chip[EM]: <<< [E:64507i S:30801 M:154584626] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (122953) chip[IN]: (S) Sending msg 154584626 on secure session with LSID: 30801[0m
+[0;33mW (122963) app_driver: GPIO 13 Off[0m
+[0;32mI (122973) chip[EM]: >>> [E:64506i S:30801 M:206612841 (Ack:154584624)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (122983) chip[EM]: <<< [E:64506i S:30801 M:154584627 (Ack:206612841)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (122993) chip[IN]: (S) Sending msg 154584627 on secure session with LSID: 30801[0m
+[0;32mI (123003) chip[EM]: >>> [E:64506i S:30801 M:206612842 (Ack:154584624)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (123013) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (123543) chip[IN]: (S) Sending msg 154584626 on secure session with LSID: 30801[0m
+[0;32mI (123553) chip[EM]: >>> [E:64507i S:30801 M:206612843 (Ack:154584626)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (123563) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (123573) esp_matter_client: Send command success[0m
+[0;32mI (123583) chip[EM]: <<< [E:64507i S:30801 M:154584628 (Ack:206612843)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (123593) chip[IN]: (S) Sending msg 154584628 on secure session with LSID: 30801[0m
+[0;32mI (123603) app_driver: Toggle button pressed[0m
+[0;33mW (123613) app_driver: GPIO 13 On[0m
+[0;32mI (123613) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (123623) chip[EM]: <<< [E:64508i S:30801 M:154584629] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (123633) chip[IN]: (S) Sending msg 154584629 on secure session with LSID: 30801[0m
+[0;33mW (123643) app_driver: GPIO 13 Off[0m
+[0;32mI (123663) chip[EM]: >>> [E:64507i S:30801 M:206612844 (Ack:154584626)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (123673) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (124123) chip[EM]: >>> [E:64508i S:30801 M:206612845 (Ack:154584629)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (124133) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (124133) esp_matter_client: Send command success[0m
+[0;32mI (124153) chip[EM]: <<< [E:64508i S:30801 M:154584630 (Ack:206612845)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (124163) chip[IN]: (S) Sending msg 154584630 on secure session with LSID: 30801[0m
+[0;32mI (124183) app_driver: Toggle button pressed[0m
+[0;33mW (124183) app_driver: GPIO 13 On[0m
+[0;32mI (124193) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (124203) chip[EM]: <<< [E:64509i S:30801 M:154584631] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (124213) chip[IN]: (S) Sending msg 154584631 on secure session with LSID: 30801[0m
+[0;33mW (124223) app_driver: GPIO 13 Off[0m
+[0;32mI (124623) chip[EM]: >>> [E:64508i S:30801 M:206612845 (Ack:154584629)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (124633) chip[EM]: <<< [E:64508i S:30801 M:154584632 (Ack:206612845)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (124643) chip[IN]: (S) Sending msg 154584632 on secure session with LSID: 30801[0m
+[0;32mI (124663) chip[EM]: >>> [E:64509i S:30801 M:206612846 (Ack:154584631)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (124683) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (124683) esp_matter_client: Send command success[0m
+[0;32mI (124703) chip[EM]: <<< [E:64509i S:30801 M:154584633 (Ack:206612846)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (124713) chip[IN]: (S) Sending msg 154584633 on secure session with LSID: 30801[0m
+[0;32mI (124983) app_driver: Toggle button pressed[0m
+[0;33mW (124983) app_driver: GPIO 13 On[0m
+[0;32mI (124993) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (125003) chip[EM]: <<< [E:64510i S:30801 M:154584634] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (125013) chip[IN]: (S) Sending msg 154584634 on secure session with LSID: 30801[0m
+[0;33mW (125023) app_driver: GPIO 13 Off[0m
+[0;32mI (125563) app_driver: Toggle button pressed[0m
+[0;33mW (125563) app_driver: GPIO 13 On[0m
+[0;32mI (125573) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (125583) chip[EM]: <<< [E:64511i S:30801 M:154584635] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (125593) chip[IN]: (S) Sending msg 154584635 on secure session with LSID: 30801[0m
+[0;33mW (125603) app_driver: GPIO 13 Off[0m
+[0;32mI (125613) chip[EM]: >>> [E:64510i S:30801 M:206612847 (Ack:154584634)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (125623) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (125623) esp_matter_client: Send command success[0m
+[0;32mI (125643) chip[EM]: <<< [E:64510i S:30801 M:154584636 (Ack:206612847)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (125653) chip[IN]: (S) Sending msg 154584636 on secure session with LSID: 30801[0m
+[0;32mI (126123) chip[EM]: >>> [E:64510i S:30801 M:206612847 (Ack:154584634)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (126133) chip[EM]: <<< [E:64510i S:30801 M:154584637 (Ack:206612847)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (126143) chip[IN]: (S) Sending msg 154584637 on secure session with LSID: 30801[0m
+[0;32mI (126153) chip[EM]: >>> [E:64511i S:30801 M:206612848 (Ack:154584635)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (126163) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (126183) esp_matter_client: Send command success[0m
+[0;32mI (126183) chip[EM]: <<< [E:64511i S:30801 M:154584638 (Ack:206612848)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (126193) chip[IN]: (S) Sending msg 154584638 on secure session with LSID: 30801[0m
+[0;32mI (127113) chip[EM]: >>> [E:64511i S:30801 M:206612848 (Ack:154584635)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (127133) chip[EM]: <<< [E:64511i S:30801 M:154584639 (Ack:206612848)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (127143) chip[IN]: (S) Sending msg 154584639 on secure session with LSID: 30801[0m
+[0;32mI (133143) app_driver: Toggle button pressed[0m
+[0;33mW (133143) app_driver: GPIO 13 On[0m
+[0;32mI (133153) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (133163) chip[EM]: <<< [E:64512i S:30801 M:154584640] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (133173) chip[IN]: (S) Sending msg 154584640 on secure session with LSID: 30801[0m
+[0;33mW (133183) app_driver: GPIO 13 Off[0m
+[0;32mI (133943) chip[IN]: (S) Sending msg 154584640 on secure session with LSID: 30801[0m
+[0;32mI (133953) chip[EM]: >>> [E:64512i S:30801 M:206612849 (Ack:154584640)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (133963) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (133973) esp_matter_client: Send command success[0m
+[0;32mI (133983) chip[EM]: <<< [E:64512i S:30801 M:154584641 (Ack:206612849)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (133993) chip[IN]: (S) Sending msg 154584641 on secure session with LSID: 30801[0m
+[0;32mI (134343) app_driver: Toggle button pressed[0m
+[0;33mW (134343) app_driver: GPIO 13 On[0m
+[0;32mI (134353) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (134363) chip[EM]: <<< [E:64513i S:30801 M:154584642] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (134373) chip[IN]: (S) Sending msg 154584642 on secure session with LSID: 30801[0m
+[0;33mW (134383) app_driver: GPIO 13 Off[0m
+[0;32mI (134393) chip[EM]: >>> [E:64512i S:30801 M:206612850 (Ack:154584640)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (134403) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (134993) chip[IN]: (S) Sending msg 154584642 on secure session with LSID: 30801[0m
+[0;32mI (135003) chip[EM]: >>> [E:64513i S:30801 M:206612851 (Ack:154584642)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (135023) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (135023) esp_matter_client: Send command success[0m
+[0;32mI (135033) chip[EM]: <<< [E:64513i S:30801 M:154584643 (Ack:206612851)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (135053) chip[IN]: (S) Sending msg 154584643 on secure session with LSID: 30801[0m
+[0;32mI (135063) app_driver: Toggle button pressed[0m
+[0;33mW (135073) app_driver: GPIO 13 On[0m
+[0;32mI (135073) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (135083) chip[EM]: <<< [E:64514i S:30801 M:154584644] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (135093) chip[IN]: (S) Sending msg 154584644 on secure session with LSID: 30801[0m
+[0;33mW (135103) app_driver: GPIO 13 Off[0m
+[0;32mI (135153) chip[EM]: >>> [E:64513i S:30801 M:206612852 (Ack:154584642)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (135163) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (135613) chip[EM]: >>> [E:64514i S:30801 M:206612853 (Ack:154584644)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (135633) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (135633) esp_matter_client: Send command success[0m
+[0;32mI (135643) chip[EM]: <<< [E:64514i S:30801 M:154584645 (Ack:206612853)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (135663) chip[IN]: (S) Sending msg 154584645 on secure session with LSID: 30801[0m
+[0;32mI (135663) app_driver: Toggle button pressed[0m
+[0;33mW (135663) app_driver: GPIO 13 On[0m
+[0;32mI (135683) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (135683) chip[EM]: <<< [E:64515i S:30801 M:154584646] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (135703) chip[IN]: (S) Sending msg 154584646 on secure session with LSID: 30801[0m
+[0;33mW (135703) app_driver: GPIO 13 Off[0m
+[0;32mI (136113) chip[EM]: >>> [E:64514i S:30801 M:206612853 (Ack:154584644)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (136123) chip[EM]: <<< [E:64514i S:30801 M:154584647 (Ack:206612853)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (136143) chip[IN]: (S) Sending msg 154584647 on secure session with LSID: 30801[0m
+[0;32mI (136153) chip[EM]: >>> [E:64515i S:30801 M:206612854 (Ack:154584646)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (136173) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (136173) esp_matter_client: Send command success[0m
+[0;32mI (136183) chip[EM]: <<< [E:64515i S:30801 M:154584648 (Ack:206612854)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (136203) chip[IN]: (S) Sending msg 154584648 on secure session with LSID: 30801[0m
+[0;32mI (136323) app_driver: Toggle button pressed[0m
+[0;33mW (136323) app_driver: GPIO 13 On[0m
+[0;32mI (136333) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (136343) chip[EM]: <<< [E:64516i S:30801 M:154584649] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (136353) chip[IN]: (S) Sending msg 154584649 on secure session with LSID: 30801[0m
+[0;33mW (136363) app_driver: GPIO 13 Off[0m
+[0;32mI (136963) app_driver: Toggle button pressed[0m
+[0;33mW (136963) app_driver: GPIO 13 On[0m
+[0;32mI (136973) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (136983) chip[EM]: <<< [E:64517i S:30801 M:154584650] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (136993) chip[IN]: (S) Sending msg 154584650 on secure session with LSID: 30801[0m
+[0;33mW (137003) app_driver: GPIO 13 Off[0m
+[0;32mI (137013) chip[EM]: >>> [E:64516i S:30801 M:206612855 (Ack:154584649)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (137023) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (137033) esp_matter_client: Send command success[0m
+[0;32mI (137043) chip[EM]: <<< [E:64516i S:30801 M:154584651 (Ack:206612855)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (137053) chip[IN]: (S) Sending msg 154584651 on secure session with LSID: 30801[0m
+[0;32mI (137523) app_driver: Toggle button pressed[0m
+[0;33mW (137523) app_driver: GPIO 13 On[0m
+[0;32mI (137533) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (137543) chip[EM]: <<< [E:64518i S:30801 M:154584652] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (137553) chip[IN]: (S) Sending msg 154584652 on secure session with LSID: 30801[0m
+[0;33mW (137563) app_driver: GPIO 13 Off[0m
+[0;32mI (137563) chip[IN]: (S) Sending msg 154584650 on secure session with LSID: 30801[0m
+[0;32mI (137583) chip[EM]: >>> [E:64517i S:30801 M:206612856 (Ack:154584650)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (137593) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (137593) esp_matter_client: Send command success[0m
+[0;32mI (137613) chip[EM]: <<< [E:64517i S:30801 M:154584653 (Ack:206612856)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (137623) chip[IN]: (S) Sending msg 154584653 on secure session with LSID: 30801[0m
+[0;32mI (138113) chip[EM]: >>> [E:64518i S:30801 M:206612857 (Ack:154584652)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (138123) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (138123) app_driver: Toggle button pressed[0m
+[0;32mI (138123) esp_matter_client: Send command success[0m
+[0;33mW (138143) app_driver: GPIO 13 On[0m
+[0;32mI (138143) chip[EM]: <<< [E:64518i S:30801 M:154584654 (Ack:206612857)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (138153) chip[IN]: (S) Sending msg 154584654 on secure session with LSID: 30801[0m
+[0;32mI (138173) chip[EM]: >>> [E:64517i S:30801 M:206612858 (Ack:154584650)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (138183) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (138183) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (138203) chip[EM]: <<< [E:64519i S:30801 M:154584655] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (138213) chip[IN]: (S) Sending msg 154584655 on secure session with LSID: 30801[0m
+[0;33mW (138223) app_driver: GPIO 13 Off[0m
+[0;32mI (138613) chip[EM]: >>> [E:64518i S:30801 M:206612857 (Ack:154584652)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (138623) chip[EM]: <<< [E:64518i S:30801 M:154584656 (Ack:206612857)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (138643) chip[IN]: (S) Sending msg 154584656 on secure session with LSID: 30801[0m
+[0;32mI (138643) chip[EM]: >>> [E:64519i S:30801 M:206612859 (Ack:154584655)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (138663) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (138673) esp_matter_client: Send command success[0m
+[0;32mI (138673) chip[EM]: <<< [E:64519i S:30801 M:154584657 (Ack:206612859)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (138683) chip[IN]: (S) Sending msg 154584657 on secure session with LSID: 30801[0m
+[0;32mI (138723) app_driver: Toggle button pressed[0m
+[0;33mW (138733) app_driver: GPIO 13 On[0m
+[0;32mI (138733) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (138743) chip[EM]: <<< [E:64520i S:30801 M:154584658] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (138753) chip[IN]: (S) Sending msg 154584658 on secure session with LSID: 30801[0m
+[0;33mW (138763) app_driver: GPIO 13 Off[0m
+[0;32mI (139343) chip[IN]: (S) Sending msg 154584658 on secure session with LSID: 30801[0m
+[0;32mI (139353) chip[EM]: >>> [E:64519i S:30801 M:206612859 (Ack:154584655)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (139363) chip[EM]: <<< [E:64519i S:30801 M:154584659 (Ack:206612859)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (139383) chip[IN]: (S) Sending msg 154584659 on secure session with LSID: 30801[0m
+[0;32mI (139383) chip[EM]: >>> [E:64520i S:30801 M:206612860 (Ack:154584658)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (139403) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (139413) esp_matter_client: Send command success[0m
+[0;32mI (139413) chip[EM]: <<< [E:64520i S:30801 M:154584660 (Ack:206612860)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (139433) chip[IN]: (S) Sending msg 154584660 on secure session with LSID: 30801[0m
+[0;32mI (139443) chip[EM]: >>> [E:64520i S:30801 M:206612861 (Ack:154584658)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (139463) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (139503) app_driver: Toggle button pressed[0m
+[0;33mW (139503) app_driver: GPIO 13 On[0m
+[0;32mI (139513) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (139523) chip[EM]: <<< [E:64521i S:30801 M:154584661] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (139533) chip[IN]: (S) Sending msg 154584661 on secure session with LSID: 30801[0m
+[0;33mW (139543) app_driver: GPIO 13 Off[0m
+[0;32mI (140113) chip[EM]: >>> [E:64521i S:30801 M:206612862 (Ack:154584661)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (140123) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (140123) esp_matter_client: Send command success[0m
+[0;32mI (140143) chip[EM]: <<< [E:64521i S:30801 M:154584662 (Ack:206612862)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (140153) chip[IN]: (S) Sending msg 154584662 on secure session with LSID: 30801[0m
+[0;32mI (140283) app_driver: Toggle button pressed[0m
+[0;33mW (140293) app_driver: GPIO 13 On[0m
+[0;32mI (140293) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (140303) chip[EM]: <<< [E:64522i S:30801 M:154584663] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (140313) chip[IN]: (S) Sending msg 154584663 on secure session with LSID: 30801[0m
+[0;33mW (140323) app_driver: GPIO 13 Off[0m
+[0;32mI (140343) chip[EM]: >>> [E:64521i S:30801 M:206612862 (Ack:154584661)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (140363) chip[EM]: <<< [E:64521i S:30801 M:154584664 (Ack:206612862)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (140373) chip[IN]: (S) Sending msg 154584664 on secure session with LSID: 30801[0m
+[0;32mI (140613) chip[EM]: >>> [E:64522i S:30801 M:206612863 (Ack:154584663)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (140623) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (140633) esp_matter_client: Send command success[0m
+[0;32mI (140643) chip[EM]: <<< [E:64522i S:30801 M:154584665 (Ack:206612863)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (140653) chip[IN]: (S) Sending msg 154584665 on secure session with LSID: 30801[0m
+[0;32mI (141403) app_driver: Toggle button pressed[0m
+[0;33mW (141403) app_driver: GPIO 13 On[0m
+[0;32mI (141413) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (141423) chip[EM]: <<< [E:64523i S:30801 M:154584666] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (141433) chip[IN]: (S) Sending msg 154584666 on secure session with LSID: 30801[0m
+[0;33mW (141443) app_driver: GPIO 13 Off[0m
+[0;32mI (142013) chip[IN]: (S) Sending msg 154584666 on secure session with LSID: 30801[0m
+[0;32mI (142013) chip[EM]: >>> [E:64523i S:30801 M:206612864 (Ack:154584666)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (142033) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (142033) esp_matter_client: Send command success[0m
+[0;32mI (142043) chip[EM]: <<< [E:64523i S:30801 M:154584667 (Ack:206612864)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (142063) chip[IN]: (S) Sending msg 154584667 on secure session with LSID: 30801[0m
+[0;32mI (142603) chip[EM]: >>> [E:64523i S:30801 M:206612865 (Ack:154584666)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (142623) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (169593) chip[EM]: >>> [E:51815r S:0 M:61572902] (U) Msg RX from 0:B5A417AD76508813 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)[0m
+[0;32mI (169603) chip[IN]: CASE Server received Sigma1 message . Starting handshake. EC 0x3ffc9fe8[0m
+[0;32mI (169613) chip[EM]: <<< [E:51815r S:0 M:65689254 (Ack:61572902)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (169623) chip[IN]: (U) Sending msg 65689254 to IP address 'UDP:[FE80::F4:8D89:1EC4:5901%st1]:53162'[0m
+[0;32mI (169643) chip[SC]: Received Sigma1 msg[0m
+[0;32mI (169643) chip[SC]: CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000078[0m
+[0;32mI (170233) chip[EM]: <<< [E:51815r S:0 M:65689255 (Ack:61572902)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)[0m
+[0;32mI (170253) chip[IN]: (U) Sending msg 65689255 to IP address 'UDP:[FE80::F4:8D89:1EC4:5901%st1]:53162'[0m
+[0;32mI (170253) chip[SC]: Sent Sigma2 msg[0m
+[0;32mI (170603) chip[EM]: >>> [E:51815r S:0 M:61572903 (Ack:65689255)] (U) Msg RX from 0:B5A417AD76508813 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)[0m
+[0;32mI (170613) chip[EM]: <<< [E:51815r S:0 M:65689256 (Ack:61572903)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (170633) chip[IN]: (U) Sending msg 65689256 to IP address 'UDP:[FE80::F4:8D89:1EC4:5901%st1]:53162'[0m
+[0;32mI (170633) chip[SC]: Received Sigma3 msg[0m
+[0;31mE (170643) chip[SC]: The device does not support GetClock_RealTimeMS() API: 6c.  Falling back to Last Known Good UTC Time[0m
+[0;31mE (171573) chip[DL]: Long dispatch time: 920 ms, for event type 2[0m
+[0;32mI (171623) chip[EM]: <<< [E:51815r S:0 M:65689257 (Ack:61572903)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)[0m
+[0;32mI (171633) chip[IN]: (U) Sending msg 65689257 to IP address 'UDP:[FE80::F4:8D89:1EC4:5901%st1]:53162'[0m
+[0;32mI (171643) chip[SC]: SecureSession[0x3ffc87f0, LSID:30800]: State change 'kEstablishing' --> 'kActive'[0m
+[0;32mI (171653) chip[IN]: CASE Session established to peer: <2ED513DC3E2CC2BE, 1>[0m
+[0;32mI (171663) chip[EM]: >>> [E:51816r S:30800 M:235160643] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:0a (IM:TimedRequest)[0m
+[0;32mI (171673) chip[EM]: <<< [E:51816r S:30800 M:39287583 (Ack:235160643)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:01 (IM:StatusResponse)[0m
+[0;32mI (171693) chip[IN]: (S) Sending msg 39287583 on secure session with LSID: 30800[0m
+[0;32mI (171693) chip[EM]: >>> [E:51815r S:0 M:61572904 (Ack:65689257)] (U) Msg RX from 0:B5A417AD76508813 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (171713) chip[EM]: >>> [E:51816r S:30800 M:235160644 (Ack:39287583)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (171723) esp_matter_command: Received command 0x00000000 for endpoint 0x0000's cluster 0x0000003C[0m
+[0;32mI (171733) chip[ZCL]: Received command to open commissioning window[0m
+[0;32mI (171743) chip[DIS]: Updating services using commissioning mode 2[0m
+[0;32mI (171743) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (171763) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (171773) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (171783) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (171793) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=2[0m
+[0;32mI (171803) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: B7196BE4E8EEE74D.[0m
+[0;32mI (171813) chip[DIS]: mDNS service published: _matterc._udp[0m
+[0;32mI (171813) chip[ZCL]: Commissioning window is now open[0m
+[0;32mI (171823) chip[EM]: <<< [E:51816r S:30800 M:39287584 (Ack:235160644)] (S) Msg TX to 1:2ED513DC3E2CC2BE [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (171833) chip[IN]: (S) Sending msg 39287584 on secure session with LSID: 30800[0m
+[0;32mI (171853) app_main: Commissioning window opened[0m
+[0;32mI (171853) chip[EM]: >>> [E:51816r S:30800 M:235160645 (Ack:39287584)] (S) Msg RX from 1:2ED513DC3E2CC2BE [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (191573) chip[EM]: >>> [E:48878r S:0 M:161160121] (U) Msg RX from 0:F630ED5B43E92210 [0000] --- Type 0000:20 (SecureChannel:PBKDFParamRequest)[0m
+[0;32mI (191583) chip[EM]: <<< [E:48878r S:0 M:65689258 (Ack:161160121)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (191593) chip[IN]: (U) Sending msg 65689258 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;32mI (191613) chip[EM]: <<< [E:48878r S:0 M:65689259 (Ack:161160121)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)[0m
+[0;32mI (191623) chip[IN]: (U) Sending msg 65689259 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;32mI (191633) chip[SVR]: Commissioning session establishment step started[0m
+[0;32mI (192083) chip[EM]: >>> [E:48878r S:0 M:161160123 (Ack:65689259)] (U) Msg RX from 0:F630ED5B43E92210 [0000] --- Type 0000:22 (SecureChannel:PASE_Pake1)[0m
+[0;32mI (192093) chip[EM]: <<< [E:48878r S:0 M:65689260 (Ack:161160123)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (192103) chip[IN]: (U) Sending msg 65689260 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;32mI (193583) chip[EM]: <<< [E:48878r S:0 M:65689261 (Ack:161160123)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:23 (SecureChannel:PASE_Pake2)[0m
+[0;32mI (193593) chip[IN]: (U) Sending msg 65689261 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;31mE (193603) chip[DL]: Long dispatch time: 1521 ms, for event type 3[0m
+[0;32mI (193623) chip[EM]: >>> [E:48878r S:0 M:161160125 (Ack:65689261)] (U) Msg RX from 0:F630ED5B43E92210 [0000] --- Type 0000:24 (SecureChannel:PASE_Pake3)[0m
+[0;32mI (193643) chip[EM]: <<< [E:48878r S:0 M:65689262 (Ack:161160125)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (193653) chip[IN]: (U) Sending msg 65689262 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;32mI (193663) chip[EM]: <<< [E:48878r S:0 M:65689263 (Ack:161160125)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)[0m
+[0;32mI (193673) chip[IN]: (U) Sending msg 65689263 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;32mI (193693) chip[SC]: SecureSession[0x3ffc8970, LSID:30803]: State change 'kEstablishing' --> 'kActive'[0m
+[0;32mI (193693) chip[SVR]: Commissioning completed session establishment step[0m
+[0;32mI (193703) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (193703) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (193733) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (193743) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (193753) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (193763) chip[SVR]: Device completed Rendezvous process[0m
+[0;32mI (193763) chip[EM]: >>> [E:48878r S:0 M:161160126 (Ack:65689263)] (U) Msg RX from 0:F630ED5B43E92210 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (193773) chip[EM]: >>> [E:48881r S:30803 M:174154984] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (193793) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 192947 and system Timestamp 192947.[0m
+[0;32mI (193803) app_main: Commissioning session started[0m
+[0;32mI (193803) app_main: Commissioning window closed[0m
+[0;32mI (193823) chip[EM]: <<< [E:48881r S:30803 M:106440009 (Ack:174154984)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (193823) chip[IN]: (S) Sending msg 106440009 on secure session with LSID: 30803[0m
+[0;32mI (193853) chip[EM]: >>> [E:48881r S:30803 M:174154985 (Ack:106440009)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (193863) chip[EM]: >>> [E:48882r S:30803 M:174154986] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (193873) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 193023 and system Timestamp 193023.[0m
+[0;32mI (193883) chip[EM]: <<< [E:48882r S:30803 M:106440010 (Ack:174154986)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (193903) chip[IN]: (S) Sending msg 106440010 on secure session with LSID: 30803[0m
+[0;32mI (193933) chip[EM]: >>> [E:48882r S:30803 M:174154987 (Ack:106440010)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (193953) chip[EM]: >>> [E:48883r S:30803 M:174154988] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (193953) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 193110 and system Timestamp 193110.[0m
+[0;32mI (193973) chip[EM]: <<< [E:48883r S:30803 M:106440011 (Ack:174154988)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (193983) chip[IN]: (S) Sending msg 106440011 on secure session with LSID: 30803[0m
+[0;32mI (194003) chip[EM]: >>> [E:48883r S:30803 M:174154989 (Ack:106440011)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (194023) chip[EM]: >>> [E:48884r S:30803 M:174154990] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (194023) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 193183 and system Timestamp 193183.[0m
+[0;32mI (194043) chip[EM]: <<< [E:48884r S:30803 M:106440012 (Ack:174154990)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (194063) chip[IN]: (S) Sending msg 106440012 on secure session with LSID: 30803[0m
+[0;32mI (194163) chip[EM]: >>> [E:48884r S:30803 M:174154991 (Ack:106440012)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (194173) chip[EM]: >>> [E:48885r S:30803 M:174154992] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (194183) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 193338 and system Timestamp 193338.[0m
+[0;32mI (194203) chip[EM]: <<< [E:48885r S:30803 M:106440013 (Ack:174154992)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (194213) chip[IN]: (S) Sending msg 106440013 on secure session with LSID: 30803[0m
+[0;32mI (194253) chip[EM]: >>> [E:48885r S:30803 M:174154993 (Ack:106440013)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (195073) chip[EM]: >>> [E:48886r S:30803 M:174154994] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (195083) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 194236 and system Timestamp 194236.[0m
+[0;32mI (195093) chip[EM]: >>> [E:48886r S:30803 M:174154994] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (195113) chip[EM]: <<< [E:48886r S:30803 M:106440014 (Ack:174154994)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (195123) chip[IN]: (S) Sending msg 106440014 on secure session with LSID: 30803[0m
+[0;32mI (195133) chip[EM]: <<< [E:48886r S:30803 M:106440015 (Ack:174154994)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (195143) chip[IN]: (S) Sending msg 106440015 on secure session with LSID: 30803[0m
+[0;32mI (195183) chip[EM]: >>> [E:48887r S:30803 M:174154995] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (195193) esp_matter_command: Received command 0x00000000 for endpoint 0x0000's cluster 0x00000030[0m
+[0;32mI (195203) chip[FS]: GeneralCommissioning: Received ArmFailSafe (60s)[0m
+[0;32mI (195213) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x00000030's Attribute 0x00000000 is 3 **********[0m
+[0;32mI (195223) chip[EM]: <<< [E:48887r S:30803 M:106440016 (Ack:174154995)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (195233) chip[IN]: (S) Sending msg 106440016 on secure session with LSID: 30803[0m
+[0;32mI (195253) chip[EM]: >>> [E:48886r S:30803 M:174154996 (Ack:106440015)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (195263) chip[EM]: >>> [E:48888r S:30803 M:174154997] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (195273) esp_matter_command: Received command 0x00000002 for endpoint 0x0000's cluster 0x00000030[0m
+[0;32mI (195283) chip[DL]: NVS set: chip-config/reg-location = 0 (0x0)[0m
+[0;32mI (195293) chip[DL]: NVS set: chip-config/country-code = "XX"[0m
+[0;32mI (195303) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x00000030's Attribute 0x00000000 is 4 **********[0m
+[0;32mI (195313) chip[EM]: <<< [E:48888r S:30803 M:106440017 (Ack:174154997)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (195333) chip[IN]: (S) Sending msg 106440017 on secure session with LSID: 30803[0m
+[0;32mI (195333) chip[EM]: >>> [E:48887r S:30803 M:174154998 (Ack:106440016)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (195353) chip[EM]: >>> [E:48889r S:30803 M:174154999] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (195363) esp_matter_command: Received command 0x00000002 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (195373) chip[ZCL]: OpCreds: Certificate Chain request received for PAI[0m
+[0;32mI (195383) chip[EM]: <<< [E:48889r S:30803 M:106440018 (Ack:174154999)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (195393) chip[IN]: (S) Sending msg 106440018 on secure session with LSID: 30803[0m
+[0;32mI (195403) chip[EM]: >>> [E:48888r S:30803 M:174155000 (Ack:106440017)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (195423) chip[EM]: >>> [E:48890r S:30803 M:174155001] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (195433) esp_matter_command: Received command 0x00000002 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (195433) chip[ZCL]: OpCreds: Certificate Chain request received for DAC[0m
+[0;32mI (195453) chip[EM]: <<< [E:48890r S:30803 M:106440019 (Ack:174155001)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (195463) chip[IN]: (S) Sending msg 106440019 on secure session with LSID: 30803[0m
+[0;32mI (195473) chip[EM]: >>> [E:48889r S:30803 M:174155002 (Ack:106440018)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (195483) chip[EM]: >>> [E:48891r S:30803 M:174155003] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (195503) esp_matter_command: Received command 0x00000000 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (195503) chip[ZCL]: OpCreds: Received an AttestationRequest command[0m
+[0;32mI (195513) chip[EM]: <<< [E:48891r S:30803 M:106440020 (Ack:174155003)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (195533) chip[IN]: (S) Sending msg 106440020 on secure session with LSID: 30803[0m
+[0;32mI (195663) chip[ZCL]: OpCreds: AttestationRequest successful.[0m
+[0;32mI (195663) chip[EM]: <<< [E:48891r S:30803 M:106440021 (Ack:174155003)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (195683) chip[IN]: (S) Sending msg 106440021 on secure session with LSID: 30803[0m
+[0;32mI (195683) chip[EM]: >>> [E:48890r S:30803 M:174155004 (Ack:106440019)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (196073) chip[EM]: >>> [E:48892r S:30803 M:174155005] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (196083) esp_matter_command: Received command 0x00000004 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (196093) chip[ZCL]: OpCreds: Received a CSRRequest command[0m
+[0;32mI (196093) chip[EM]: <<< [E:48892r S:30803 M:106440022 (Ack:174155005)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (196113) chip[IN]: (S) Sending msg 106440022 on secure session with LSID: 30803[0m
+[0;32mI (196363) chip[ZCL]: OpCreds: AllocatePendingOperationalKey succeeded[0m
+[0;32mI (196493) chip[ZCL]: OpCreds: CSRRequest successful.[0m
+[0;32mI (196493) chip[EM]: <<< [E:48892r S:30803 M:106440023 (Ack:174155005)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (196513) chip[IN]: (S) Sending msg 106440023 on secure session with LSID: 30803[0m
+[0;32mI (196513) chip[EM]: >>> [E:48891r S:30803 M:174155006 (Ack:106440021)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (196553) chip[EM]: >>> [E:48892r S:30803 M:174155007 (Ack:106440023)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (196563) chip[EM]: >>> [E:48893r S:30803 M:174155008] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (196573) esp_matter_command: Received command 0x0000000B for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (196583) chip[ZCL]: OpCreds: Received an AddTrustedRootCertificate command[0m
+[0;32mI (196593) chip[EM]: <<< [E:48893r S:30803 M:106440024 (Ack:174155008)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (196613) chip[IN]: (S) Sending msg 106440024 on secure session with LSID: 30803[0m
+[0;32mI (197083) chip[ZCL]: OpCreds: AddTrustedRootCertificate successful.[0m
+[0;32mI (197083) chip[EM]: <<< [E:48893r S:30803 M:106440025 (Ack:174155008)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (197093) chip[IN]: (S) Sending msg 106440025 on secure session with LSID: 30803[0m
+[0;32mI (197113) chip[EM]: >>> [E:48894r S:30803 M:174155009] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (197113) esp_matter_command: Received command 0x00000006 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (197123) chip[ZCL]: OpCreds: Received an AddNOC command[0m
+[0;32mI (197133) chip[EM]: <<< [E:48894r S:30803 M:106440026 (Ack:174155009)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (197143) chip[IN]: (S) Sending msg 106440026 on secure session with LSID: 30803[0m
+[0;32mI (197163) chip[FP]: Validating NOC chain[0m
+[0;32mI (198083) chip[FP]: NOC chain validation successful[0m
+[0;32mI (198083) chip[FP]: Added new fabric at index: 0x2[0m
+[0;32mI (198083) chip[FP]: Assigned compressed fabric ID: 0x906D89248D0488D1, node ID: 0x0000000100000016[0m
+[0;32mI (198103) chip[TS]: Last Known Good Time: 2023-08-30T16:10:21[0m
+[0;32mI (198103) chip[TS]: New proposed Last Known Good Time: 2023-08-30T16:12:20[0m
+[0;32mI (198113) chip[TS]: Updating pending Last Known Good Time to 2023-08-30T16:12:20[0m
+[0;32mI (198163) chip[ZCL]: OpCreds: ACL entry created for Fabric index 0x2 CASE Admin Subject 0x0000000000010000[0m
+[0;32mI (198163) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (198173) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (198193) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (198193) chip[DIS]: Advertise operational node 906D89248D0488D1-0000000100000016[0m
+[0;32mI (198213) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 906D89248D0488D1-0000000100000016.[0m
+[0;32mI (198213) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (198223) chip[ZCL]: OpCreds: successfully created fabric index 0x2 via AddNOC[0m
+[0;32mI (198233) chip[EM]: <<< [E:48894r S:30803 M:106440027 (Ack:174155009)] (S) Msg TX to 2:FFFFFFFB00000000 [88D1] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (198243) chip[IN]: (S) Sending msg 106440027 on secure session with LSID: 30803[0m
+[0;31mE (198253) chip[DL]: Long dispatch time: 1144 ms, for event type 3[0m
+[0;32mI (198263) chip[EM]: >>> [E:48893r S:30803 M:174155010 (Ack:106440025)] (S) Msg RX from 2:FFFFFFFB00000000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (198283) chip[EM]: >>> [E:48894r S:30803 M:174155011 (Ack:106440027)] (S) Msg RX from 2:FFFFFFFB00000000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (199073) chip[EM]: >>> [E:48895r S:0 M:161160127] (U) Msg RX from 0:C77DAC1003642A10 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)[0m
+[0;32mI (199073) chip[IN]: CASE Server received Sigma1 message . Starting handshake. EC 0x3ffc9fe8[0m
+[0;32mI (199093) chip[EM]: <<< [E:48895r S:0 M:65689264 (Ack:161160127)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (199103) chip[IN]: (U) Sending msg 65689264 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;32mI (199113) chip[SC]: Received Sigma1 msg[0m
+[0;32mI (199133) chip[SC]: CASE matched destination ID: fabricIndex 2, NodeID 0x0000000100000016[0m
+[0;32mI (199713) chip[EM]: <<< [E:48895r S:0 M:65689265 (Ack:161160127)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)[0m
+[0;32mI (199723) chip[IN]: (U) Sending msg 65689265 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;32mI (199723) chip[SC]: Sent Sigma2 msg[0m
+[0;32mI (200073) chip[EM]: >>> [E:48895r S:0 M:161160128 (Ack:65689265)] (U) Msg RX from 0:C77DAC1003642A10 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)[0m
+[0;32mI (200093) chip[EM]: <<< [E:48895r S:0 M:65689266 (Ack:161160128)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (200103) chip[IN]: (U) Sending msg 65689266 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;32mI (200103) chip[SC]: Received Sigma3 msg[0m
+[0;31mE (200113) chip[SC]: The device does not support GetClock_RealTimeMS() API: 6c.  Falling back to Last Known Good UTC Time[0m
+[0;31mE (201503) chip[DL]: Long dispatch time: 1380 ms, for event type 2[0m
+[0;32mI (201533) chip[EM]: <<< [E:48895r S:0 M:65689267 (Ack:161160128)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)[0m
+[0;32mI (201543) chip[IN]: (U) Sending msg 65689267 to IP address 'UDP:192.168.100.10%st1:54121'[0m
+[0;32mI (201553) chip[SC]: SecureSession[0x3ffc88b0, LSID:30802]: State change 'kEstablishing' --> 'kActive'[0m
+[0;32mI (201563) chip[IN]: CASE Session established to peer: <0000000000010000, 2>[0m
+[0;32mI (201583) chip[EM]: >>> [E:48896r S:30802 M:145398336] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (201593) esp_matter_command: Received command 0x00000004 for endpoint 0x0000's cluster 0x00000030[0m
+[0;32mI (201603) chip[FS]: GeneralCommissioning: Received CommissioningComplete[0m
+[0;32mI (201623) chip[FP]: Metadata for Fabric 0x2 persisted to storage.[0m
+[0;32mI (201693) chip[TS]: Committing Last Known Good Time to storage: 2023-08-30T16:12:20[0m
+[0;32mI (201703) chip[ZCL]: OpCreds: Fabric index 0x2 was committed to storage. Compressed Fabric Id 0x906D89248D0488D1, FabricId 00000000004A4B6C, NodeId 0000000100000016, VendorId 0x125D[0m
+[0;32mI (201743) chip[FS]: GeneralCommissioning: Successfully commited pending fabric data[0m
+[0;32mI (201743) chip[FS]: Fail-safe cleanly disarmed[0m
+[0;32mI (201743) esp_matter_attribute: ********** W : Endpoint 0x0000's Cluster 0x00000030's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (201763) chip[EM]: <<< [E:48896r S:30802 M:87508175 (Ack:145398336)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (201773) chip[IN]: (S) Sending msg 87508175 on secure session with LSID: 30802[0m
+[0;32mI (201793) chip[EM]: >>> [E:48895r S:0 M:161160129 (Ack:65689267)] (U) Msg RX from 0:C77DAC1003642A10 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (201803) chip[SVR]: Commissioning completed successfully[0m
+[0;32mI (201813) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (201813) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (201833) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000078[0m
+[0;32mI (201843) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000078.[0m
+[0;32mI (201853) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (201863) chip[DIS]: Advertise operational node 906D89248D0488D1-0000000100000016[0m
+[0;32mI (201873) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 906D89248D0488D1-0000000100000016.[0m
+[0;32mI (201883) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (201883) chip[SC]: SecureSession[0x3ffc8970, LSID:30803]: State change 'kActive' --> 'kPendingEviction'[0m
+[0;32mI (201893) app_main: Commissioning complete[0m
+[0;32mI (201903) esp_matter_core: Commissioning Complete[0m
+[0;32mI (201913) chip[EM]: >>> [E:48896r S:30802 M:145398337 (Ack:87508175)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (201923) chip[EM]: >>> [E:48897r S:30802 M:145398338] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (201933) esp_matter_command: Received command 0x00000009 for endpoint 0x0000's cluster 0x0000003E[0m
+[0;32mI (201943) chip[ZCL]: OpCreds: Received an UpdateFabricLabel command[0m
+[0;32mI (201953) chip[FP]: Metadata for Fabric 0x2 persisted to storage.[0m
+[0;32mI (201963) chip[EM]: <<< [E:48897r S:30802 M:87508176 (Ack:145398338)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (201973) chip[IN]: (S) Sending msg 87508176 on secure session with LSID: 30802[0m
+[0;32mI (201983) app_main: Commissioning window closed[0m
+[0;32mI (202013) chip[EM]: >>> [E:48897r S:30802 M:145398339 (Ack:87508176)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (203073) chip[EM]: >>> [E:48898r S:30802 M:145398340] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:03 (IM:SubscribeRequest)[0m
+[0;31mE (203083) chip[IM]: Subscription from [2:0000000000010000] has no access at all. Rejecting request.[0m
+[0;32mI (203093) chip[EM]: <<< [E:48898r S:30802 M:87508177 (Ack:145398340)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:01 (IM:StatusResponse)[0m
+[0;32mI (203103) chip[IN]: (S) Sending msg 87508177 on secure session with LSID: 30802[0m
+[0;32mI (203113) chip[EM]: >>> [E:48899r S:30802 M:145398341] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (203123) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 202282 and system Timestamp 202282.[0m
+[0;32mI (203143) chip[EM]: >>> [E:48902r S:30802 M:145398342] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (203143) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 202302 and system Timestamp 202302.[0m
+[0;32mI (203163) chip[EM]: >>> [E:48905r S:30802 M:145398343] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (203173) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 202333 and system Timestamp 202333.[0m
+[0;32mI (203193) chip[EM]: >>> [E:48906r S:30802 M:145398344] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (203203) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 202363 and system Timestamp 202363.[0m
+[0;32mI (203213) chip[EM]: >>> [E:48898r S:30802 M:145398345 (Ack:87508177)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:01 (IM:StatusResponse)[0m
+[0;32mI (203223) chip[EM]: <<< [E:48898r S:30802 M:87508178 (Ack:145398345)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (203243) chip[IN]: (S) Sending msg 87508178 on secure session with LSID: 30802[0m
+[0;31mE (203253) chip[EM]: Dropping unexpected message of type 0x1 with protocolId (0, 1) and MessageCounter:145398345 on exchange 48898r[0m
+[0;32mI (203273) chip[EM]: <<< [E:48899r S:30802 M:87508179 (Ack:145398341)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (203273) chip[IN]: (S) Sending msg 87508179 on secure session with LSID: 30802[0m
+[0;32mI (203293) chip[EM]: <<< [E:48902r S:30802 M:87508180 (Ack:145398342)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (203303) chip[IN]: (S) Sending msg 87508180 on secure session with LSID: 30802[0m
+[0;32mI (203323) chip[EM]: <<< [E:48905r S:30802 M:87508181 (Ack:145398343)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (203323) chip[IN]: (S) Sending msg 87508181 on secure session with LSID: 30802[0m
+[0;32mI (203353) chip[EM]: <<< [E:48906r S:30802 M:87508182 (Ack:145398344)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (203353) chip[IN]: (S) Sending msg 87508182 on secure session with LSID: 30802[0m
+[0;32mI (203373) chip[EM]: >>> [E:48907r S:30802 M:145398346] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:06 (IM:WriteRequest)[0m
+[0;32mI (203423) chip[EM]: <<< [E:48907r S:30802 M:87508183 (Ack:145398346)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:07 (IM:WriteResponse)[0m
+[0;32mI (203433) chip[IN]: (S) Sending msg 87508183 on secure session with LSID: 30802[0m
+[0;32mI (203443) chip[EM]: >>> [E:48899r S:30802 M:145398347 (Ack:87508179)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (203453) chip[EM]: >>> [E:48902r S:30802 M:145398348 (Ack:87508180)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (203473) chip[EM]: >>> [E:48905r S:30802 M:145398349 (Ack:87508181)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (203483) chip[EM]: >>> [E:48906r S:30802 M:145398350 (Ack:87508182)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (203503) chip[EM]: >>> [E:48907r S:30802 M:145398351 (Ack:87508183)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (204073) chip[EM]: >>> [E:48908r S:30802 M:145398352] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (204073) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 203231 and system Timestamp 203231.[0m
+[0;32mI (204093) chip[EM]: <<< [E:48908r S:30802 M:87508184 (Ack:145398352)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (204103) chip[IN]: (S) Sending msg 87508184 on secure session with LSID: 30802[0m
+[0;32mI (204163) chip[EM]: >>> [E:48908r S:30802 M:145398353 (Ack:87508184)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (208073) chip[EM]: >>> [E:48910r S:30802 M:145398354] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (208083) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 207235 and system Timestamp 207235.[0m
+[0;32mI (208093) chip[EM]: >>> [E:48910r S:30802 M:145398354] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (208113) chip[EM]: <<< [E:48910r S:30802 M:87508185 (Ack:145398354)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (208123) chip[IN]: (S) Sending msg 87508185 on secure session with LSID: 30802[0m
+[0;32mI (208143) chip[EM]: <<< [E:48910r S:30802 M:87508186 (Ack:145398354)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (208143) chip[IN]: (S) Sending msg 87508186 on secure session with LSID: 30802[0m
+[0;32mI (208213) chip[EM]: >>> [E:48910r S:30802 M:145398355 (Ack:87508186)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (215063) chip[EM]: >>> [E:48912r S:30802 M:145398356] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (215073) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 214226 and system Timestamp 214226.[0m
+[0;32mI (215083) chip[EM]: >>> [E:48915r S:30802 M:145398357] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (215103) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 214257 and system Timestamp 214257.[0m
+[0;32mI (215123) chip[EM]: <<< [E:48912r S:30802 M:87508187 (Ack:145398356)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (215123) chip[IN]: (S) Sending msg 87508187 on secure session with LSID: 30802[0m
+[0;32mI (215143) chip[EM]: <<< [E:48915r S:30802 M:87508188 (Ack:145398357)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (215153) chip[IN]: (S) Sending msg 87508188 on secure session with LSID: 30802[0m
+[0;32mI (215173) chip[EM]: >>> [E:48912r S:30802 M:145398358 (Ack:87508187)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (215183) chip[EM]: >>> [E:48915r S:30802 M:145398359 (Ack:87508188)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (215203) chip[EM]: >>> [E:48918r S:30802 M:145398360] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (215213) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 214363 and system Timestamp 214363.[0m
+[0;32mI (215223) chip[EM]: >>> [E:48921r S:30802 M:145398361] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (215243) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 214394 and system Timestamp 214394.[0m
+[0;32mI (215253) chip[EM]: <<< [E:48918r S:30802 M:87508189 (Ack:145398360)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (215263) chip[IN]: (S) Sending msg 87508189 on secure session with LSID: 30802[0m
+[0;32mI (215283) chip[EM]: <<< [E:48921r S:30802 M:87508190 (Ack:145398361)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (215283) chip[IN]: (S) Sending msg 87508190 on secure session with LSID: 30802[0m
+[0;32mI (215303) chip[EM]: >>> [E:48918r S:30802 M:145398362 (Ack:87508189)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (215333) chip[EM]: >>> [E:48921r S:30802 M:145398363 (Ack:87508190)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (216573) chip[EM]: >>> [E:48924r S:30802 M:145398364] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (216583) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 215735 and system Timestamp 215735.[0m
+[0;32mI (216593) chip[EM]: >>> [E:48927r S:30802 M:145398365] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (216613) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 215765 and system Timestamp 215765.[0m
+[0;32mI (216623) chip[EM]: <<< [E:48924r S:30802 M:87508191 (Ack:145398364)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (216633) chip[IN]: (S) Sending msg 87508191 on secure session with LSID: 30802[0m
+[0;32mI (216653) chip[EM]: <<< [E:48927r S:30802 M:87508192 (Ack:145398365)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (216653) chip[IN]: (S) Sending msg 87508192 on secure session with LSID: 30802[0m
+[0;32mI (216673) chip[EM]: >>> [E:48924r S:30802 M:145398366 (Ack:87508191)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (217073) chip[EM]: >>> [E:48927r S:30802 M:145398367 (Ack:87508192)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (218563) chip[EM]: >>> [E:48930r S:30802 M:145398368] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (218573) chip[EM]: <<< [E:48930r S:30802 M:87508193 (Ack:145398368)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (218583) chip[IN]: (S) Sending msg 87508193 on secure session with LSID: 30802[0m
+[0;32mI (218603) chip[EM]: >>> [E:48930r S:30802 M:145398369 (Ack:87508193)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (219563) chip[EM]: >>> [E:48931r S:30802 M:145398370] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (219573) chip[EM]: <<< [E:48931r S:30802 M:87508194 (Ack:145398370)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (219583) chip[IN]: (S) Sending msg 87508194 on secure session with LSID: 30802[0m
+[0;32mI (219603) chip[EM]: >>> [E:48931r S:30802 M:145398371 (Ack:87508194)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (224563) chip[EM]: >>> [E:48933r S:30802 M:145398372] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (224563) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 223719 and system Timestamp 223719.[0m
+[0;32mI (224583) chip[EM]: <<< [E:48933r S:30802 M:87508195 (Ack:145398372)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (224593) chip[IN]: (S) Sending msg 87508195 on secure session with LSID: 30802[0m
+[0;32mI (224613) chip[EM]: >>> [E:48933r S:30802 M:145398373 (Ack:87508195)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (225283) app_driver: Toggle button pressed[0m
+[0;33mW (225293) app_driver: GPIO 13 On[0m
+[0;32mI (225293) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (225303) chip[EM]: <<< [E:64524i S:30801 M:154584668] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (225313) chip[IN]: (S) Sending msg 154584668 on secure session with LSID: 30801[0m
+[0;33mW (225323) app_driver: GPIO 13 Off[0m
+[0;32mI (226203) chip[IN]: (S) Sending msg 154584668 on secure session with LSID: 30801[0m
+[0;32mI (227003) app_driver: Toggle button pressed[0m
+[0;33mW (227003) app_driver: GPIO 13 On[0m
+[0;32mI (227013) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (227023) chip[EM]: <<< [E:64525i S:30801 M:154584669] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (227033) chip[IN]: (S) Sending msg 154584669 on secure session with LSID: 30801[0m
+[0;33mW (227043) app_driver: GPIO 13 Off[0m
+[0;32mI (227123) chip[IN]: (S) Sending msg 154584668 on secure session with LSID: 30801[0m
+[0;32mI (227883) chip[IN]: (S) Sending msg 154584669 on secure session with LSID: 30801[0m
+[0;32mI (227963) app_driver: Toggle button pressed[0m
+[0;33mW (227963) app_driver: GPIO 13 On[0m
+[0;32mI (227973) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (227983) chip[EM]: <<< [E:64526i S:30801 M:154584670] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (227993) chip[IN]: (S) Sending msg 154584670 on secure session with LSID: 30801[0m
+[0;33mW (228003) app_driver: GPIO 13 Off[0m
+[0;32mI (228283) chip[IN]: (S) Sending msg 154584668 on secure session with LSID: 30801[0m
+[0;32mI (228693) chip[IN]: (S) Sending msg 154584669 on secure session with LSID: 30801[0m
+[0;32mI (228723) app_driver: Toggle button pressed[0m
+[0;33mW (228723) app_driver: GPIO 13 On[0m
+[0;32mI (228733) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (228743) chip[EM]: <<< [E:64527i S:30801 M:154584671] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (228753) chip[IN]: (S) Sending msg 154584671 on secure session with LSID: 30801[0m
+[0;33mW (228763) app_driver: GPIO 13 Off[0m
+[0;32mI (228803) chip[IN]: (S) Sending msg 154584670 on secure session with LSID: 30801[0m
+[0;32mI (229573) chip[IN]: (S) Sending msg 154584671 on secure session with LSID: 30801[0m
+[0;32mI (229663) chip[IN]: (S) Sending msg 154584670 on secure session with LSID: 30801[0m
+[0;32mI (230053) chip[IN]: (S) Sending msg 154584669 on secure session with LSID: 30801[0m
+[0;32mI (230323) chip[IN]: (S) Sending msg 154584668 on secure session with LSID: 30801[0m
+[0;32mI (230493) chip[IN]: (S) Sending msg 154584671 on secure session with LSID: 30801[0m
+[0;32mI (230893) chip[IN]: (S) Sending msg 154584670 on secure session with LSID: 30801[0m
+[0;32mI (231723) chip[IN]: (S) Sending msg 154584671 on secure session with LSID: 30801[0m
+[0;32mI (231853) chip[IN]: (S) Sending msg 154584669 on secure session with LSID: 30801[0m
+[0;32mI (232783) chip[IN]: (S) Sending msg 154584670 on secure session with LSID: 30801[0m
+[0;32mI (233143) app_driver: Toggle button pressed[0m
+[0;33mW (233153) app_driver: GPIO 13 On[0m
+[0;32mI (233153) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (233163) chip[EM]: <<< [E:64528i S:30801 M:154584672] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (233173) chip[IN]: (S) Sending msg 154584672 on secure session with LSID: 30801[0m
+[0;33mW (233183) app_driver: GPIO 13 Off[0m
+[0;31mE (233713) chip[EM]: Failed to Send CHIP MessageCounter:154584668 on exchange 64524i sendCount: 4 max retries: 4[0m
+[0;32mI (233863) chip[IN]: (S) Sending msg 154584671 on secure session with LSID: 30801[0m
+[0;32mI (234023) chip[IN]: (S) Sending msg 154584672 on secure session with LSID: 30801[0m
+[0;32mI (234903) chip[IN]: (S) Sending msg 154584672 on secure session with LSID: 30801[0m
+[0;31mE (235223) chip[EM]: Failed to Send CHIP MessageCounter:154584669 on exchange 64525i sendCount: 4 max retries: 4[0m
+[0;31mE (235823) chip[EM]: Failed to Send CHIP MessageCounter:154584670 on exchange 64526i sendCount: 4 max retries: 4[0m
+[0;32mI (236003) app_driver: Toggle button pressed[0m
+[0;33mW (236003) app_driver: GPIO 13 On[0m
+[0;32mI (236013) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (236023) chip[EM]: <<< [E:64529i S:30801 M:154584673] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (236033) chip[IN]: (S) Sending msg 154584673 on secure session with LSID: 30801[0m
+[0;33mW (236043) app_driver: GPIO 13 Off[0m
+[0;32mI (236173) chip[IN]: (S) Sending msg 154584672 on secure session with LSID: 30801[0m
+[0;32mI (236253) chip[SC]: SecureSession[0x3ffc8670, LSID:30801]: State change 'kActive' --> 'kDefunct'[0m
+[0;32mI (236253) chip[DMG]: Time out! failed to receive invoke command response from Exchange: 64524i[0m
+[0;32mI (236273) esp_matter_client: FSend command failure[0m
+[0;32mI (236883) chip[IN]: (S) Sending msg 154584673 on secure session with LSID: 30801[0m
+[0;31mE (236933) chip[EM]: Failed to Send CHIP MessageCounter:154584671 on exchange 64527i sendCount: 4 max retries: 4[0m
+[0;32mI (237143) app_driver: Toggle button pressed[0m
+[0;33mW (237143) app_driver: GPIO 13 On[0m
+[0;33mW (237153) app_driver: GPIO 13 Off[0m
+[0;32mI (237353) chip[DIS]: Checking node lookup status after 200 ms[0m
+[0;32mI (237693) chip[IN]: (S) Sending msg 154584673 on secure session with LSID: 30801[0m
+[0;32mI (237703) chip[DIS]: UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540: new best score: 7[0m
+[0;32mI (237703) chip[DIS]: UDP:192.168.100.14%st1:5540: score has not improved: 2[0m
+[0;32mI (237713) chip[DIS]: Checking node lookup status after 565 ms[0m
+[0;32mI (237713) chip[SC]: Initiating session on local FabricIndex 1 from 0x0000000000000078 -> 0x0000000000000075[0m
+[0;32mI (237853) chip[EM]: <<< [E:64530i S:0 M:65689268] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)[0m
+[0;32mI (237863) chip[IN]: (U) Sending msg 65689268 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (237873) chip[SC]: Sent Sigma1 msg[0m
+[0;32mI (237973) chip[DMG]: Time out! failed to receive invoke command response from Exchange: 64525i[0m
+[0;32mI (237973) esp_matter_client: FSend command failure[0m
+[0;32mI (238103) chip[EM]: >>> [E:64530i S:0 M:81748037 (Ack:65689268)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (238133) chip[EM]: >>> [E:64530i S:0 M:81748038 (Ack:65689268)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:33 (SecureChannel:CASE_Sigma2Resume)[0m
+[0;32mI (238143) chip[EM]: <<< [E:64530i S:0 M:65689269 (Ack:81748038)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (238163) chip[IN]: (U) Sending msg 65689269 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (238203) chip[EM]: <<< [E:64530i S:0 M:65689270 (Ack:81748038)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)[0m
+[0;32mI (238213) chip[IN]: (U) Sending msg 65689270 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (238223) chip[SC]: SecureSession[0x3ffc8970, LSID:30805]: State change 'kEstablishing' --> 'kActive'[0m
+[0;32mI (238243) chip[EM]: <<< [E:64531i S:30805 M:189948812] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (238243) chip[IN]: (S) Sending msg 189948812 on secure session with LSID: 30805[0m
+[0;32mI (238253) chip[IN]: (S) Sending msg 154584672 on secure session with LSID: 30801[0m
+[0;32mI (238823) chip[IN]: (U) Sending msg 65689270 to IP address 'UDP:[FE80::CEDB:A7FF:FE16:D5D4%st1]:5540'[0m
+[0;32mI (238833) chip[EM]: >>> [E:64530i S:0 M:81748039 (Ack:65689270)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (238853) chip[EM]: >>> [E:64531i S:30805 M:33972461 (Ack:189948812)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (238863) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (238873) esp_matter_client: Send command success[0m
+[0;32mI (238883) chip[EM]: <<< [E:64531i S:30805 M:189948813 (Ack:33972461)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (238893) chip[IN]: (S) Sending msg 189948813 on secure session with LSID: 30805[0m
+[0;32mI (238903) chip[EM]: >>> [E:64530i S:0 M:81748040 (Ack:65689270)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (238923) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (238933) chip[DMG]: Time out! failed to receive invoke command response from Exchange: 64526i[0m
+[0;32mI (238933) esp_matter_client: FSend command failure[0m
+[0;32mI (238983) chip[IN]: (S) Sending msg 154584673 on secure session with LSID: 30801[0m
+[0;32mI (239693) chip[DMG]: Time out! failed to receive invoke command response from Exchange: 64527i[0m
+[0;32mI (239693) esp_matter_client: FSend command failure[0m
+[0;32mI (240803) chip[IN]: (S) Sending msg 154584673 on secure session with LSID: 30801[0m
+[0;32mI (240813) chip[EM]: >>> [E:48936r S:30802 M:145398374] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (240833) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 239984 and system Timestamp 239984.[0m
+[0;32mI (240833) chip[EM]: <<< [E:48936r S:30802 M:87508196 (Ack:145398374)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (240853) chip[IN]: (S) Sending msg 87508196 on secure session with LSID: 30802[0m
+[0;32mI (240883) chip[EM]: >>> [E:48936r S:30802 M:145398375 (Ack:87508196)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (241083) app_driver: Toggle button pressed[0m
+[0;33mW (241083) app_driver: GPIO 13 On[0m
+[0;32mI (241093) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (241103) chip[EM]: <<< [E:64532i S:30805 M:189948814] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (241113) chip[IN]: (S) Sending msg 189948814 on secure session with LSID: 30805[0m
+[0;33mW (241123) app_driver: GPIO 13 Off[0m
+[0;31mE (241453) chip[EM]: Failed to Send CHIP MessageCounter:154584672 on exchange 64528i sendCount: 4 max retries: 4[0m
+[0;32mI (241743) chip[IN]: (S) Sending msg 189948814 on secure session with LSID: 30805[0m
+[0;32mI (241753) chip[EM]: >>> [E:64532i S:30805 M:33972462 (Ack:189948814)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (241763) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (241773) esp_matter_client: Send command success[0m
+[0;32mI (241783) chip[EM]: <<< [E:64532i S:30805 M:189948815 (Ack:33972462)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (241793) chip[IN]: (S) Sending msg 189948815 on secure session with LSID: 30805[0m
+[0;32mI (242093) chip[EM]: >>> [E:64532i S:30805 M:33972463 (Ack:189948814)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (242103) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (242363) app_driver: Toggle button pressed[0m
+[0;33mW (242373) app_driver: GPIO 13 On[0m
+[0;32mI (242373) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (242383) chip[EM]: <<< [E:64533i S:30805 M:189948816] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (242393) chip[IN]: (S) Sending msg 189948816 on secure session with LSID: 30805[0m
+[0;33mW (242403) app_driver: GPIO 13 Off[0m
+[0;32mI (242963) app_driver: Toggle button pressed[0m
+[0;33mW (242963) app_driver: GPIO 13 On[0m
+[0;32mI (242973) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (242983) chip[EM]: <<< [E:64534i S:30805 M:189948817] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (242993) chip[IN]: (S) Sending msg 189948817 on secure session with LSID: 30805[0m
+[0;33mW (243003) app_driver: GPIO 13 Off[0m
+[0;32mI (243003) chip[IN]: (S) Sending msg 189948816 on secure session with LSID: 30805[0m
+[0;32mI (243023) chip[EM]: >>> [E:64533i S:30805 M:33972464 (Ack:189948816)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (243033) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (243033) esp_matter_client: Send command success[0m
+[0;32mI (243053) chip[EM]: <<< [E:64533i S:30805 M:189948818 (Ack:33972464)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (243063) chip[IN]: (S) Sending msg 189948818 on secure session with LSID: 30805[0m
+[0;32mI (243483) app_driver: Toggle button pressed[0m
+[0;33mW (243483) app_driver: GPIO 13 On[0m
+[0;32mI (243493) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (243503) chip[EM]: <<< [E:64535i S:30805 M:189948819] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (243513) chip[IN]: (S) Sending msg 189948819 on secure session with LSID: 30805[0m
+[0;33mW (243523) app_driver: GPIO 13 Off[0m
+[0;32mI (243533) chip[EM]: >>> [E:64534i S:30805 M:33972465 (Ack:189948817)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (243543) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (243543) esp_matter_client: Send command success[0m
+[0;32mI (243563) chip[EM]: <<< [E:64534i S:30805 M:189948820 (Ack:33972465)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (243573) chip[IN]: (S) Sending msg 189948820 on secure session with LSID: 30805[0m
+[0;32mI (243583) chip[EM]: >>> [E:64533i S:30805 M:33972466 (Ack:189948816)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (243593) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;31mE (243863) chip[EM]: Failed to Send CHIP MessageCounter:154584673 on exchange 64529i sendCount: 4 max retries: 4[0m
+[0;32mI (244003) app_driver: Toggle button pressed[0m
+[0;33mW (244003) app_driver: GPIO 13 On[0m
+[0;32mI (244013) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (244023) chip[EM]: <<< [E:64536i S:30805 M:189948821] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (244033) chip[IN]: (S) Sending msg 189948821 on secure session with LSID: 30805[0m
+[0;33mW (244043) app_driver: GPIO 13 Off[0m
+[0;32mI (244053) chip[EM]: >>> [E:64535i S:30805 M:33972467 (Ack:189948819)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (244063) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (244073) esp_matter_client: Send command success[0m
+[0;32mI (244083) chip[EM]: <<< [E:64535i S:30805 M:189948822 (Ack:33972467)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (244093) chip[IN]: (S) Sending msg 189948822 on secure session with LSID: 30805[0m
+[0;32mI (244113) chip[DMG]: Time out! failed to receive invoke command response from Exchange: 64528i[0m
+[0;32mI (244113) esp_matter_client: FSend command failure[0m
+[0;32mI (244553) chip[EM]: >>> [E:64535i S:30805 M:33972467 (Ack:189948819)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (244563) chip[EM]: <<< [E:64535i S:30805 M:189948823 (Ack:33972467)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (244573) chip[IN]: (S) Sending msg 189948823 on secure session with LSID: 30805[0m
+[0;32mI (244583) chip[EM]: >>> [E:64536i S:30805 M:33972468 (Ack:189948821)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (244593) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (244603) app_driver: Toggle button pressed[0m
+[0;32mI (244613) esp_matter_client: Send command success[0m
+[0;33mW (244613) app_driver: GPIO 13 On[0m
+[0;32mI (244623) chip[EM]: <<< [E:64536i S:30805 M:189948824 (Ack:33972468)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (244643) chip[IN]: (S) Sending msg 189948824 on secure session with LSID: 30805[0m
+[0;32mI (244643) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (244653) chip[EM]: <<< [E:64537i S:30805 M:189948825] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (244663) chip[IN]: (S) Sending msg 189948825 on secure session with LSID: 30805[0m
+[0;33mW (244673) app_driver: GPIO 13 Off[0m
+[0;32mI (245303) chip[IN]: (S) Sending msg 189948825 on secure session with LSID: 30805[0m
+[0;32mI (245313) chip[EM]: >>> [E:64536i S:30805 M:33972468 (Ack:189948821)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (245323) chip[EM]: <<< [E:64536i S:30805 M:189948826 (Ack:33972468)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (245343) chip[IN]: (S) Sending msg 189948826 on secure session with LSID: 30805[0m
+[0;32mI (245343) chip[EM]: >>> [E:64537i S:30805 M:33972469 (Ack:189948825)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (245363) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (245373) esp_matter_client: Send command success[0m
+[0;32mI (245373) chip[EM]: <<< [E:64537i S:30805 M:189948827 (Ack:33972469)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (245393) chip[IN]: (S) Sending msg 189948827 on secure session with LSID: 30805[0m
+[0;32mI (245403) chip[EM]: >>> [E:64537i S:30805 M:33972470 (Ack:189948825)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (245423) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (245703) app_driver: Toggle button pressed[0m
+[0;33mW (245703) app_driver: GPIO 13 On[0m
+[0;32mI (245713) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (245723) chip[EM]: <<< [E:64538i S:30805 M:189948828] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (245733) chip[IN]: (S) Sending msg 189948828 on secure session with LSID: 30805[0m
+[0;33mW (245743) app_driver: GPIO 13 Off[0m
+[0;32mI (246293) chip[IN]: (S) Sending msg 189948828 on secure session with LSID: 30805[0m
+[0;32mI (246293) chip[EM]: >>> [E:64538i S:30805 M:33972471 (Ack:189948828)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (246313) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (246313) esp_matter_client: Send command success[0m
+[0;32mI (246323) chip[EM]: <<< [E:64538i S:30805 M:189948829 (Ack:33972471)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (246343) chip[IN]: (S) Sending msg 189948829 on secure session with LSID: 30805[0m
+[0;32mI (246403) app_driver: Toggle button pressed[0m
+[0;33mW (246413) app_driver: GPIO 13 On[0m
+[0;32mI (246413) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (246423) chip[EM]: <<< [E:64539i S:30805 M:189948830] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (246433) chip[IN]: (S) Sending msg 189948830 on secure session with LSID: 30805[0m
+[0;33mW (246443) app_driver: GPIO 13 Off[0m
+[0;32mI (246973) chip[DMG]: Time out! failed to receive invoke command response from Exchange: 64529i[0m
+[0;32mI (246973) esp_matter_client: FSend command failure[0m
+[0;32mI (247013) chip[IN]: (S) Sending msg 189948830 on secure session with LSID: 30805[0m
+[0;32mI (247023) chip[EM]: >>> [E:64538i S:30805 M:33972472 (Ack:189948828)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (247023) app_driver: Toggle button pressed[0m
+[0;31mE (247033) chip[EM]: [0;33mW (247033) app_driver: GPIO 13 On[0m
+OnMessageReceived failed, err = 70[0m
+[0;32mI (247053) chip[EM]: >>> [E:64539i S:30805 M:33972473 (Ack:189948830)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (247063) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (247063) esp_matter_client: Send command success[0m
+[0;32mI (247083) chip[EM]: <<< [E:64539i S:30805 M:189948831 (Ack:33972473)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (247093) chip[IN]: (S) Sending msg 189948831 on secure session with LSID: 30805[0m
+[0;32mI (247103) chip[EM]: >>> [E:64539i S:30805 M:33972474 (Ack:189948830)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (247113) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (247123) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (247133) chip[EM]: <<< [E:64540i S:30805 M:189948832] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (247143) chip[IN]: (S) Sending msg 189948832 on secure session with LSID: 30805[0m
+[0;33mW (247153) app_driver: GPIO 13 Off[0m
+[0;32mI (247743) chip[IN]: (S) Sending msg 189948832 on secure session with LSID: 30805[0m
+[0;32mI (247743) chip[EM]: >>> [E:64540i S:30805 M:33972475 (Ack:189948832)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (247763) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (247763) esp_matter_client: Send command success[0m
+[0;32mI (247773) chip[EM]: <<< [E:64540i S:30805 M:189948833 (Ack:33972475)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (247793) chip[IN]: (S) Sending msg 189948833 on secure session with LSID: 30805[0m
+[0;32mI (248543) chip[EM]: >>> [E:64540i S:30805 M:33972476 (Ack:189948832)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (248563) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (249063) app_driver: Toggle button pressed[0m
+[0;33mW (249063) app_driver: GPIO 13 On[0m
+[0;32mI (249073) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (249083) chip[EM]: <<< [E:64541i S:30805 M:189948834] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (249093) chip[IN]: (S) Sending msg 189948834 on secure session with LSID: 30805[0m
+[0;33mW (249103) app_driver: GPIO 13 Off[0m
+[0;32mI (249403) app_driver: Toggle button pressed[0m
+[0;33mW (249403) app_driver: GPIO 13 On[0m
+[0;32mI (249413) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (249423) chip[EM]: <<< [E:64542i S:30805 M:189948835] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (249423) chip[IN]: (S) Sending msg 189948835 on secure session with LSID: 30805[0m
+[0;33mW (249443) app_driver: GPIO 13 Off[0m
+[0;32mI (249723) chip[IN]: (S) Sending msg 189948834 on secure session with LSID: 30805[0m
+[0;32mI (249733) chip[EM]: >>> [E:64541i S:30805 M:33972477 (Ack:189948834)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (249753) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (249753) esp_matter_client: Send command success[0m
+[0;32mI (249763) chip[EM]: <<< [E:64541i S:30805 M:189948836 (Ack:33972477)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (249783) chip[IN]: (S) Sending msg 189948836 on secure session with LSID: 30805[0m
+[0;32mI (250013) chip[IN]: (S) Sending msg 189948835 on secure session with LSID: 30805[0m
+[0;32mI (250023) chip[EM]: >>> [E:64542i S:30805 M:33972478 (Ack:189948835)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (250033) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (250043) esp_matter_client: Send command success[0m
+[0;32mI (250053) chip[EM]: <<< [E:64542i S:30805 M:189948837 (Ack:33972478)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (250063) chip[IN]: (S) Sending msg 189948837 on secure session with LSID: 30805[0m
+[0;32mI (250073) chip[EM]: >>> [E:64541i S:30805 M:33972479 (Ack:189948834)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (250083) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (250093) chip[EM]: >>> [E:64542i S:30805 M:33972480 (Ack:189948835)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (250113) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (250503) app_driver: Toggle button pressed[0m
+[0;33mW (250503) app_driver: GPIO 13 On[0m
+[0;32mI (250513) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (250523) chip[EM]: <<< [E:64543i S:30805 M:189948838] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (250533) chip[IN]: (S) Sending msg 189948838 on secure session with LSID: 30805[0m
+[0;33mW (250543) app_driver: GPIO 13 Off[0m
+[0;32mI (250783) app_driver: Toggle button pressed[0m
+[0;33mW (250783) app_driver: GPIO 13 On[0m
+[0;32mI (250793) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (250803) chip[EM]: <<< [E:64544i S:30805 M:189948839] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (250803) chip[IN]: (S) Sending msg 189948839 on secure session with LSID: 30805[0m
+[0;33mW (250823) app_driver: GPIO 13 Off[0m
+[0;32mI (251113) chip[IN]: (S) Sending msg 189948838 on secure session with LSID: 30805[0m
+[0;32mI (251463) chip[IN]: (S) Sending msg 189948839 on secure session with LSID: 30805[0m
+[0;32mI (251473) chip[EM]: >>> [E:64543i S:30805 M:33972481 (Ack:189948838)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (251483) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (251493) esp_matter_client: Send command success[0m
+[0;32mI (251503) chip[EM]: <<< [E:64543i S:30805 M:189948840 (Ack:33972481)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (251513) chip[IN]: (S) Sending msg 189948840 on secure session with LSID: 30805[0m
+[0;32mI (251523) chip[EM]: >>> [E:64544i S:30805 M:33972482 (Ack:189948839)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (251533) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (251553) esp_matter_client: Send command success[0m
+[0;32mI (251553) chip[EM]: <<< [E:64544i S:30805 M:189948841 (Ack:33972482)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (251563) chip[IN]: (S) Sending msg 189948841 on secure session with LSID: 30805[0m
+[0;32mI (251583) chip[EM]: >>> [E:64543i S:30805 M:33972483 (Ack:189948838)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (251593) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (251593) chip[EM]: >>> [E:64544i S:30805 M:33972484 (Ack:189948839)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (251613) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (251843) app_driver: Toggle button pressed[0m
+[0;33mW (251843) app_driver: GPIO 13 On[0m
+[0;32mI (251853) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (251863) chip[EM]: <<< [E:64545i S:30805 M:189948842] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (251873) chip[IN]: (S) Sending msg 189948842 on secure session with LSID: 30805[0m
+[0;33mW (251883) app_driver: GPIO 13 Off[0m
+[0;32mI (252423) app_driver: Toggle button pressed[0m
+[0;33mW (252423) app_driver: GPIO 13 On[0m
+[0;32mI (252433) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (252443) chip[EM]: <<< [E:64546i S:30805 M:189948843] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (252453) chip[IN]: (S) Sending msg 189948843 on secure session with LSID: 30805[0m
+[0;33mW (252463) app_driver: GPIO 13 Off[0m
+[0;32mI (252473) chip[EM]: >>> [E:64545i S:30805 M:33972485 (Ack:189948842)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (252483) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (252483) esp_matter_client: Send command success[0m
+[0;32mI (252503) chip[EM]: <<< [E:64545i S:30805 M:189948844 (Ack:33972485)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (252513) chip[IN]: (S) Sending msg 189948844 on secure session with LSID: 30805[0m
+[0;32mI (253033) chip[IN]: (S) Sending msg 189948843 on secure session with LSID: 30805[0m
+[0;32mI (253033) chip[EM]: >>> [E:64546i S:30805 M:33972486 (Ack:189948843)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (253053) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (253053) esp_matter_client: Send command success[0m
+[0;32mI (253063) chip[EM]: <<< [E:64546i S:30805 M:189948845 (Ack:33972486)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (253083) chip[IN]: (S) Sending msg 189948845 on secure session with LSID: 30805[0m
+[0;32mI (253543) chip[EM]: >>> [E:64546i S:30805 M:33972486 (Ack:189948843)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (253553) chip[EM]: <<< [E:64546i S:30805 M:189948846 (Ack:33972486)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (253573) chip[IN]: (S) Sending msg 189948846 on secure session with LSID: 30805[0m
+[0;32mI (253573) chip[EM]: >>> [E:64546i S:30805 M:33972487 (Ack:189948843)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (253593) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (253963) app_driver: Toggle button pressed[0m
+[0;33mW (253963) app_driver: GPIO 13 On[0m
+[0;32mI (253973) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (253983) chip[EM]: <<< [E:64547i S:30805 M:189948847] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (253993) chip[IN]: (S) Sending msg 189948847 on secure session with LSID: 30805[0m
+[0;33mW (254003) app_driver: GPIO 13 Off[0m
+[0;32mI (254543) chip[EM]: >>> [E:64547i S:30805 M:33972488 (Ack:189948847)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (254553) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (254563) esp_matter_client: Send command success[0m
+[0;32mI (254563) app_driver: Toggle button pressed[0m
+[0;33mW (254573) app_driver: GPIO 13 On[0m
+[0;32mI (254573) chip[EM]: <<< [E:64547i S:30805 M:189948848 (Ack:33972488)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (254593) chip[IN]: (S) Sending msg 189948848 on secure session with LSID: 30805[0m
+[0;32mI (254603) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (254603) chip[EM]: <<< [E:64548i S:30805 M:189948849] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (254623) chip[IN]: (S) Sending msg 189948849 on secure session with LSID: 30805[0m
+[0;33mW (254633) app_driver: GPIO 13 Off[0m
+[0;32mI (255043) chip[EM]: >>> [E:64547i S:30805 M:33972488 (Ack:189948847)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (255053) chip[EM]: <<< [E:64547i S:30805 M:189948850 (Ack:33972488)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (255073) chip[IN]: (S) Sending msg 189948850 on secure session with LSID: 30805[0m
+[0;32mI (255073) chip[EM]: >>> [E:64548i S:30805 M:33972489 (Ack:189948849)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (255093) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (255103) esp_matter_client: Send command success[0m
+[0;32mI (255103) chip[EM]: <<< [E:64548i S:30805 M:189948851 (Ack:33972489)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (255123) chip[IN]: (S) Sending msg 189948851 on secure session with LSID: 30805[0m
+[0;32mI (255203) app_driver: Toggle button pressed[0m
+[0;33mW (255203) app_driver: GPIO 13 On[0m
+[0;32mI (255213) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (255223) chip[EM]: <<< [E:64549i S:30805 M:189948852] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (255233) chip[IN]: (S) Sending msg 189948852 on secure session with LSID: 30805[0m
+[0;33mW (255243) app_driver: GPIO 13 Off[0m
+[0;32mI (255793) chip[IN]: (S) Sending msg 189948852 on secure session with LSID: 30805[0m
+[0;32mI (255803) chip[EM]: >>> [E:64549i S:30805 M:33972490 (Ack:189948852)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (255813) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (255823) esp_matter_client: Send command success[0m
+[0;32mI (255833) chip[EM]: <<< [E:64549i S:30805 M:189948853 (Ack:33972490)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (255843) chip[IN]: (S) Sending msg 189948853 on secure session with LSID: 30805[0m
+[0;32mI (255853) chip[EM]: >>> [E:64549i S:30805 M:33972491 (Ack:189948852)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (255863) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (256043) app_driver: Toggle button pressed[0m
+[0;33mW (256053) app_driver: GPIO 13 On[0m
+[0;32mI (256053) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (256063) chip[EM]: <<< [E:64550i S:30805 M:189948854] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (256073) chip[IN]: (S) Sending msg 189948854 on secure session with LSID: 30805[0m
+[0;33mW (256083) app_driver: GPIO 13 Off[0m
+[0;32mI (256623) chip[IN]: (S) Sending msg 189948854 on secure session with LSID: 30805[0m
+[0;32mI (256903) app_driver: Toggle button pressed[0m
+[0;33mW (256903) app_driver: GPIO 13 On[0m
+[0;32mI (256913) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (256923) chip[EM]: <<< [E:64551i S:30805 M:189948855] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (256933) chip[IN]: (S) Sending msg 189948855 on secure session with LSID: 30805[0m
+[0;33mW (256943) app_driver: GPIO 13 Off[0m
+[0;32mI (256953) chip[EM]: >>> [E:64550i S:30805 M:33972492 (Ack:189948854)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (256963) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (256963) esp_matter_client: Send command success[0m
+[0;32mI (256983) chip[EM]: <<< [E:64550i S:30805 M:189948856 (Ack:33972492)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (256993) chip[IN]: (S) Sending msg 189948856 on secure session with LSID: 30805[0m
+[0;32mI (257003) chip[EM]: >>> [E:64550i S:30805 M:33972493 (Ack:189948854)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (257013) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (257023) chip[EM]: >>> [E:48939r S:30802 M:145398376] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (257043) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 256195 and system Timestamp 256195.[0m
+[0;32mI (257043) chip[EM]: <<< [E:48939r S:30802 M:87508197 (Ack:145398376)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (257063) chip[IN]: (S) Sending msg 87508197 on secure session with LSID: 30802[0m
+[0;32mI (257083) chip[EM]: >>> [E:48939r S:30802 M:145398377 (Ack:87508197)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (257503) app_driver: Toggle button pressed[0m
+[0;33mW (257503) app_driver: GPIO 13 On[0m
+[0;32mI (257513) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (257523) chip[EM]: <<< [E:64552i S:30805 M:189948857] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (257533) chip[IN]: (S) Sending msg 189948857 on secure session with LSID: 30805[0m
+[0;33mW (257543) app_driver: GPIO 13 Off[0m
+[0;32mI (257543) chip[IN]: (S) Sending msg 189948855 on secure session with LSID: 30805[0m
+[0;32mI (257563) chip[EM]: >>> [E:64551i S:30805 M:33972494 (Ack:189948855)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (257573) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (257573) esp_matter_client: Send command success[0m
+[0;32mI (257593) chip[EM]: <<< [E:64551i S:30805 M:189948858 (Ack:33972494)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (257603) chip[IN]: (S) Sending msg 189948858 on secure session with LSID: 30805[0m
+[0;32mI (258043) chip[EM]: >>> [E:64551i S:30805 M:33972494 (Ack:189948855)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (258053) chip[EM]: <<< [E:64551i S:30805 M:189948859 (Ack:33972494)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (258073) chip[IN]: (S) Sending msg 189948859 on secure session with LSID: 30805[0m
+[0;32mI (258073) chip[EM]: >>> [E:64552i S:30805 M:33972495 (Ack:189948857)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (258093) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (258103) esp_matter_client: Send command success[0m
+[0;32mI (258103) chip[EM]: <<< [E:64552i S:30805 M:189948860 (Ack:33972495)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (258123) chip[IN]: (S) Sending msg 189948860 on secure session with LSID: 30805[0m
+[0;32mI (258133) chip[EM]: >>> [E:64551i S:30805 M:33972496 (Ack:189948855)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (258153) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (258543) chip[EM]: >>> [E:64552i S:30805 M:33972495 (Ack:189948857)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (258553) chip[EM]: <<< [E:64552i S:30805 M:189948861 (Ack:33972495)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (258573) chip[IN]: (S) Sending msg 189948861 on secure session with LSID: 30805[0m
+[0;32mI (273533) chip[EM]: >>> [E:48943r S:30802 M:145398378] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (273543) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 272694 and system Timestamp 272694.[0m
+[0;32mI (273553) chip[EM]: <<< [E:48943r S:30802 M:87508198 (Ack:145398378)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (273573) chip[IN]: (S) Sending msg 87508198 on secure session with LSID: 30802[0m
+[0;32mI (273593) chip[EM]: >>> [E:48943r S:30802 M:145398379 (Ack:87508198)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (290023) chip[EM]: >>> [E:23218r S:0 M:14444175] (U) Msg RX from 0:A3304D42613BE7F2 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)[0m
+[0;32mI (290033) chip[IN]: CASE Server received Sigma1 message . Starting handshake. EC 0x3ffc9fe8[0m
+[0;32mI (290043) chip[EM]: <<< [E:23218r S:0 M:65689271 (Ack:14444175)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (290063) chip[IN]: (U) Sending msg 65689271 to IP address 'UDP:192.168.100.10%st1:60827'[0m
+[0;32mI (290073) chip[SC]: Received Sigma1 msg[0m
+[0;32mI (290083) chip[SC]: CASE matched destination ID: fabricIndex 2, NodeID 0x0000000100000016[0m
+[0;32mI (290673) chip[EM]: <<< [E:23218r S:0 M:65689272 (Ack:14444175)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)[0m
+[0;32mI (290683) chip[IN]: (U) Sending msg 65689272 to IP address 'UDP:192.168.100.10%st1:60827'[0m
+[0;32mI (290693) chip[SC]: Sent Sigma2 msg[0m
+[0;32mI (290723) chip[EM]: >>> [E:23218r S:0 M:14444180 (Ack:65689272)] (U) Msg RX from 0:A3304D42613BE7F2 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)[0m
+[0;32mI (290733) chip[EM]: <<< [E:23218r S:0 M:65689273 (Ack:14444180)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (290743) chip[IN]: (U) Sending msg 65689273 to IP address 'UDP:192.168.100.10%st1:60827'[0m
+[0;32mI (290753) chip[SC]: Received Sigma3 msg[0m
+[0;31mE (290763) chip[SC]: The device does not support GetClock_RealTimeMS() API: 6c.  Falling back to Last Known Good UTC Time[0m
+[0;31mE (292153) chip[DL]: Long dispatch time: 1380 ms, for event type 2[0m
+[0;32mI (292203) chip[EM]: <<< [E:23218r S:0 M:65689274 (Ack:14444180)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)[0m
+[0;32mI (292213) chip[IN]: (U) Sending msg 65689274 to IP address 'UDP:192.168.100.10%st1:60827'[0m
+[0;32mI (292223) chip[SC]: SecureSession[0x3ffc8a30, LSID:30804]: State change 'kEstablishing' --> 'kActive'[0m
+[0;32mI (292223) chip[IN]: CASE Session established to peer: <0000000000010000, 2>[0m
+[0;32mI (292243) chip[EM]: >>> [E:23224r S:30804 M:185674117] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:03 (IM:SubscribeRequest)[0m
+[0;31mE (292253) chip[IM]: Subscription from [2:0000000000010000] has no access at all. Rejecting request.[0m
+[0;32mI (292263) chip[EM]: <<< [E:23224r S:30804 M:15927977 (Ack:185674117)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:01 (IM:StatusResponse)[0m
+[0;32mI (292273) chip[IN]: (S) Sending msg 15927977 on secure session with LSID: 30804[0m
+[0;32mI (292293) chip[EM]: >>> [E:23218r S:0 M:14444184 (Ack:65689274)] (U) Msg RX from 0:A3304D42613BE7F2 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (292303) chip[EM]: >>> [E:23225r S:30804 M:185674118] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (292313) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 291464 and system Timestamp 291464.[0m
+[0;32mI (292323) chip[EM]: >>> [E:23224r S:30804 M:185674119 (Ack:15927977)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:01 (IM:StatusResponse)[0m
+[0;32mI (292343) chip[EM]: <<< [E:23224r S:30804 M:15927978 (Ack:185674119)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (292353) chip[IN]: (S) Sending msg 15927978 on secure session with LSID: 30804[0m
+[0;31mE (292363) chip[EM]: Dropping unexpected message of type 0x1 with protocolId (0, 1) and MessageCounter:185674119 on exchange 23224r[0m
+[0;32mI (292373) chip[EM]: <<< [E:23225r S:30804 M:15927979 (Ack:185674118)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (292383) chip[IN]: (S) Sending msg 15927979 on secure session with LSID: 30804[0m
+[0;32mI (292413) chip[EM]: >>> [E:23225r S:30804 M:185674120 (Ack:15927979)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (294963) app_driver: Toggle button pressed[0m
+[0;33mW (294973) app_driver: GPIO 13 On[0m
+[0;32mI (294973) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (294983) chip[EM]: <<< [E:64553i S:30805 M:189948862] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (294993) chip[IN]: (S) Sending msg 189948862 on secure session with LSID: 30805[0m
+[0;33mW (295003) app_driver: GPIO 13 Off[0m
+[0;32mI (295523) chip[EM]: >>> [E:64553i S:30805 M:33972497 (Ack:189948862)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (295533) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (295543) esp_matter_client: Send command success[0m
+[0;32mI (295553) chip[EM]: <<< [E:64553i S:30805 M:189948863 (Ack:33972497)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (295563) chip[IN]: (S) Sending msg 189948863 on secure session with LSID: 30805[0m
+[0;32mI (296023) chip[EM]: >>> [E:64553i S:30805 M:33972497 (Ack:189948862)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (296033) chip[EM]: <<< [E:64553i S:30805 M:189948864 (Ack:33972497)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (296043) chip[IN]: (S) Sending msg 189948864 on secure session with LSID: 30805[0m
+[0;32mI (296803) app_driver: Toggle button pressed[0m
+[0;33mW (296803) app_driver: GPIO 13 On[0m
+[0;32mI (296813) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (296823) chip[EM]: <<< [E:64554i S:30805 M:189948865] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (296833) chip[IN]: (S) Sending msg 189948865 on secure session with LSID: 30805[0m
+[0;33mW (296843) app_driver: GPIO 13 Off[0m
+[0;32mI (297443) chip[IN]: (S) Sending msg 189948865 on secure session with LSID: 30805[0m
+[0;32mI (297453) chip[EM]: >>> [E:64554i S:30805 M:33972498 (Ack:189948865)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (297473) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (297473) esp_matter_client: Send command success[0m
+[0;32mI (297483) chip[EM]: <<< [E:64554i S:30805 M:189948866 (Ack:33972498)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (297493) chip[IN]: (S) Sending msg 189948866 on secure session with LSID: 30805[0m
+[0;32mI (298013) chip[EM]: >>> [E:64554i S:30805 M:33972499 (Ack:189948865)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (298033) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (304513) chip[EM]: >>> [E:23231r S:30804 M:185674121] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (304523) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 303674 and system Timestamp 303674.[0m
+[0;32mI (304533) chip[EM]: <<< [E:23231r S:30804 M:15927980 (Ack:185674121)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (304553) chip[IN]: (S) Sending msg 15927980 on secure session with LSID: 30804[0m
+[0;32mI (304563) chip[EM]: >>> [E:23231r S:30804 M:185674122 (Ack:15927980)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (321003) chip[EM]: >>> [E:23236r S:30804 M:185674123] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (321003) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 320163 and system Timestamp 320163.[0m
+[0;32mI (321023) chip[EM]: <<< [E:23236r S:30804 M:15927981 (Ack:185674123)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (321043) chip[IN]: (S) Sending msg 15927981 on secure session with LSID: 30804[0m
+[0;32mI (321053) chip[EM]: >>> [E:23236r S:30804 M:185674124 (Ack:15927981)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (337503) chip[EM]: >>> [E:23239r S:30804 M:185674125] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0001:02 (IM:ReadRequest)[0m
+[0;32mI (337503) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 336659 and system Timestamp 336659.[0m
+[0;32mI (337523) chip[EM]: <<< [E:23239r S:30804 M:15927982 (Ack:185674125)] (S) Msg TX to 2:0000000000010000 [88D1] --- Type 0001:05 (IM:ReportData)[0m
+[0;32mI (337533) chip[IN]: (S) Sending msg 15927982 on secure session with LSID: 30804[0m
+[0;32mI (337573) chip[EM]: >>> [E:23239r S:30804 M:185674126 (Ack:15927982)] (S) Msg RX from 2:0000000000010000 [88D1] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (363463) app_driver: Toggle button pressed[0m
+[0;33mW (363473) app_driver: GPIO 13 On[0m
+[0;32mI (363473) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (363483) chip[EM]: <<< [E:64555i S:30805 M:189948867] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (363493) chip[IN]: (S) Sending msg 189948867 on secure session with LSID: 30805[0m
+[0;33mW (363503) app_driver: GPIO 13 Off[0m
+[0;32mI (364403) chip[IN]: (S) Sending msg 189948867 on secure session with LSID: 30805[0m
+[0;32mI (364413) chip[EM]: >>> [E:64555i S:30805 M:33972500 (Ack:189948867)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (364423) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (364433) esp_matter_client: Send command success[0m
+[0;32mI (364443) chip[EM]: <<< [E:64555i S:30805 M:189948868 (Ack:33972500)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (364453) chip[IN]: (S) Sending msg 189948868 on secure session with LSID: 30805[0m
+[0;32mI (364983) chip[EM]: >>> [E:64555i S:30805 M:33972501 (Ack:189948867)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (364993) chip[EM]: OnMessageReceived failed, err = 70[0m
+[0;32mI (373263) app_driver: Toggle button pressed[0m
+[0;33mW (373273) app_driver: GPIO 13 On[0m
+[0;32mI (373273) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (373283) chip[EM]: <<< [E:64556i S:30805 M:189948869] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (373293) chip[IN]: (S) Sending msg 189948869 on secure session with LSID: 30805[0m
+[0;33mW (373303) app_driver: GPIO 13 Off[0m
+[0;32mI (373973) chip[EM]: >>> [E:64556i S:30805 M:33972502 (Ack:189948869)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (373993) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (373993) esp_matter_client: Send command success[0m
+[0;32mI (374003) chip[EM]: <<< [E:64556i S:30805 M:189948870 (Ack:33972502)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (374013) chip[IN]: (S) Sending msg 189948870 on secure session with LSID: 30805[0m
+[0;32mI (374143) app_driver: Toggle button pressed[0m
+[0;33mW (374143) app_driver: GPIO 13 On[0m
+[0;32mI (374153) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (374163) chip[EM]: <<< [E:64557i S:30805 M:189948871] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (374173) chip[IN]: (S) Sending msg 189948871 on secure session with LSID: 30805[0m
+[0;33mW (374183) app_driver: GPIO 13 Off[0m
+[0;32mI (374473) chip[EM]: >>> [E:64556i S:30805 M:33972502 (Ack:189948869)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (374493) chip[EM]: <<< [E:64556i S:30805 M:189948872 (Ack:33972502)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (374503) chip[IN]: (S) Sending msg 189948872 on secure session with LSID: 30805[0m
+[0;32mI (374513) chip[EM]: >>> [E:64557i S:30805 M:33972503 (Ack:189948871)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (374523) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (374533) esp_matter_client: Send command success[0m
+[0;32mI (374543) chip[EM]: <<< [E:64557i S:30805 M:189948873 (Ack:33972503)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (374553) chip[IN]: (S) Sending msg 189948873 on secure session with LSID: 30805[0m
+[0;32mI (375183) app_driver: Toggle button pressed[0m
+[0;33mW (375183) app_driver: GPIO 13 On[0m
+[0;32mI (375193) chip[DIS]: Found an existing secure session to [1:0000000000000075]![0m
+[0;32mI (375203) chip[EM]: <<< [E:64558i S:30805 M:189948874] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0001:08 (IM:InvokeCommandRequest)[0m
+[0;32mI (375213) chip[IN]: (S) Sending msg 189948874 on secure session with LSID: 30805[0m
+[0;33mW (375223) app_driver: GPIO 13 Off[0m
+[0;32mI (375823) chip[IN]: (S) Sending msg 189948874 on secure session with LSID: 30805[0m
+[0;32mI (375833) chip[EM]: >>> [E:64558i S:30805 M:33972504 (Ack:189948874)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0001:09 (IM:InvokeCommandResponse)[0m
+[0;32mI (375853) chip[DMG]: Received Command Response Status for Endpoint=3 Cluster=0x0000_0006 Command=0x0000_0002 Status=0x0[0m
+[0;32mI (375853) esp_matter_client: Send command success[0m
+[0;32mI (375863) chip[EM]: <<< [E:64558i S:30805 M:189948875 (Ack:33972504)] (S) Msg TX to 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;32mI (375883) chip[IN]: (S) Sending msg 189948875 on secure session with LSID: 30805[0m
+[0;32mI (376473) chip[EM]: >>> [E:64558i S:30805 M:33972505 (Ack:189948874)] (S) Msg RX from 1:0000000000000075 [7060] --- Type 0000:10 (SecureChannel:StandaloneAck)[0m
+[0;31mE (376483) chip[EM]: OnMessageReceived failed, err = 70[0m

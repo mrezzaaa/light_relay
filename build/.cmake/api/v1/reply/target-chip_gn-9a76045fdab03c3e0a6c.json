@@ -1,0 +1,148 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"externalproject_add",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"/Users/icewalker/.espressif/tools/cmake/3.24.0/CMake.app/Contents/share/cmake-3.24/Modules/ExternalProject.cmake",
+			"/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 322,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3967,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 4157,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "args_gn::@35bd1345f7a2604aaab7"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "ExternalProjectTargets/chip_gn"
+	},
+	"id" : "chip_gn::@35bd1345f7a2604aaab7",
+	"name" : "chip_gn",
+	"paths" : 
+	{
+		"build" : "esp-idf/chip",
+		"source" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/CMakeFiles/chip_gn",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/CMakeFiles/chip_gn.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/CMakeFiles/chip_gn-complete.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-build.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-configure.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-download.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-install.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-mkdir.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-patch.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-update.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

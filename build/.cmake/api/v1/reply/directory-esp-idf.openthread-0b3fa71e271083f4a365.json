@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/openthread",
+		"source" : "/Users/icewalker/esp-idf/esp-idf/components/openthread"
+	}
+}

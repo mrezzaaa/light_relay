@@ -1,0 +1,11 @@
+[
+  "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/=out/",
+  "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip=",
+  "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/=",
+  "../../../../../connectedhomeip/connectedhomeip/config/esp32/=",
+  "=out/",
+  "../../../../../connectedhomeip/connectedhomeip/config/esp32/=",
+  "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/=",
+  "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip=",
+  "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/=out/"
+]

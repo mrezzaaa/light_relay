@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/iot_button",
+		"source" : "/Users/icewalker/esp-idf/esp-matter/device_hal/button_driver/iot_button"
+	}
+}

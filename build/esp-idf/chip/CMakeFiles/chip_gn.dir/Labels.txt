@@ -1,0 +1,13 @@
+# Target labels
+ chip_gn
+# Source files and their labels
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/CMakeFiles/chip_gn
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/CMakeFiles/chip_gn.rule
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/CMakeFiles/chip_gn-complete.rule
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-build.rule
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-configure.rule
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-download.rule
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-install.rule
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-mkdir.rule
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-patch.rule
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/chip_gn-prefix/src/chip_gn-stamp/chip_gn-update.rule

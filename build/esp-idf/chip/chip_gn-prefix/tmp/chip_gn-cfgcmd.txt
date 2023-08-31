@@ -1,0 +1,1 @@
+cmd='/usr/local/bin/gn;--root=/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32;gen;--check;--fail-on-unused-args;/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip'

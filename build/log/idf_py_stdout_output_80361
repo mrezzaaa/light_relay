@@ -1,0 +1,327 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 30 2023 21:06:46[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 esp_secure_cert  unknown          3f 06 0000d000 00002000[0m
+[0;32mI (77) boot:  1 nvs              WiFi data        01 02 00010000 0000c000[0m
+[0;32mI (84) boot:  2 nvs_keys         NVS keys         01 04 0001c000 00001000[0m
+[0;32mI (92) boot:  3 otadata          OTA data         01 00 0001d000 00002000[0m
+[0;32mI (99) boot:  4 phy_init         RF data          01 01 0001f000 00001000[0m
+[0;32mI (106) boot:  5 ota_0            OTA app          00 10 00020000 001e0000[0m
+[0;32mI (114) boot:  6 ota_1            OTA app          00 11 00200000 001e0000[0m
+[0;32mI (122) boot:  7 fctry            WiFi data        01 02 003e0000 00006000[0m
+[0;32mI (129) boot: End of partition table[0m
+[0;32mI (133) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=392a8h (234152) map[0m
+[0;32mI (190) esp_image: segment 1: paddr=000592d0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (190) esp_image: segment 2: paddr=000592dc vaddr=3ffbdb60 size=056f4h ( 22260) load[0m
+[0;32mI (201) esp_image: segment 3: paddr=0005e9d8 vaddr=40080000 size=01640h (  5696) load[0m
+[0;32mI (206) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=fcdfch (1035772) map[0m
+[0;32mI (426) esp_image: segment 5: paddr=0015ce24 vaddr=40081640 size=1d858h (120920) load[0m
+[0;32mI (474) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (474) boot: Disabling RNG early entropy source...[0m
+[0;32mI (485) cpu_start: Multicore app[0m
+[0;32mI (486) cpu_start: Pro cpu up.[0m
+[0;32mI (486) cpu_start: Starting app cpu, entry point is 0x400814a4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (506) cpu_start: Pro cpu start user code[0m
+[0;32mI (506) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (506) cpu_start: Application information:[0m
+[0;32mI (510) cpu_start: Project name:     light_relay[0m
+[0;32mI (516) cpu_start: App version:      1.0[0m
+[0;32mI (520) cpu_start: Compile time:     Aug 30 2023 21:06:40[0m
+[0;32mI (526) cpu_start: ELF file SHA256:  33bc50b1a4972beb...[0m
+[0;32mI (532) cpu_start: ESP-IDF:          v5.1.1[0m
+[0;32mI (537) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (542) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (547) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (552) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (559) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (565) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (571) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (577) heap_init: At 3FFD4BD8 len 0000B428 (45 KiB): DRAM[0m
+[0;32mI (583) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (590) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (596) heap_init: At 4009EE98 len 00001168 (4 KiB): IRAM[0m
+[0;32mI (604) spi_flash: detected chip: generic[0m
+[0;32mI (607) spi_flash: flash io: dio[0m
+[0;32mI (614) coexist: coex firmware version: 80b0d89[0m
+[0;32mI (617) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (621) app_start: Starting scheduler on CPU1[0m
+mI (621) main_task: Started on CPU0[0m
+[0;32mI (631) main_task: Calling app_main()[0m
+[0;32mI (771) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;33mW (771) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;33mW (781) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001F already exists. Not creating again.[0m
+[0;31mE (791) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;31mE (801) esp_matter_attribute: Could not create attribute, string length out of bound[0m
+[0;33mW (811) esp_matter_core: Attribute 0x00000000 on cluster 0x00000030 already exists. Not creating again.[0m
+[0;33mW (821) app_main: Creating button 0 with GPIO 13[0m
+[0;32mI (821) led_driver_gpio: Initializing light driver[0m
+[0;33mW (831) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (841) app_main: Light created with endpoint_id 1[0m
+[0;33mW (841) app_main: Creating button 1 with GPIO 14[0m
+[0;32mI (851) led_driver_gpio: Initializing light driver[0m
+[0;33mW (851) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (871) app_main: Light created with endpoint_id 2[0m
+[0;33mW (871) app_main: Creating button 2 with GPIO 27[0m
+[0;32mI (871) led_driver_gpio: Initializing light driver[0m
+[0;33mW (881) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (891) app_main: Light created with endpoint_id 3[0m
+[0;33mW (891) app_main: Creating button 3 with GPIO 26[0m
+[0;32mI (901) led_driver_gpio: Initializing light driver[0m
+[0;33mW (911) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (921) app_main: Light created with endpoint_id 4[0m
+[0;33mW (921) app_main: Creating button 4 with GPIO 25[0m
+[0;32mI (931) led_driver_gpio: Initializing light driver[0m
+[0;33mW (931) esp_matter_core: Attribute 0x0000FFFD on cluster 0x0000001D already exists. Not creating again.[0m
+[0;32mI (951) app_main: Light created with endpoint_id 5[0m
+I (961) wifi:wifi driver task: 3ffdea90, prio:23, stack:6656, core=0
+I (991) wifi:wifi firmware version: ce9244d
+I (991) wifi:wifi certification version: v7.0
+I (991) wifi:config NVS flash: enabled
+I (991) wifi:config nano formating: disabled
+I (991) wifi:Init data frame dynamic rx buffer num: 32
+I (1001) wifi:Init management frame dynamic rx buffer num: 32
+I (1011) wifi:Init management short buffer num: 32
+I (1011) wifi:Init dynamic tx buffer num: 32
+I (1011) wifi:Init static rx buffer size: 1600
+I (1021) wifi:Init static rx buffer num: 10
+I (1021) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1031) wifi_init: rx ba win: 6[0m
+[0;32mI (1031) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1031) wifi_init: udp mbox: 6[0m
+[0;32mI (1041) wifi_init: tcp mbox: 6[0m
+[0;32mI (1041) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1051) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1051) wifi_init: tcp mss: 1440[0m
+[0;32mI (1051) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1061) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1101) chip[DL]: NVS set: chip-counters/reboot-count = 3 (0x3)[0m
+[0;32mI (1121) CHIP[DL]: WiFi station already provisioned, not initializing BLE[0m
+[0;32mI (1121) chip[DL]: Real time clock set to 946684800 (0100/00/01 00:00:00 UTC)[0m
+[0;32mI (1121) chip[DL]: Starting ESP WiFi layer[0m
+[0;32mI (1131) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07[0m
+I (1231) wifi:mode : sta (cc:db:a7:16:d5:d4)
+I (1241) wifi:enable tsf
+W (1241) wifi:Haven't to connect to a suitable AP now!
+[0;32mI (1241) chip[DL]: Attempting to connect WiFi station interface[0m
+[0;32mI (1241) chip[DL]: WiFi station state change: NotConnected -> Connecting[0m
+[0;32mI (1251) chip[DL]: Done driving station state, nothing else to do...[0m
+I (1251) wifi:[0;32mI (1261) chip[SVR]: new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1Initializing subscription resumption storage...
+[0m
+I (1271) wifi:state: init -> auth (b0)
+[0;32mI (1271) chip[SVR]: Server initializing...[0m
+I (1281) wifi:state: auth -> assoc (0)
+[0;32mI (1281) chip[TS]: Last Known Good Time: 2023-08-30T21:07:42[0m
+I (1291) wifi:state: assoc -> run (10)
+[0;32mI (1301) chip[FP]: Fabric index 0x2 was retrieved from storage. Compressed FabricId 0x5070A2F460AE7060, FabricId 0x0000000000000001, NodeId 0x0000000000000075, VendorId 0xFFF1[0m
+I (1301) wifi:<ba-add>idx:0 (ifx:0, 0c:41:e9:80:c6:40), tid:0, ssn:0, winSize:64
+[0;32mI (1321) chip[FP]: Fabric index 0x3 was retrieved from storage. Compressed FabricId 0x906D89248D0488D1, FabricId 0x00000000004A4B6C, NodeId 0x0000000100000014, VendorId 0x125D[0m
+I (1331) wifi:connected with ReadysNetwork, aid = 6, channel 6, BW20, bssid = 0c:41:e9:80:c6:40
+[0;32mI (1341) chip[FP]: I (1341) wifi:Fabric index 0x4 was retrieved from storage. Compressed FabricId 0x2A893D1B8C8F99AB, FabricId 0x0000000000000001, NodeId 0x0000000000000047, VendorId 0xFFF1[0m
+security: WPA2-PSK, phy: bgn, rssi: -45
+[0;32mI (1361) chip[DMG]: AccessControl: initializing[0m
+[0;32mI (1371) chip[DMG]: Examples::AccessControlDelegate::Init[0m
+[0;32mI (1371) chip[DMG]: AccessControl: setting[0m
+[0;32mI (1381) chip[DMG]: DefaultAclStorage: initializing[0m
+I (1391) wifi:pm start, type: 1
+
+[0;32mI (1391) chip[DMG]: DefaultAclStorage: 3 entries loaded[0m
+[0;32mI (1421) chip[ZCL]: Using ZAP configuration...[0m
+[0;32mI (1421) esp_matter_cluster: Cluster plugin init common callback[0m
+[0;32mI (1421) chip[DMG]: AccessControlCluster: initializing[0m
+[0;32mI (1431) chip[ZCL]: 0x3f407ea8ep 0 clus 0x0000_0030 attr 0x0000_0000 not supported[0m
+[0;32mI (1431) chip[ZCL]: Initiating Admin Commissioning cluster.[0m
+[0;31mE (1441) chip[ZCL]: Duplicate attribute override registration failed[0m
+[0;31mE (1451) chip[ZCL]: Duplicate attribute override registration failed[0m
+[0;31mE (1451) chip[ZCL]: ScenesServer::Instance().Init() error: 3[0m
+[0;31mE (1461) chip[ZCL]: Duplicate attribute override registration failed[0m
+[0;31mE (1471) chip[ZCL]: ScenesServer::Instance().Init() error: 3[0m
+[0;31mE (1471) chip[ZCL]: Duplicate attribute override registration failed[0m
+[0;31mE (1481) chip[ZCL]: ScenesServer::Instance().Init() error: 3[0m
+[0;31mE (1491) chip[ZCL]: Duplicate attribute override registration failed[0m
+[0;31mE (1491) chip[ZCL]: ScenesServer::Instance().Init() error: 3[0m
+[0;32mI (1501) chip[SVR]: Fabric already commissioned. Disabling BLE advertisement[0m
+[0;32mI (1511) chip[IN]: CASE Server enabling CASE session setups[0m
+[0;32mI (1521) chip[SVR]: Joining Multicast groups[0m
+[0;32mI (1521) chip[SVR]: Server Listening...[0m
+[0;32mI (1531) esp_matter_core: Dynamic endpoint 0 added[0m
+[0;32mI (1531) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;33mW (1541) app_driver: Changed on endpoint 1 cluster 3 attribute 1 value 0[0m
+[0;32mI (1551) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x00000000 is 128 **********[0m
+[0;33mW (1561) app_driver: Changed on endpoint 1 cluster 4 attribute 0 value -128[0m
+[0;32mI (1571) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000004's Attribute 0x0000FFFC is <invalid type: 0> **********[0m
+[0;33mW (1581) app_driver: Changed on endpoint 1 cluster 4 attribute 65532 value 0[0m
+[0;32mI (1591) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********[0m
+[0;32mI (1601) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00004003 is 0 **********[0m
+[0;32mI (1611) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 1 **********[0m
+[0;32mI (1621) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 1 **********[0m
+[0;32mI (1631) chip[ZCL]: Toggle ep1 on/off from state 1 to 0[0m
+[0;32mI (1641) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;33mW (1651) app_driver: Changed on endpoint 1 cluster 6 attribute 0 value 0[0m
+[0;33mW (1661) app_driver: Changing value 1 -> 0[0m
+I (1681) wifi:AP's beacon interval = 499712 us, DTIM period = 1
+[0;32mI (1681) esp_matter_attribute: ********** R : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********[0m
+[0;32mI (1681) chip[ZCL]: Off completed. reset OnTime to  0[0m
+[0;32mI (1691) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000006's Attribute 0x00004001 is 0 **********[0m
+[0;33mW (1701) app_driver: Changed on endpoint 1 cluster 6 attribute 16385 value 0[0m
+[0;32mI (1711) esp_matter_attribute: ********** W : Endpoint 0x0001's Cluster 0x00000005's Attribute 0x00000003 is 0 **********[0m
+[0;33mW (1721) app_driver: Changed on endpoint 1 cluster 5 attribute 3 value 0[0m
+[0;32mI (1731) esp_matter_core: Dynamic endpoint 1 added[0m
+[0;32mI (1731) esp_matter_attribute: ********** W : Endpoint 0x0002's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;33mW (1751) app_driver: Changed on endpoint 2 cluster 3 attribute 1 value 0[0m
+[0;32mI (1751) esp_matter_attribute: ********** W : Endpoint 0x0002's Cluster 0x00000004's Attribute 0x00000000 is 128 **********[0m
+[0;33mW (1761) app_driver: Changed on endpoint 2 cluster 4 attribute 0 value -128[0m
+[0;32mI (1771) esp_matter_attribute: ********** W : Endpoint 0x0002's Cluster 0x00000004's Attribute 0x0000FFFC is <invalid type: 0> **********[0m
+[0;33mW (1781) app_driver: Changed on endpoint 2 cluster 4 attribute 65532 value 0[0m
+[0;32mI (1791) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********[0m
+[0;32mI (1801) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x00004003 is 0 **********[0m
+[0;32mI (1821) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x00000000 is 1 **********[0m
+[0;32mI (1831) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x00000000 is 1 **********[0m
+[0;32mI (1841) chip[ZCL]: Toggle ep2 on/off from state 1 to 0[0m
+[0;32mI (1851) esp_matter_attribute: ********** W : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;33mW (1861) app_driver: Changed on endpoint 2 cluster 6 attribute 0 value 0[0m
+[0;33mW (1861) app_driver: Changing value 2 -> 0[0m
+[0;32mI (1881) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********[0m
+[0;32mI (1881) chip[ZCL]: Off completed. reset OnTime to  0[0m
+[0;32mI (1891) esp_matter_attribute: ********** W : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x00004001 is 0 **********[0m
+[0;33mW (1901) app_driver: Changed on endpoint 2 cluster 6 attribute 16385 value 0[0m
+[0;32mI (1911) esp_matter_attribute: ********** W : Endpoint 0x0002's Cluster 0x00000005's Attribute 0x00000003 is 0 **********[0m
+[0;33mW (1921) app_driver: Changed on endpoint 2 cluster 5 attribute 3 value 0[0m
+[0;32mI (1921) esp_matter_core: Dynamic endpoint 2 added[0m
+[0;32mI (1931) esp_matter_attribute: ********** W : Endpoint 0x0003's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;33mW (1941) app_driver: Changed on endpoint 3 cluster 3 attribute 1 value 0[0m
+[0;32mI (1951) esp_matter_attribute: ********** W : Endpoint 0x0003's Cluster 0x00000004's Attribute 0x00000000 is 128 **********[0m
+[0;33mW (1961) app_driver: Changed on endpoint 3 cluster 4 attribute 0 value -128[0m
+[0;32mI (1971) esp_matter_attribute: ********** W : Endpoint 0x0003's Cluster 0x00000004's Attribute 0x0000FFFC is <invalid type: 0> **********[0m
+[0;33mW (1981) app_driver: Changed on endpoint 3 cluster 4 attribute 65532 value 0[0m
+[0;32mI (1991) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********[0m
+[0;32mI (2001) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000006's Attribute 0x00004003 is 0 **********[0m
+[0;32mI (2011) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (2021) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (2041) chip[ZCL]: Endpoint 3 On/off already set to new value[0m
+[0;32mI (2041) esp_matter_core: Dynamic endpoint 3 added[0m
+[0;32mI (2051) esp_matter_attribute: ********** W : Endpoint 0x0004's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;33mW (2061) app_driver: Changed on endpoint 4 cluster 3 attribute 1 value 0[0m
+[0;32mI (2071) esp_matter_attribute: ********** W : Endpoint 0x0004's Cluster 0x00000004's Attribute 0x00000000 is 128 **********[0m
+[0;33mW (2081) app_driver: Changed on endpoint 4 cluster 4 attribute 0 value -128[0m
+[0;32mI (2091) esp_matter_attribute: ********** W : Endpoint 0x0004's Cluster 0x00000004's Attribute 0x0000FFFC is <invalid type: 0> **********[0m
+[0;33mW (2101) app_driver: Changed on endpoint 4 cluster 4 attribute 65532 value 0[0m
+[0;32mI (2111) esp_matter_attribute: ********** R : Endpoint 0x0004's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********[0m
+[0;32mI (2121) esp_matter_attribute: ********** R : Endpoint 0x0004's Cluster 0x00000006's Attribute 0x00004003 is 0 **********[0m
+[0;32mI (2131) esp_matter_attribute: ********** R : Endpoint 0x0004's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (2141) esp_matter_attribute: ********** R : Endpoint 0x0004's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (2151) chip[ZCL]: Endpoint 4 On/off already set to new value[0m
+[0;32mI (2161) esp_matter_core: Dynamic endpoint 4 added[0m
+[0;32mI (2171) esp_matter_attribute: ********** W : Endpoint 0x0005's Cluster 0x00000003's Attribute 0x00000001 is 0 **********[0m
+[0;33mW (2181) app_driver: Changed on endpoint 5 cluster 3 attribute 1 value 0[0m
+[0;32mI (2181) esp_matter_attribute: ********** W : Endpoint 0x0005's Cluster 0x00000004's Attribute 0x00000000 is 128 **********[0m
+[0;33mW (2201) app_driver: Changed on endpoint 5 cluster 4 attribute 0 value -128[0m
+[0;32mI (2201) esp_matter_attribute: ********** W : Endpoint 0x0005's Cluster 0x00000004's Attribute 0x0000FFFC is <invalid type: 0> **********[0m
+[0;33mW (2221) app_driver: Changed on endpoint 5 cluster 4 attribute 65532 value 0[0m
+[0;32mI (2221) esp_matter_attribute: ********** R : Endpoint 0x0005's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********[0m
+[0;32mI (2241) esp_matter_attribute: ********** R : Endpoint 0x0005's Cluster 0x00000006's Attribute 0x00004003 is 0 **********[0m
+[0;32mI (2251) esp_matter_attribute: ********** R : Endpoint 0x0005's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (2261) esp_matter_attribute: ********** R : Endpoint 0x0005's Cluster 0x00000006's Attribute 0x00000000 is 0 **********[0m
+[0;32mI (2271) chip[ZCL]: Endpoint 5 On/off already set to new value[0m
+[0;32mI (2281) esp_matter_core: Dynamic endpoint 5 added[0m
+[0;31mE (2291) chip[DL]: Long dispatch time: 1031 ms, for event type 2[0m
+[0;32mI (2291) chip[DL]: WIFI_EVENT_STA_START[0m
+[0;32mI (2301) chip[DL]: Done driving station state, nothing else to do...[0m
+[0;32mI (2301) chip[DL]: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (2311) chip[DL]: WiFi station state change: Connecting -> Connecting_Succeeded[0m
+[0;32mI (2321) chip[DL]: WiFi station state change: Connecting_Succeeded -> Connected[0m
+[0;32mI (2321) chip[DL]: WiFi station interface connected[0m
+[0;32mI (2331) chip[ZCL]: WiFiDiagnosticsDelegate: OnConnectionStatusChanged[0ing data[0m
+[5n[6n [0;32mI (2391) main_task: Returned from app_main()[0m
+[999C [6n [297D[6n [0;32m> [0m[6n [0;32mI (3951) chip[DL]: IP_EVENT_GOT_IP6[0m
+[0;32mI (3951) chip[DL]: IPv6 addr available. Ready on WIFI_STA_DEF interface: fe80:0000:0000:0000:cedb:a7ff:fe16:d5d4[0m
+[0;32mI (3961) app_main: Interface IP Address changed[0m
+[0;32mI (3961) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (3971) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (3981) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000075[0m
+[0;32mI (3981) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000075.[0m
+[0;32mI (4001) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4001) chip[DIS]: Advertise operational node 906D89248D0488D1-0000000100000014[0m
+[0;32mI (4021) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 906D89248D0488D1-0000000100000014.[0m
+[0;32mI (4021) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4021) chip[DIS]: Advertise operational node 2A893D1B8C8F99AB-0000000000000047[0m
+[0;32mI (4041) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 2A893D1B8C8F99AB-0000000000000047.[0m
+[0;32mI (4051) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4061) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (4061) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (4081) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000075[0m
+[0;32mI (4081) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000075.[0m
+[0;32mI (4101) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4101) chip[DIS]: Advertise operational node 906D89248D0488D1-0000000100000014[0m
+[0;32mI (4111) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 906D89248D0488D1-0000000100000014.[0m
+[0;32mI (4121) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4121) chip[DIS]: Advertise operational node 2A893D1B8C8F99AB-0000000000000047[0m
+[0;32mI (4141) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 2A893D1B8C8F99AB-0000000000000047.[0m
+[0;32mI (4151) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4161) chip[SVR]: Server initialization complete[0m
+[0;32mI (4171) chip[IM]: Resuming 2 subscriptions in 0 seconds[0m
+[0;32mI (4171) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 3575 and system Timestamp 3575.[0m
+[0;32mI (4191) chip[IM]: Resuming subscriptionId 733672501[0m
+[0;32mI (4191) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 3596 and system Timestamp 3596.[0m
+[0;32mI (4201) chip[IM]: Resuming subscriptionId 1340633406[0m
+[0;32mI (4391) esp_netif_handlers: sta ip: 192.168.100.14, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (4391) chip[DL]: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (4391) chip[DL]: IPv4 address changed on WiFi station interface: 192.168.100.14/255.255.255.0 gateway 192.168.100.1[0m
+[0;32mI (4401) chip[DL]: IPv4 Internet connectivity ESTABLISHED[0m
+[0;32mI (4421) app_main: Interface IP Address changed[0m
+[0;32mI (4421) chip[DIS]: Updating services using commissioning mode 0[0m
+[0;32mI (4431) chip[DIS]: CHIP minimal mDNS started advertising.[0m
+[0;32mI (4451) chip[DIS]: Advertise operational node 5070A2F460AE7060-0000000000000075[0m
+[0;32mI (4451) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 5070A2F460AE7060-0000000000000075.[0m
+[0;32mI (4471) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4471) chip[DIS]: Advertise operational node 906D89248D0488D1-0000000100000014[0m
+[0;32mI (4481) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 906D89248D0488D1-0000000100000014.[0m
+[0;32mI (4501) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4501) chip[DIS]: Advertise operational node 2A893D1B8C8F99AB-0000000000000047[0m
+[0;32mI (4511) chip[DIS]: CHIP minimal mDNS configured as 'Operational device'; instance name: 2A893D1B8C8F99AB-0000000000000047.[0m
+[0;32mI (4521) chip[DIS]: mDNS service published: _matter._tcp[0m
+[0;32mI (4531) chip[DIS]: Checking node lookup status after 338 ms[0m
+[0;31mE (35191) chip[DIS]: Timeout waiting for mDNS resolution.[0m
+[0;32mI (49191) chip[DIS]: Checking node lookup status after 45000 ms[0m
+[0;31mE (49191) chip[DIS]: OperationalSessionSetup[3:0000000000010000]: operational discovery failed: 32[0m
+[0;31mE (49201) chip[DMG]: Failed to establish CASE for subscription-resumption with error '32'[0m
+[0;31mE (49221) chip[DMG]: Failed to establish CASE for subscription-resumption with error '32'[0m
+[0;32mI (349221) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 348622 and system Timestamp 348622.[0m
+[0;32mI (349221) chip[IM]: Resuming subscriptionId 733672501[0m
+[0;32mI (349241) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 348644 and system Timestamp 348644.[0m
+[0;32mI (349241) chip[IM]: Resuming subscriptionId 1340633406[0m
+[0;32mI (349431) chip[DIS]: Checking node lookup status after 200 ms[0m
+[0;31mE (380231) chip[DIS]: Timeout waiting for mDNS resolution.[0m
+[0;32mI (394231) chip[DIS]: Checking node lookup status after 45000 ms[0m
+[0;31mE (394241) chip[DIS]: OperationalSessionSetup[3:0000000000010000]: operational discovery failed: 32[0m
+[0;31mE (394251) chip[DMG]: Failed to establish CASE for subscription-resumption with error '32'[0m
+[0;31mE (394261) chip[DMG]: Failed to establish CASE for subscription-resumption with error '32'[0m
+[0;32mI (994261) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 993668 and system Timestamp 993668.[0m
+[0;32mI (994271) chip[IM]: Resuming subscriptionId 733672501[0m
+[0;32mI (994291) chip[DMG]: Registered a ReadHandler that will schedule a report between system Timestamp: 993690 and system Timestamp 993690.[0m
+[0;32mI (994291) chip[IM]: Resuming subscriptionId 1340633406[0m
+[0;32mI (994481) chip[DIS]: Checking node lookup status after 200 ms[0m
+[0;31mE (1025281) chip[DIS]: Timeout waiting for mDNS resolution.[0m
+[0;32mI (1039281) chip[DIS]: Checking node lookup status after 45000 ms[0m
+[0;31mE (1039281) chip[DIS]: OperationalSessionSetup[3:0000000000010000]: operational discovery failed: 32[0m
+[0;31mE (1039291) chip[DMG]: Failed to establish CASE for subscription-resumption with error '32'[0m
+[0;31mE (1039311) chip[DMG]: Failed to establish CASE for subscription-resumption with error '32'[0m

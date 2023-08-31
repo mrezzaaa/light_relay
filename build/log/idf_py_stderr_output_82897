@@ -1,0 +1,1541 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-0001 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400814a4: call_start_cpu1 at /Users/icewalker/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d7a7f: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:169
+[0m
+[0;33m0x400d7a7c: app_driver_light_init(light_gpio*) at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_driver.cpp:167
+[0m
+[0;33m0x400d76ea: _ZL13create_buttonP10light_gpioPj$isra$0 at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:147
+[0m
+[0;33m0x400d7841: app_main at /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:225
+[0m
+[0;33m0x401cb34f: main_task at /Users/icewalker/esp-idf/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40094e35: vPortTaskWrapper at /Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

@@ -1,0 +1,29 @@
+[1/12] Performing build step for 'chip_gn'
+ninja: no work to do.
+[2/10] Performing build step for 'bootloader'
+[1/1] cd /Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/bootloader/esp-idf/esptool_py && /Users/icewalker/esp-idf/components/esptool_py/esptool/python_env/idf5.1_py3.9_env/bin/python /Users/icewalker/esp-idf/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 bootloader 0x1000 /Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/bootloader/bootloader.bin
+Bootloader binary size 0x67f0 bytes. 0x4810 bytes (41%) free.
+[3/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.cpp.obj
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp: In function 'esp_err_t create_button(light_gpio*, esp_matter::node_t*)':
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:187:16: warning: unused variable 'fl_cluster' [-Wunused-variable]
+  187 |     cluster_t *fl_cluster = cluster::fixed_label::create(endpoint, &fl_config, CLUSTER_FLAG_SERVER);
+      |                ^~~~~~~~~~
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:189:16: warning: unused variable 'ul_cluster' [-Wunused-variable]
+  189 |     cluster_t *ul_cluster = cluster::user_label::create(endpoint, &ul_config, CLUSTER_FLAG_SERVER);
+      |                ^~~~~~~~~~
+/Users/icewalker/esp-idf/esp-matter/examples/light_relay/main/app_main.cpp:192:16: warning: unused variable 'cluster' [-Wunused-variable]
+  192 |     cluster_t *cluster = cluster::get(endpoint, OnOff::Id);
+      |                ^~~~~~~
+[4/8] Linking C static library esp-idf/main/libmain.a
+[5/8] Generating ld/sections.ld
+warning: default on the choice symbol SEC_CERT_DAC_PROVIDER (defined at /Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:786, /Users/icewalker/esp-idf/esp-matter/components/esp_matter/Kconfig:34) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol SEC_CERT_DAC_PROVIDER (defined at /Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:786, /Users/icewalker/esp-idf/esp-matter/components/esp_matter/Kconfig:34) is defined with a prompt outside the choice
+[6/8] Linking CXX executable light_relay.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/light_relay.bin
+[8/8] cd /Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/esptool_py && /Users/icewalker/esp-idf/components/esptool_py/esptool/python_env/idf5.1_py3.9_env/bin/python /Users/icewalker/esp-idf/esp-idf/components/partition_table/check_sizes.py --offset 0xc000 partition --type app /Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/partition_table/partition-table.bin /Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/light_relay.bin
+light_relay.bin binary size 0x15a8d0 bytes. Smallest app partition is 0x1e0000 bytes. 0x85730 bytes (28%) free.

@@ -1,0 +1,2135 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "esp-idf/esp_matter/libesp_matter.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"idf_component_register",
+			"set_property",
+			"__component_set_dependencies",
+			"__component_set_all_dependencies",
+			"add_compile_options",
+			"add_cxx_compile_options",
+			"target_compile_options",
+			"add_compile_definitions",
+			"include_directories",
+			"target_include_directories",
+			"__component_add_include_dirs"
+		],
+		"files" : 
+		[
+			"/Users/icewalker/esp-idf/esp-idf/tools/cmake/component.cmake",
+			"/Users/icewalker/esp-idf/esp-matter/components/esp_matter/CMakeLists.txt",
+			"/Users/icewalker/esp-idf/esp-idf/tools/cmake/utilities.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 479,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 513,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 354,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 339,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 339,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 464,
+				"parent" : 1
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 467,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 270,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 465,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 339,
+				"parent" : 4
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 463,
+				"parent" : 1
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 481,
+				"parent" : 1
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 315,
+				"parent" : 14
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 315,
+				"parent" : 14
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 315,
+				"parent" : 14
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 315,
+				"parent" : 14
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 315,
+				"parent" : 14
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 482,
+				"parent" : 1
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 315,
+				"parent" : 20
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 339,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 339,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 339,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 339,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 357,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 336,
+				"parent" : 26
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address  -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-enum-conversion"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmacro-prefix-map=/Users/icewalker/esp-idf/esp-matter/examples/light_relay=."
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmacro-prefix-map=/Users/icewalker/esp-idf/esp-idf=/IDF"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-jump-tables"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-tree-switch-conversion"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=uninitialized"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=maybe-uninitialized"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=array-bounds"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-format-nonliteral"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-format-security"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-std=gnu++2b"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-exceptions"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-rtti"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-std=gnu++14"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Os"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-DCHIP_HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "\"-DCHIP_ADDRESS_RESOLVE_IMPL_INCLUDE_HEADER=<lib/address_resolve/AddressResolve_DefaultImpl.h>\""
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 11,
+					"define" : "ESP_PLATFORM"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "IDF_VER=\"v5.1.1\""
+				},
+				{
+					"backtrace" : 12,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_POSIX_READER_WRITER_LOCKS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 13,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/config"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/zzz_generated/app-common"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/third_party/nlfaultinjection/repo/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/zap_common"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/freertos/esp_additions/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/freertos/esp_additions/arch/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_hw_support/include/soc/esp32"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_hw_support/port/esp32/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_hw_support/port/esp32/private_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/soc/esp32"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/hal/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/hal/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_rom/include/esp32"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_rom/esp32"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_system/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/lwip/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/lwip/port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/lwip/port/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/lwip/port/esp32xx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/lwip/port/esp32xx/include/arch"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/platform/ESP32"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/platform/OpenThread"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/lib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/examples/platform/esp32"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/third_party/nlassert/repo/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/third_party/nlio/repo/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/src/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/chip/gen/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/../.."
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/include/esp32/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/common/osi/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/common/api/include/api"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/common/btc/profile/esp/blufi/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/common/btc/profile/esp/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ans/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/bas/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/dis/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gap/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/gatt/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/hr/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/htp/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ias/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/ipss/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/lls/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/prox/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/services/tps/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/util/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/ram/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/host/store/config/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/porting/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/porting/nimble/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/port/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/transport/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/porting/npl/freertos/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/nimble/nimble/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bt/host/nimble/esp-hci/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_timer/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_wifi/wifi_apps/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_phy/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_phy/esp32/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter_console"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/nvs_flash/include"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/spi_flash/include"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_partition/include"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/app_update/include"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bootloader_support/include"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/bootloader_support/bootloader_flash/include"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_app_format/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/managed_components/espressif__esp_secure_cert_mgr/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/mbedtls/mbedtls/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/mbedtls/mbedtls/library"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/mbedtls/esp_crt_bundle/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/efuse/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/efuse/esp32/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/deprecated"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/analog_comparator/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/dac/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/gpio/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/gptimer/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/i2c/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/i2s/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/ledc/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/mcpwm/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/parlio/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/pcnt/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/rmt/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/sdio_slave/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/sdmmc/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/sigma_delta/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/spi/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/temperature_sensor/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/touch_sensor/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/twai/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/uart/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/usb_serial_jtag/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/driver/touch_sensor/esp32/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_pm/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/icewalker/esp-idf/esp-idf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "/Users/icewalker/esp-idf/esp-matter/examples/light_relay/managed_components/espressif__esp_encrypted_img/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "__idf_xtensa::@1daaaad7abe597e030f9"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_bt::@0a9ab9982b985d43ed2a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_wear_levelling::@cb21b0d7c0815cff11c6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_sdmmc::@89ed5bca1750ffbc7db6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "__idf_esp_matter_console::@e145103dc4b9100889c9"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__esp_encrypted_img::@a19bf9401ff1afa12895"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__esp_secure_cert_mgr::@2137c484516755352d0e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_chip::@35bd1345f7a2604aaab7"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__mdns::@d92204a997f34ad8e688"
+		}
+	],
+	"id" : "__idf_esp_matter::@c85aa8fc9184ca1cb72c",
+	"name" : "__idf_esp_matter",
+	"nameOnDisk" : "libesp_matter.a",
+	"paths" : 
+	{
+		"build" : "esp-idf/esp_matter",
+		"source" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_attribute.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_attribute_utils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_client.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_cluster.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_command.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_core.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_endpoint.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_event.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_feature.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_identify.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_mem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_ota.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/esp_matter_providers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/weak_functions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/private/esp_matter_nvs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/zzz_generated/app-common/app-common/zap-generated/attributes/Accessors.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/AttributeAccessInterface.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/AttributePathExpandIterator.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/BufferedReadCallback.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/CASEClient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/CASESessionManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/ChunkedWriteCallback.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/ClusterStateCache.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/CommandHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/CommandSender.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/DefaultAttributePersistenceProvider.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/DeferredAttributePersistenceProvider.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/DeviceProxy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/EventManagement.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/FailSafeContext.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/InteractionModelEngine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/OperationalSessionSetup.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/ReadClient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/ReadHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/RequiredPrivilege.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/SimpleSubscriptionResumptionStorage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/StatusResponse.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/TimedHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/TimedRequest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/WriteClient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/WriteHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/server/AclStorage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/server/CommissioningWindowManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/server/DefaultAclStorage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/server/Dnssd.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/server/EchoHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/server/OnboardingCodesUtil.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/server/Server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/DataModelHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/attribute-size-util.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/attribute-storage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/attribute-table.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/binding-table.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/ember-compatibility-functions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/error-mapping.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/generic-callback-stubs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/message.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/privilege-storage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/util/util.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/reporting/Engine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/reporting/ReportSchedulerImpl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/reporting/SynchronizedReportSchedulerImpl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/access-control-server/access-control-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/account-login-server/account-login-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/administrator-commissioning-server/administrator-commissioning-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/application-basic-server/application-basic-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/application-launcher-server/application-launcher-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/audio-output-server/audio-output-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/barrier-control-server/barrier-control-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/basic-information/basic-information.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/bindings/BindingManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/bindings/PendingNotificationMap.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/bindings/bindings.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/bridged-device-basic-information-server/bridged-device-basic-information-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/channel-server/channel-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/color-control-server/color-control-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/content-launch-server/content-launch-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/descriptor/descriptor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/diagnostic-logs-server/diagnostic-logs-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/dishwasher-alarm-server/dishwasher-alarm-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/door-lock-server/door-lock-server-callback.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/door-lock-server/door-lock-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/ethernet-network-diagnostics-server/ethernet-network-diagnostics-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/fan-control-server/fan-control-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/fault-injection-server/fault-injection-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/fixed-label-server/fixed-label-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/general-commissioning-server/general-commissioning-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/general-diagnostics-server/GenericFaultTestEventTriggerDelegate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/general-diagnostics-server/general-diagnostics-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/group-key-mgmt-server/group-key-mgmt-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/groups-server/groups-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/icd-management-server/icd-management-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/identify-server/identify-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/keypad-input-server/keypad-input-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/laundry-washer-controls-server/laundry-washer-controls-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/level-control/level-control.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/localization-configuration-server/localization-configuration-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/low-power-server/low-power-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/media-input-server/media-input-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/media-playback-server/media-playback-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/mode-base-server/mode-base-cluster-objects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/mode-base-server/mode-base-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/mode-select-server/mode-select-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/network-commissioning/network-commissioning.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/occupancy-sensor-server/occupancy-sensor-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/on-off-server/on-off-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/operational-credentials-server/operational-credentials-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/operational-state-server/operational-state-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/ota-provider/ota-provider.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/ota-requestor/BDXDownloader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/ota-requestor/DefaultOTARequestor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/ota-requestor/DefaultOTARequestorDriver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/ota-requestor/DefaultOTARequestorStorage.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/ota-requestor/ExtendedOTARequestorDriver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/ota-requestor/OTATestEventTriggerDelegate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/ota-requestor/ota-requestor-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/power-source-configuration-server/power-source-configuration-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/power-source-server/power-source-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/pump-configuration-and-control-client/pump-configuration-and-control-client.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/pump-configuration-and-control-server/pump-configuration-and-control-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/refrigerator-alarm-server/refrigerator-alarm-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/resource-monitoring-server/resource-monitoring-cluster-objects.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/resource-monitoring-server/resource-monitoring-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/scenes-server/ExtensionFieldSetsImpl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/scenes-server/SceneTableImpl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/scenes-server/scenes-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/smoke-co-alarm-server/smoke-co-alarm-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/software-diagnostics-server/software-diagnostics-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/switch-server/switch-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/target-navigator-server/target-navigator-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/temperature-control-server/temperature-control-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/test-cluster-server/test-cluster-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/thermostat-client/thermostat-client.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/thermostat-server/thermostat-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/thermostat-user-interface-configuration-server/thermostat-user-interface-configuration-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/thread-network-diagnostics-server/thread-network-diagnostics-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/time-format-localization-server/time-format-localization-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/time-synchronization-server/DefaultTimeSyncDelegate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/time-synchronization-server/TimeSyncDataProvider.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/time-synchronization-server/time-synchronization-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/user-label-server/user-label-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/wake-on-lan-server/wake-on-lan-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/wifi-network-diagnostics-server/wifi-network-diagnostics-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/src/app/clusters/window-covering-server/window-covering-server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter/zap_common/app/callback-stub.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

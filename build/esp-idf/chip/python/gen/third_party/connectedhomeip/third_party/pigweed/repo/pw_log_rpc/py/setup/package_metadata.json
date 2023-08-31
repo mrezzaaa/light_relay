@@ -1,0 +1,16 @@
+{
+  "gn_target_name": "//third_party/connectedhomeip/third_party/pigweed/repo/pw_log_rpc/py:setup",
+  "inputs": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_log_rpc/py/setup.cfg",
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_log_rpc/py/pyproject.toml"
+  ],
+  "setup_sources": [
+
+  ],
+  "sources": [
+    "../../../../../connectedhomeip/connectedhomeip/config/esp32/third_party/connectedhomeip/third_party/pigweed/repo/pw_log_rpc/py/setup.py"
+  ],
+  "tests": [
+
+  ]
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/esp_matter_console",
+		"source" : "/Users/icewalker/esp-idf/esp-matter/components/esp_matter_console"
+	}
+}

@@ -1,0 +1,59 @@
+-- Existing sdkconfig '/Users/icewalker/esp-idf/esp-matter/examples/light_relay/sdkconfig' renamed to '/Users/icewalker/esp-idf/esp-matter/examples/light_relay/sdkconfig.old'.
+-- Found Git: /usr/bin/git (found version "2.39.2 (Apple Git-143)") 
+-- Component directory /Users/icewalker/esp-idf/esp-matter/examples/common/blemesh_platform does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /Users/icewalker/esp-idf/esp-matter/examples/common/external_platform does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /Users/icewalker/esp-idf/esp-matter/examples/common/relinker does not contain a CMakeLists.txt file. No component will be added
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/icewalker/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/icewalker/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/icewalker/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32
+Skipping optional dependency: espressif/cmake_utilities
+Processing 7 dependencies:
+[1/7] espressif/button (2.5.0)
+[2/7] espressif/esp_encrypted_img (2.0.3)
+[3/7] espressif/esp_secure_cert_mgr (2.3.1)
+[4/7] espressif/json_parser (1.0.0)
+[5/7] espressif/led_strip (1.0.0)
+[6/7] espressif/mdns (1.2.0)
+[7/7] idf (5.1.1)
+-- Found Python3: /usr/local/Frameworks/Python.framework/Versions/3.11/bin/python3.11 (found version "3.11.4") found components: Interpreter 
+Skipping optional dependency: espressif/cmake_utilities
+-- Project sdkconfig file /Users/icewalker/esp-idf/esp-matter/examples/light_relay/sdkconfig
+Loading defaults file /Users/icewalker/esp-idf/esp-matter/examples/light_relay/sdkconfig.defaults...
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /Users/icewalker/.espressif/python_env/idf5.1_py3.11_env/bin/python (found version "3.11.4") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "light_relay" version: 1.0
+-- Adding linker script /Users/icewalker/esp-idf/esp-matter/examples/light_relay/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/icewalker/esp-idf/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /Users/icewalker/esp-idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /Users/icewalker/esp-idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /Users/icewalker/esp-idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /Users/icewalker/esp-idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /Users/icewalker/esp-idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /Users/icewalker/esp-idf/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /Users/icewalker/esp-idf/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_bridge app_reset app_trace app_update bootloader bootloader_support bt chip cmock console cxx device driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_matter esp_matter_bridge esp_matter_console esp_matter_controller esp_matter_rainmaker esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__button espressif__esp_encrypted_img espressif__esp_secure_cert_mgr espressif__json_parser espressif__led_strip espressif__mdns esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 iot_button json led_driver log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/icewalker/esp-idf/esp-matter/examples/common/app_bridge /Users/icewalker/esp-idf/esp-matter/examples/common/app_reset /Users/icewalker/esp-idf/esp-idf/components/app_trace /Users/icewalker/esp-idf/esp-idf/components/app_update /Users/icewalker/esp-idf/esp-idf/components/bootloader /Users/icewalker/esp-idf/esp-idf/components/bootloader_support /Users/icewalker/esp-idf/esp-idf/components/bt /Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip /Users/icewalker/esp-idf/esp-idf/components/cmock /Users/icewalker/esp-idf/esp-idf/components/console /Users/icewalker/esp-idf/esp-idf/components/cxx /Users/icewalker/esp-idf/esp-matter/device_hal/device /Users/icewalker/esp-idf/esp-idf/components/driver /Users/icewalker/esp-idf/esp-idf/components/efuse /Users/icewalker/esp-idf/esp-idf/components/esp-tls /Users/icewalker/esp-idf/esp-idf/components/esp_adc /Users/icewalker/esp-idf/esp-idf/components/esp_app_format /Users/icewalker/esp-idf/esp-idf/components/esp_coex /Users/icewalker/esp-idf/esp-idf/components/esp_common /Users/icewalker/esp-idf/esp-idf/components/esp_eth /Users/icewalker/esp-idf/esp-idf/components/esp_event /Users/icewalker/esp-idf/esp-idf/components/esp_gdbstub /Users/icewalker/esp-idf/esp-idf/components/esp_hid /Users/icewalker/esp-idf/esp-idf/components/esp_http_client /Users/icewalker/esp-idf/esp-idf/components/esp_http_server /Users/icewalker/esp-idf/esp-idf/components/esp_https_ota /Users/icewalker/esp-idf/esp-idf/components/esp_https_server /Users/icewalker/esp-idf/esp-idf/components/esp_hw_support /Users/icewalker/esp-idf/esp-idf/components/esp_lcd /Users/icewalker/esp-idf/esp-idf/components/esp_local_ctrl /Users/icewalker/esp-idf/esp-matter/components/esp_matter /Users/icewalker/esp-idf/esp-matter/components/esp_matter_bridge /Users/icewalker/esp-idf/esp-matter/components/esp_matter_console /Users/icewalker/esp-idf/esp-matter/components/esp_matter_controller /Users/icewalker/esp-idf/esp-matter/components/esp_matter_rainmaker /Users/icewalker/esp-idf/esp-idf/components/esp_mm /Users/icewalker/esp-idf/esp-idf/components/esp_netif /Users/icewalker/esp-idf/esp-idf/components/esp_netif_stack /Users/icewalker/esp-idf/esp-idf/components/esp_partition /Users/icewalker/esp-idf/esp-idf/components/esp_phy /Users/icewalker/esp-idf/esp-idf/components/esp_pm /Users/icewalker/esp-idf/esp-idf/components/esp_psram /Users/icewalker/esp-idf/esp-idf/components/esp_ringbuf /Users/icewalker/esp-idf/esp-idf/components/esp_rom /Users/icewalker/esp-idf/esp-idf/components/esp_system /Users/icewalker/esp-idf/esp-idf/components/esp_timer /Users/icewalker/esp-idf/esp-idf/components/esp_wifi /Users/icewalker/esp-idf/esp-idf/components/espcoredump /Users/icewalker/esp-idf/esp-matter/examples/light_relay/managed_components/espressif__button /Users/icewalker/esp-idf/esp-matter/examples/light_relay/managed_components/espressif__esp_encrypted_img /Users/icewalker/esp-idf/esp-matter/examples/light_relay/managed_components/espressif__esp_secure_cert_mgr /Users/icewalker/esp-idf/esp-matter/examples/light_relay/managed_components/espressif__json_parser /Users/icewalker/esp-idf/esp-matter/examples/light_relay/managed_components/espressif__led_strip /Users/icewalker/esp-idf/esp-matter/examples/light_relay/managed_components/espressif__mdns /Users/icewalker/esp-idf/esp-idf/components/esptool_py /Users/icewalker/esp-idf/esp-idf/components/fatfs /Users/icewalker/esp-idf/esp-idf/components/freertos /Users/icewalker/esp-idf/esp-idf/components/hal /Users/icewalker/esp-idf/esp-idf/components/heap /Users/icewalker/esp-idf/esp-idf/components/http_parser /Users/icewalker/esp-idf/esp-idf/components/idf_test /Users/icewalker/esp-idf/esp-idf/components/ieee802154 /Users/icewalker/esp-idf/esp-matter/device_hal/button_driver/iot_button /Users/icewalker/esp-idf/esp-idf/components/json /Users/icewalker/esp-idf/esp-matter/device_hal/led_driver /Users/icewalker/esp-idf/esp-idf/components/log /Users/icewalker/esp-idf/esp-idf/components/lwip /Users/icewalker/esp-idf/esp-matter/examples/light_relay/main /Users/icewalker/esp-idf/esp-idf/components/mbedtls /Users/icewalker/esp-idf/esp-idf/components/mqtt /Users/icewalker/esp-idf/esp-idf/components/newlib /Users/icewalker/esp-idf/esp-idf/components/nvs_flash /Users/icewalker/esp-idf/esp-idf/components/openthread /Users/icewalker/esp-idf/esp-idf/components/partition_table /Users/icewalker/esp-idf/esp-idf/components/perfmon /Users/icewalker/esp-idf/esp-idf/components/protobuf-c /Users/icewalker/esp-idf/esp-idf/components/protocomm /Users/icewalker/esp-idf/esp-idf/components/pthread /Users/icewalker/esp-idf/esp-idf/components/sdmmc /Users/icewalker/esp-idf/esp-idf/components/soc /Users/icewalker/esp-idf/esp-idf/components/spi_flash /Users/icewalker/esp-idf/esp-idf/components/spiffs /Users/icewalker/esp-idf/esp-idf/components/tcp_transport /Users/icewalker/esp-idf/esp-idf/components/ulp /Users/icewalker/esp-idf/esp-idf/components/unity /Users/icewalker/esp-idf/esp-idf/components/usb /Users/icewalker/esp-idf/esp-idf/components/vfs /Users/icewalker/esp-idf/esp-idf/components/wear_levelling /Users/icewalker/esp-idf/esp-idf/components/wifi_provisioning /Users/icewalker/esp-idf/esp-idf/components/wpa_supplicant /Users/icewalker/esp-idf/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/icewalker/esp-idf/esp-matter/examples/light_relay/build

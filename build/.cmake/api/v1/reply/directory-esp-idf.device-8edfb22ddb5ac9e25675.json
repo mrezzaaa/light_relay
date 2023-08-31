@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/device",
+		"source" : "/Users/icewalker/esp-idf/esp-matter/device_hal/device"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "esp-idf/app_bridge",
+		"source" : "/Users/icewalker/esp-idf/esp-matter/examples/common/app_bridge"
+	}
+}

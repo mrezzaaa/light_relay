@@ -1,0 +1,7 @@
+CMake Error at run_serial_tool.cmake:66 (message):
+  
+  /Users/icewalker/esp-idf/components/esptool_py/esptool/python_env/idf5.1_py3.9_env/bin/python;;/Users/icewalker/esp-idf/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32
+  failed.
+
+
+
