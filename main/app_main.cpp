@@ -235,8 +235,6 @@ extern "C" void app_main()
         ESP_LOGW(TAG,"Creating light %i with GPIO %i",i,light.GPIO_PIN_VALUE);
         err |= create_light(&light,node);
     }
-   
-    vTaskDelay(1000);
     // extended_color_light::config_t light_config;
     // light_config.on_off.on_off = DEFAULT_POWER;
     // light_config.on_off.lighting.start_up_on_off = nullptr;

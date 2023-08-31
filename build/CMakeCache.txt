@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//No help, variable specified on the command line.
+CCACHE_ENABLE:UNINITIALIZED=1
+
+//Path to a program.
+CCACHE_FOUND:FILEPATH=/usr/local/bin/ccache
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/Users/icewalker/esp-idf/components/esptool_py/esptool/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-addr2line
 
@@ -292,6 +298,9 @@ ENABLE_PROGRAMS:BOOL=
 //Build mbed TLS tests.
 ENABLE_TESTING:BOOL=
 
+//No help, variable specified on the command line.
+ESP_PLATFORM:UNINITIALIZED=1
+
 //Generate the auto-generated files as needed
 GEN_FILES:BOOL=
 
@@ -318,6 +327,12 @@ LINK_WITH_TRUSTED_STORAGE:BOOL=OFF
 
 //Compiler warnings treated as errors
 MBEDTLS_FATAL_WARNINGS:BOOL=ON
+
+//No help, variable specified on the command line.
+PYTHON:UNINITIALIZED=/Users/icewalker/esp-idf/components/esptool_py/esptool/python_env/idf5.1_py3.9_env/bin/python
+
+//No help, variable specified on the command line.
+PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
 //Allow unsafe builds. These builds ARE NOT SECURE.
 UNSAFE_BUILD:BOOL=OFF
@@ -562,7 +577,7 @@ C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.39.2 (Apple Git-143)()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/icewalker/opt/miniconda3/bin/python3.9][cfound components: Interpreter ][v3.9.16()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/icewalker/esp-idf/components/esptool_py/esptool/python_env/idf5.1_py3.9_env/bin/python][cfound components: Interpreter ][v3.9.16()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Have include stddef.h
@@ -577,9 +592,8 @@ HAVE_TIME_T_SIZE:INTERNAL=TRUE
 TIME_T_SIZE:INTERNAL=8
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
-//Path to a program.
-_Python3_EXECUTABLE:INTERNAL=/Users/icewalker/opt/miniconda3/bin/python3.9
+_Python3_EXECUTABLE:INTERNAL=/Users/icewalker/esp-idf/components/esptool_py/esptool/python_env/idf5.1_py3.9_env/bin/python
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;16;32;;;/Users/icewalker/opt/miniconda3/lib/python3.9;/Users/icewalker/opt/miniconda3/lib/python3.9;/Users/icewalker/opt/miniconda3/lib/python3.9/site-packages;/Users/icewalker/opt/miniconda3/lib/python3.9/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=c4003fba2da1c403e0237bc356226f82
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;16;32;;;/Users/icewalker/opt/miniconda3/lib/python3.9;/Users/icewalker/opt/miniconda3/lib/python3.9;/Users/icewalker/esp-idf/components/esptool_py/esptool/python_env/idf5.1_py3.9_env/lib/python3.9/site-packages;/Users/icewalker/esp-idf/components/esptool_py/esptool/python_env/idf5.1_py3.9_env/lib/python3.9/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=54976c31dfffa124ae4bacd2da29fd85
 

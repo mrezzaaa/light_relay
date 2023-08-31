@@ -1,0 +1,4 @@
+warning: default on the choice symbol SEC_CERT_DAC_PROVIDER (defined at /Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:786, /Users/icewalker/esp-idf/esp-matter/components/esp_matter/Kconfig:34) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol SEC_CERT_DAC_PROVIDER (defined at /Users/icewalker/esp-idf/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:786, /Users/icewalker/esp-idf/esp-matter/components/esp_matter/Kconfig:34) is defined with a prompt outside the choice
+Compiler supported targets: xtensa-esp32-elf
+
